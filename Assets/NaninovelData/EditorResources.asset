@@ -236,30 +236,6 @@ MonoBehaviour:
     - name: Scene1
       pathPrefix: Scripts
       guid: 3c5b80c03bd2ab64da2921abb47f5e7e
-    - name: Scene2
-      pathPrefix: Scripts
-      guid: 9ea9c81334d96db49a5ed9b667be3d3c
-    - name: Scene3
-      pathPrefix: Scripts
-      guid: 0a448b3cc549e6a40b100a4d233e5afb
-    - name: Scene4
-      pathPrefix: Scripts
-      guid: bf33929268b602f49b74efc5510bd8de
-    - name: Scene5
-      pathPrefix: Scripts
-      guid: bdee992e60591ab43a64400334907b84
-    - name: Scene6
-      pathPrefix: Scripts
-      guid: bbfc148a31b72de4a8465c48a346ba3f
-    - name: Scene7
-      pathPrefix: Scripts
-      guid: baad4f907def424448d9cbb30149973d
-    - name: Scene8
-      pathPrefix: Scripts
-      guid: 79a915820b39e4149a116fd7b8383c64
-    - name: Scene9
-      pathPrefix: Scripts
-      guid: caaf09b550e6fa84d9e7e4306f862f9e
     - name: Scene10
       pathPrefix: Scripts
       guid: 1b69f6604b7783f42bcd57a8a9dac9ec
