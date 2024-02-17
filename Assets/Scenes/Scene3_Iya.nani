@@ -4,7 +4,7 @@
 
 ; @bgm ембієнт метро
 
-@back BG_Dialog_Iya
+@back BG_GhostTrain
 
 ; PreviousChar - це змінна, яка змінюється в залежності від того, кого з персонажів ми обрали до цього
 ; 0 = Nobody
@@ -50,6 +50,8 @@
 
 
 #IyaHello
+
+@back BG_Dialog_Iya
 
 @char Настя.nastya_surprise pos:75,0
 ; @printer Настя
