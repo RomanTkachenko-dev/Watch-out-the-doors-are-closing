@@ -12,7 +12,7 @@
 ; 2 = Orest
 ; 3 = Kazimir
 
-@if PreviousChar==1 
+@if PreviousChar==0 
     ; @printer Thoughts
     Нє, ну не стирчати ж тут? Піду з людьми порозмовляю.
 
