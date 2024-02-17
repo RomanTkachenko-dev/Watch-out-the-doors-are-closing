@@ -6,6 +6,7 @@
 
 @unlock BG_Dialog_Haron
 
+
 @choice "Сцена 1" goto:.Start
 @choice "Сцена 2" goto:Scene2
 @choice "Сцена 3" goto:Scene3

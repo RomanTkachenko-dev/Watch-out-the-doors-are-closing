@@ -19,23 +19,26 @@
 
 @set PreviousChar=0
 #Scene3Choice
+@back BG_ThreePersonages
 
 @choice "Підійти до силуета 1" goto:.Ch1Option1 
 @choice "Підійти до силуета 2" goto:.Ch1Option2
 @choice "Підійти до силуета 3" goto:.Ch1Option3
-
+@stop
 
 #Ch1Option1
-
+@set PreviousChar=1
 @goto Scene3_Iya
 
 @stop
 
 #Ch1Option2
+@set PreviousChar=3
 @goto Scene3_Kazimir
 @stop
 
 #Ch1Option3
+@set PreviousChar=2
 @goto Scene3_Orest
 @stop
 
