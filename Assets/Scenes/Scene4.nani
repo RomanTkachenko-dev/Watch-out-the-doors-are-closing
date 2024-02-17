@@ -8,12 +8,12 @@
 
 ; @sfx звук потяга, що зупиняється
 
-@char nastya_norm pos:75,0
-@printer Announcer
+@char Настя.Настя.nastya_norm pos:75,0
+; @printer Announcer
 Диктор: Станція “Перекур”. Технічна зупинка. Наступна станція — кінцева.
 
-@char nastya_meh
-@printer Настя
+@char Настя.Настя.nastya_meh
+; @printer Настя
 Настя: Перекур, каже. Курить хто мені купить, ти?
 
 Настя: Треба сходить хоть ноги розімнять. Все одно говорить більше ні з ким.
@@ -22,25 +22,25 @@
 
 @back BG_Dialog_Haron
 
-@char nastya_meh
+@char Настя.Настя.nastya_meh
 Настя: …
 
-@char nastya_irony
+@char Настя.nastya_irony
 Настя: Сюда б зараз дівок моїх. Петрівну. І Миколаївну. Ото б було їм розказать…
 
 ; @sfx звук кроків чоловіка, який наближ
 
-@char nastya_surprise
+@char Настя.nastya_surprise
 @char charon_gallant_smile pos:30,0
-@printer ???
+; @printer ???
 ???: Доброї ночі. Перепрошую. Я волів би закурити. Чи пані не буде проти?
 
-@char nastya_surprise
-@printer Настя
+@char Настя.nastya_surprise
+; @printer Настя
 Настя: Шо?
 
 @char charon_normal
-@printer ???
+; @printer ???
 ???: Дозволите закурити тут, пані?
 
 
@@ -49,7 +49,7 @@
 @stop
 
 #CharonSmoke
-    @char nastya_irony
+    @char Настя.nastya_irony
     Настя: Яка я там в сраку пані.
 
     @char charon_active_smile
@@ -57,11 +57,11 @@
 
     ???: Чи пані бажає курити також?
 
-    @char nastya_smile
+    @char Настя.nastya_smile
     Настя: Йой, питаєш!
 
     ; @sfx звук запальнички і затягування
-    @char nastya_complacency
+    @char Настя.nastya_complacency
     Настя: ...
 @goto .NastyaSmoke
 
@@ -72,18 +72,18 @@
     @char charon_active_smile
     ???: Прошу, візьміть.
 
-    @char nastya_irony
+    @char Настя.nastya_irony
     Настя: Боже, нарешті.
 
     ; @sfx звук запальнички і затягування
-    @char nastya_complacency
+    @char Настя.nastya_complacency
     Настя: ...
 @goto .NastyaSmoke
 
 
 #NastyaSmoke
 
-@char nastya_smile
+@char Настя.nastya_smile
 Настя: Фух, так краще.
 
 Настя: Я Настя, до речі.
@@ -101,7 +101,7 @@
     @char charon_active_smile
     Харитон Андронович: Вельми неординарно, як ви думаєте?
     
-    @char nastya_irony
+    @char Настя.nastya_irony
     Настя: Не одинарно. Хе-хе.
 @goto .CharonAsk
 
@@ -129,6 +129,7 @@
 
 ; CharsSaved - змінна, що відповідає за кількість персонажів, які отримали гарну кінцівку. Тобто, якщо Настя рятує персонажа, змінна CharsSaved має збільшуватися на 1, і так до максимуму 3. 0 означає, що жодного з персонажів не врятовано (погана кінцівка). 1 або 2 - що не всі персонажі врятовані (нормальна кінцівка). 3 - що врятовані всі персонажі (хороша кінцівка).
 
+
 @if CharsSaved<=0
     
     @choice "Може й мертва вже." goto:.CharonAlreadyDead
@@ -136,13 +137,13 @@
     @stop
 
     #CharonAlreadyDead
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Я вже сама не знаю, шо значить “не мертва”. Може й мертва. З якого боку подивиться.
 
         @char charon_surprise
         Харитон Андронович: Але моє вухо вловлює цей звук, такий незвичний у цій частині підземних тонелів. Пані має серце, що б’ється.
 
-        @char nastya_facepalm
+        @char Настя.nastya_facepalm
         Настя: А понту з того, шо б’ється. Все одно ненадовго.
 
         @char charon_gallant_smile
@@ -150,7 +151,7 @@
     @goto .CharonAnswerSorry
 
     #CharonSorry
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Я залізла, бо вже похрін було. Погана прикмета, не погана. Шо втрачать?
 
         @char charon_normal
@@ -158,7 +159,7 @@
 
         Харитон Андронович: Скільки відміряв вам ваш лікар?
 
-        @char nastya_facepalm
+        @char Настя.nastya_facepalm
         Настя: Ой, я тебе прошу. Лікар. Тут би на комуналку наскребти. А ти “лікар”.
     @goto .CharonAnswerSorry
 
@@ -168,12 +169,12 @@
     @char charon_sad
     Харитон Андронович: Мої щирі співчуття.
 
-    @char nastya_menace
+    @char Настя.nastya_menace
     Настя: Люди — ублюди, Харитоне Андроновичу. Сидять у телехвонах своїх і навісніють. Ти їм оце граєш, душу рвеш, а вони тобі ше в харю дадуть.
 
     Настя: Ні смаку, ні совісті.
 
-    @char nastya_meh
+    @char Настя.nastya_meh
     Настя: А я?
 
 
@@ -182,24 +183,24 @@
     @stop
 
     #CharonIAmGuilty
-        @char nastya_menace
+        @char Настя.nastya_menace
         Настя: Не вчилась, не працювала, вола гибала. Шо тіки не нюхала і не колола. Обжималась по кутках. Тіки й побувала в житті, шо на нарах.
 
-        @char nastya_disgust
+        @char Настя.nastya_disgust
         Настя: Ай…
 
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Може, і ліпше, шо захворіла. Хоть не буду довго мучитись.
     @goto .CharonSadStory
 
     #CharonCircumstancesAreGuilty
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Може, якби родилась у нормальній хаті, у нормальній сім’ї, то були б люди з мене. А так… шо там казать.
 
-        @char nastya_disgust
+        @char Настя.nastya_disgust
         Настя: Алкаші знайшли одне одного. Яке їхало, таке здибало. І залетіли. А кому того дитя треба, коли на портвейн нема?
 
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Так і виросла, як той бур’ян. Вже не дождусь, коли виполють.
     @goto .CharonSadStory
 
@@ -214,7 +215,7 @@
     @char charon_seriousness
     Харитон Андронович: І пані зовсім не мала рідної душі, змалечку і до сьогодні?
 
-    @char nastya_meh
+    @char Настя.nastya_meh
     Настя: Тьотька Дашка хіба. Вона вчителька була у музикалці, поки не спилась. На гітарі мене навчила. А потім шо. Потім синька, і всьо.
 
     @char charon_sad
@@ -235,12 +236,12 @@
     @stop
 
     #CharonReadyToDie
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Тут вже мені давно нічого ловить.
     @goto .CharonFinalDestination
 
     #CharonButMyGuitar
-        @char nastya_irony
+        @char Настя.nastya_irony
         Настя: Якби ше зіграть… пісня завше помагає.
 
         @char charon_normal
@@ -248,33 +249,33 @@
 
         Харитон Андронович: І до того ж. Хіба музика принесла пані те, що пані шукала? Єднання людських душ? Вираження творчого пориву душі?
 
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Моя оддушина була…
 
         @char charon_seriousness
         Харитон Андронович: Всього-на-всього щось, що не є таким поганим, як решта світу. Хіба це найкраще, на що ви заслуговуєте, Анастасіє Олександрівно?
 
-        @char nastya_surprise
+        @char Настя.nastya_surprise
         Настя: …
     @goto .CharonFinalDestination
 
     #CharonButMyFriends
-        @char nastya_smile
+        @char Настя.nastya_smile
         Настя: З ними курить — ото одна радість в мене була.
 
         @char charon_normal
         Харитон Андронович: Чи може пані сказати, що, зустрівшись зі мною і отримавши таку саму пропозицію, вони б сказали про пані так само?
 
-        @char nastya_facepalm
+        @char Настя.nastya_facepalm
         Настя: Петрівна ні в жисть. Вона хороша баба, але така вже нудна. Ніколи слова доброго не дождешся.
 
-        @char nastya_norm
+        @char Настя.nastya_norm
         Настя: Миколаївна б може сказала. Але тоже не знати.
 
         @char charon_gallant_smile
         Харитон Андронович: Хіба це найкраще, на що ви заслуговуєте, Анастасіє Олександрівно?
 
-        @char nastya_surprise
+        @char Настя.nastya_surprise
         Настя: …
     @goto .CharonFinalDestination
 
@@ -284,7 +285,7 @@
     @char charon_normal
     Харитон Андронович: Наступна станція — кінцева.
 
-    @char nastya_surprise
+    @char Настя.nastya_surprise
     Настя: Шо там, на кінцевій?
 
     @char charon_seriousness
@@ -307,20 +308,20 @@
     @back BG_GhostTrain_Final
     ; @bgm ембієнт порожнього потягу, який рухається
 
-    @char nastya_meh
+    @char Настя.nastya_meh
     Настя: Ну шо ж. Виходить, шо так воно всьо і закінчується. Пожила-пожила, за полтос років прожила, а нічо не нажила.
 
     Настя: Ні я нічо хорошого не зробила, ні мені нічо.
 
-    @char nastya_norm
+    @char Настя.nastya_norm
     Настя: То може, воно і ліпше отак просто собі поїхать. Петрівна казала, погана прикмета. Може, воно і погана. Не знаю.
 
-    @char nastya_meh
+    @char Настя.nastya_meh
     Настя: Одно шкода. Петрівна з Миколаївною завтра вранці будуть мене на перекур чекать.
 
     Настя: І післязавтра будуть чекать.
 
-    @char nastya_menace
+    @char Настя.nastya_menace
     Настя: А не дочекаються вже. Ой, дівоньки мої. Хто ж вас повеселить тепер, як не Наська, стара тунеядка?..
 
     @back BlackBg
@@ -328,14 +329,14 @@
     @goto SceneEnding
 
 
-@elseIf (CharsSaved>0 && CharsSaved<3)
+@elseIf CharsSaved>0&&CharsSaved<3
 
     @choice "Нє, не мертва. Живіше всіх." goto:.CharonIAmAlive
     @choice "Вибачай, Харитоне Андроновичу." goto:.CharonSorryNotSorry
     @stop
 
     #CharonIAmAlive
-        @char nastya_menace
+        @char Настя.nastya_menace
         Настя: Подивилась я тут на твоїх пасанжирів, Харитоне Андроновичу, і ні хріна я не мертва. І не хочу.
 
         @char charon_active_smile
@@ -345,13 +346,13 @@
     @goto .CharonIWantToLive
 
     #CharonSorryNotSorry
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Я залізла більше з інтересу. Думала, куда їде погана прикмета.
 
         @char charon_gallant_smile
         Харитон Андронович: Вельми жива цікавість. Які ж висновки пані зробили?
 
-        @char nastya_norm
+        @char Настя.nastya_norm
         Настя: Це ж поїзд до пекла, та? Кудись на ту сторону. Кінцева зупинка — то та, з якої не вертають.
 
         @char charon_normal
@@ -361,22 +362,22 @@
 
     #CharonIWantToLive
 
-    @char nastya_norm
+    @char Настя.nastya_norm
     Настя: Не на всіх на них чекає шось нормальне, правда ж? Хтось у житті в сраці барахтався, а після смерті в ще більшу потрапив.
 
     @char charon_seriousness
     Харитон Андронович: На кожну душу очікує щось своє, пані.
 
-    @char nastya_meh
+    @char Настя.nastya_meh
     Настя: Отож. І хто знає, пощастить мені чи нє, ну?
 
     @char charon_gallant_smile
     Харитон Андронович: Це дуже залежить від того, що пані вкладає у поняття щастя.
 
-    @char nastya_disgust
+    @char Настя.nastya_disgust
     Настя: Я не хочу опиниться в сраці, Харитоне. Не хочу так скінчить, як… ну, як деякі.
 
-    @char nastya_smile
+    @char Настя.nastya_smile
     Настя: Я тако собі подумала. Я схожу тут. Їжджай собі сам на свою кінцеву. Привіти передавай. А я додому.
 
     @char charon_surprise
@@ -389,7 +390,7 @@
     @stop
 
     #CharonGetWork
-        @char nastya_smile
+        @char Настя.nastya_smile
         Настя: Найду нарешті якусь роботу нормальну. Та хоть вулиці мести. Шоб було видно результат.
 
         Настя: А там, чого на світі не бува, піду перевступлю до конси.
@@ -397,31 +398,31 @@
         @char charon_normal
         Харитон Андронович: Пані хотіли б музичну освіту?
 
-        @char nastya_menace
+        @char Настя.nastya_menace
         Настя: А шо? Шо я, гірша? Я оно як лабаю! Може, воно не пізно ніколи. Оно деяким навіть після смерті якісь другі шанси понавипадали.
     @goto .CharonGoodbye
 
     #CharonStopDrinking
-        @char nastya_irony
+        @char Настя.nastya_irony
         Настя: Це ж скільки гріш висвободиться. На шось хороше можна буде відкласти.
 
         Настя: А хоч би і переїхати. Невже я не варта нормальної хати?
 
-        @char nastya_smile
+        @char Настя.nastya_smile
         Настя: Може, найду собі якогось козака. Кохання — воно, знаєш, є і після полтоса.
 
         Настя: Буде кому серенадів співать.
     @goto .CharonGoodbye
 
     #CharonNotTellingYou
-        @char nastya_norm
+        @char Настя.nastya_norm
         Настя: Сам побачиш, як все вийде в мене.
 
         Настя: Я одно тобі скажу, шо я більше по оцим вагонам задрипаним бісер перед свинями кидати не буду.
 
         Настя: Музика — вона поваги вимагає. Ау-ди-торії.
 
-        @char nastya_smile
+        @char Настя.nastya_smile
         Настя: А я себе не на помийці найшла.
     @goto .CharonGoodbye
 
@@ -431,7 +432,7 @@
     @char charon_gallant_smile
     Харитон Андронович: Що ж, вельми надихаючі наміри. За розкладом, поїзд має відправлятися за хвилину. Зичу вам доброго здоров’я, пані.
 
-    @char nastya_smile
+    @char Настя.nastya_smile
     Настя: І ти бувай здоров, Харитончику. Дякую за сігу.
 
 
@@ -447,7 +448,7 @@
 
         @hide Charon
         ; @sfx віддаляються кроки
-        @char nastya_complacency
+        @char Настя.nastya_complacency
         Настя: Ги… ото чолов’яга. Мабуть, цілується як бог.
     @goto .CharonMeetThePolice
 
@@ -471,13 +472,13 @@
 
     ???: Гей! Пані!
 
-    @char nastya_surprise
+    @char Настя.nastya_surprise
     Настя: Га?
 
     @char policeman_2_normal pos:30,0
     Поліцейський: Пані, ви що там робите? Вам не можна тут знаходитися.
 
-    @char nastya_norm
+    @char Настя.nastya_norm
     Настя: Йой, та я вже йду… загубилась трохи, вибачайте…
 
     Поліцейська: Це ваш інструмент?
@@ -487,13 +488,13 @@
     @char policeman_2_angry
     Поліцейська: Це на неї викликали. Пані, перепрошую, вам доведеться пройти з нами.
 
-    @char nastya_meh
+    @char Настя.nastya_meh
     Настя: Шо?! Чого?! Куди?!
 
     @char policeman_2_normal
     Поліцейський: Будь ласка, не чиніть опору. Пройдіть із нами до машини.
 
-    @char nastya_surprise
+    @char Настя.nastya_surprise
     Настя: Шо?! Куди ви мене… я ж нічо! Я вже йду! Харон! Харон!
 
     @back BlackBg
@@ -515,23 +516,23 @@
     @goto .CharonIWantToStay
 
     #CharonIAmKindaSorry
-        @char nastya_smile
+        @char Настя.nastya_smile
         Настя: Я просто перевірить хотіла, справді потяг, якого нема, погана прикмета, чи нє.
 
         @char charon_gallant_smile
         Харитон Андронович: Чому ж нема. Адже пані мали нагоду самі проїхатися.
 
-        @char nastya_meh
+        @char Настя.nastya_meh
         Настя: Ну але ніхто не бачить його більше, крім мене. І кажуть, шо прикмета погана.
     @goto .CharonIWantToStay
 
 
     #CharonIWantToStay
 
-    @char nastya_laugh
+    @char Настя.nastya_laugh
     Настя: Смішне, Харитоне Андроновичу. Я їхала оце у тебе, з мертвими балакала. А ти знаєш, вже сто років такою живою себе не відчувала.
 
-    @char nastya_smile
+    @char Настя.nastya_smile
     Настя: Я спочатку дупля не давала, чого так. А зараз помітила. Мені у тебе в потязі не болить нічо.
 
     @char charon_normal
@@ -585,7 +586,7 @@
 
     Харитон Андронович: Чи не воліли б пані отримати роботу?
 
-    @char nastya_surprise
+    @char Настя.nastya_surprise
     Настя: Шо?..
 
     @char charon_gallant_smile
@@ -593,7 +594,7 @@
 
     Харитон Андронович: Робота непроста і своєрідна, але сьогодні пані вже спробували, і, здається, досягли неабиякого успіху.
 
-    @char nastya_complacency
+    @char Настя.nastya_complacency
     Настя: Чекай, типу шо, отак їздить і говорить просто?
 
     @char charon_seriousness
@@ -608,10 +609,10 @@
     @stop
 
     #CharonWhatAboutPetrivna
-        @char nastya_norm
+        @char Настя.nastya_norm
         Настя: На цій роботі твоїй є перекур?
 
-        @char nastya_smile
+        @char Настя.nastya_smile
         Настя: …з живими?
 
         @char charon_seriousness
@@ -644,20 +645,20 @@
     ; @bgm ембієнт всередині потягу
     @back BG_GhostTrain_Final
 
-    @char nastya_norm pos:75,0
+    @char Настя.nastya_norm pos:75,0
     Отак я і влаштувалась на роботу кондукторки мертвих.
 
     Вони такі смішні. Відкрили мені в банку карту для виплат, бо, кажуть, то, шо в них іде за валюту, в готівку вже тисячу років не конвертується.
 
-    @char nastya_smile
+    @char Настя.nastya_smile
     Виявляється, в банку теж працюють ці, без лиць. Коли побачиш, шо десь каса не працює, будеш знать тепер. То працює, насправді, просто не для тебе. Хе-хе.
 
     А, ну, ти вже, мабуть, не побачиш. Ну нічо.
 
-    @char nastya_norm
+    @char Настя.nastya_norm
     Отак собі і живу. Працюю. На перекур навіть виходить вирватись. 
 
-    @char nastya_irony
+    @char Настя.nastya_irony
     Петрівна все така ж нудна. Але шо. Вона баба хороша. Миколаївна, правда, шось зовсім вже хвора.
 
     А я роблю, шо люблю. Триндю та на гітарці бринькаю. Навіть про свої перепердії іноді виходить розказать. От як зараз тобі.
@@ -667,10 +668,10 @@
 
     ; @bgmstop ембієнт всередині потягу затихає
 
-    @char nastya_norm
+    @char Настя.nastya_norm
     Диктор: Станція “Щасливий кінець”. Наступна станція…
 
-    @char nastya_smile
+    @char Настя.nastya_smile
     Настя: О, це твоя. Ну бувай. Передавай привіти.
 
     @hide Nastya

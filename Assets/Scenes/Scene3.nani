@@ -1,0 +1,43 @@
+@stopSfx
+@stopBgm
+
+Диктор: Обережно, двері зачиняються.
+
+*Двері зачиняються*
+*Ембієнт всередині потягу*
+
+@back BG_ThreePersonages
+
+Шо це? Якось тут дивно.
+А хоча ніби й як завжди.
+Нє, дивно.
+Шось дупля не ріжу, шо саме не так.
+Еййй, добрий вечір, хе-хе…
+Чекай-но. Це ж ці… примари. Оно, навіть лиць не видно. То ось кого він возить. То куди?.. Невже справді у пекло?..
+Може, тойво. Спитати…
+
+
+@set PreviousChar=0
+#Scene3Choice
+
+@choice "Підійти до силуета 1" goto:.Ch1Option1 
+@choice "Підійти до силуета 2" goto:.Ch1Option2
+@choice "Підійти до силуета 3" goto:.Ch1Option3
+
+
+#Ch1Option1
+
+@goto Scene3_Iya
+
+@stop
+
+#Ch1Option2
+@goto Scene3_Kazimir
+@stop
+
+#Ch1Option3
+@goto Scene3_Orest
+@stop
+
+
+@goto Scene4

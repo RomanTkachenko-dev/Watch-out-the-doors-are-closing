@@ -1,2 +1,3 @@
-@bgm MainThemeMajor
+@bgm Меню
+@unlock BG_MMenu
 @stop
