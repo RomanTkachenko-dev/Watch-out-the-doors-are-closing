@@ -334,6 +334,9 @@ MonoBehaviour:
       guid: 75aa83cfb2b440c40b5288f04d0dac0d
   - Id: Unlockables
     Resources:
+    - name: CG/BG_MMenu
+      pathPrefix: Unlockables
+      guid: 6996a7c92a948a04390d547d8ff7379f
     - name: CG/BG_Dialog_Haron
       pathPrefix: Unlockables
       guid: df62b2a7692d25a4895b2bf71666b6a5
@@ -376,9 +379,6 @@ MonoBehaviour:
     - name: CG/BG_GhostTrain_Final
       pathPrefix: Unlockables
       guid: 2eba96f71c5c7334081370f202456a3c
-    - name: CG/BG_MMenu
-      pathPrefix: Unlockables
-      guid: 6996a7c92a948a04390d547d8ff7379f
     - name: CG/BG_Outside1_Kazimir_01_Todler_
       pathPrefix: Unlockables
       guid: f550fca6b0854e3479e5579469011d81
@@ -624,3 +624,79 @@ MonoBehaviour:
     - name: petrivna_smile
       pathPrefix: "Characters/\u041F\u0435\u0442\u0440\u0456\u0432\u043D\u0430"
       guid: 7dd6f556e7d96004a9932f41905f9a57
+  - Id: Characters/4ffa43cd-c9d1-429f-9d3b-4fb89f82430b
+    Resources:
+    - name: iya_doubts
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: b6f6d3086e2bf9a46998cf2d126789c5
+    - name: iya_embarrassment
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: bbec491ea9a25a14c9d982ae270fa9a5
+    - name: iya_fear
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: f9d24d3b742b0754ea9672e91e5c632b
+    - name: iya_laugh
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: de1d76f64b6df474c924101085533a9e
+    - name: iya_normal
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: e056424840e0a914db47484d50d3379a
+    - name: iya_sad
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 76658cbd088c3d7488150c5474084400
+    - name: iya_soft_smile
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 580ca99415285a6469aaf0aa992d91e7
+    - name: iya_surprise
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: b309ba0fbb8e49c428e950a6e938d8ef
+    - name: iya_thoughtfulness
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 91a7fbc6bbcf8e8469320af8016a120a
+    - name: dark_iya_doubts
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 6020d26cc585b5a4eb0290e5a16ce13f
+    - name: dark_iya_embarrassment
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 08f2a54bbf2bdd14bb647e856eb5aa08
+    - name: dark_iya_fear
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: c76aba0a19573464eba881df94bba487
+    - name: dark_iya_laugh
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: f2dc289d2dc12a849a88252f6289fe91
+    - name: dark_iya_normal
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: c62aad7a66b97844797c1c04324c0b6b
+    - name: dark_iya_sad
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: dd685e3af972d814f936443418e1b91e
+    - name: dark_iya_soft_smile
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: e0c68ab9da369264db958e1a55d7d2f3
+    - name: dark_iya_surprise
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 8eb069f883a1a3e40bfbfbbafa2c3b2b
+    - name: dark_iya_thoughtfulness
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: 4a2527676c9d57446bf7b6a1be0b4a58
+  - Id: Characters/167a3566-9c47-4208-a6f7-835a1c0e7d05
+    Resources:
+    - name: charon_active_smile
+      pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
+      guid: fde8a231c1e3e6d419bdb5f1655ec476
+    - name: charon_gallant_smile
+      pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
+      guid: 3c0b223c791202c4695285f98d9ec1e7
+    - name: charon_normal
+      pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
+      guid: e7bd600c9eaba66428f8ef287b2be7ac
+    - name: charon_sad
+      pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
+      guid: 98fd04b89ce9eab4b9415f33214486b7
+    - name: charon_seriousness
+      pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
+      guid: 771a22d469868ab44853302dbf95314c
+    - name: charon_surprise
+      pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
+      guid: a6f1df9ba4730c146ba87fa2942aec26

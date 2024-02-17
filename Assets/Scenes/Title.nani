@@ -1,3 +1,6 @@
 @bgm Меню
-@unlock BG_MMenu
+@unlock BG_MMenu.CircleReveal
+
+
+
 @stop
