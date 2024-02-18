@@ -38,6 +38,8 @@
 @back BG_Sc1_Train.CircleReveal
 @char Настя.guitar_play_nastya_norm pos:30,0
 
+; @sfx В. Хоробрий Світанок
+
 Дитина: Тьотя, на!
 @char Настя.guitar_play_nastya_laugh
 ???: Ой ти моє зайчик, дякую-дякую! Рости велике і здорове, мамі-папі на радість!
@@ -50,11 +52,15 @@
 @stop
 
 #Ch1Option1
-@char Настя.guitar_play_nastya_menace
+@char Настя.guitar_play_nastya_disgust
+???: Май сором при дитині таке казать!
+
 Чоловік: Мала б сама сором, намалювалася як молодуха і диринь-диринь отут, ану пішла!
 @goto .Ch1End
 
 #Ch1Option2
+@char Настя.guitar_play_nastya_disgust
+???: Стули писок!
 
 Чоловік: Я зараз поліцію на тебе викличу, вони тобі стулять по горбу!
 @goto .Ch1End
@@ -94,11 +100,12 @@
 @char Настя.nastya_surprise
 Настя: Може, правду розказують про те, шо тут під землею десь пекло.
 Настя: Може, їх звідти випускають погулять по території.
+@char Настя.nastya_meh
 Настя: Як у тюрячці. Не до ночі згадати.
 @goto .Ch2End
 
 #Ch2Option3
-@char Настя.guitar_play_nastya_meh
+@char Настя.guitar_play_nastya_disgust
 Настя: “З лицями”. З харями! І шо далі то зліші.
 Настя: На моїх сусідів по комуналці схожі. Ті теж мразі
 @goto .Ch2End
