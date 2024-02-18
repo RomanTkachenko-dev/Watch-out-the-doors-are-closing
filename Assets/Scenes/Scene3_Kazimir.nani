@@ -6,7 +6,7 @@
 @back BG_GhostTrain
 @printer Dialogue
 @char Настя.nastya_norm pos:30,0
-
+@hide Казік.ChoosingSprite_Cazik
 
 ; PreviousChar - це змінна, яка змінюється в залежності від того, кого з персонажів ми обрали до цього
 ; 0 = Nobody

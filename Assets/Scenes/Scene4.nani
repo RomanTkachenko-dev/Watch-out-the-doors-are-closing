@@ -452,8 +452,8 @@
     Настя: І ти бувай здоров, Харитончику. Дякую за сігу.
 
 
-    @choice "Ти цей… як будеш проїжджать знов, то виходь. Потриндим." goto:.CharonStopDrinking
-    @choice "Всього хорошого." goto:.CharonNotTellingYou
+    @choice "Ти цей… як будеш проїжджать знов, то виходь. Потриндим." goto:.CharonGetWork
+    @choice "Всього хорошого." goto:.CharonStopDrinking
     @stop
 
     @goto Ending

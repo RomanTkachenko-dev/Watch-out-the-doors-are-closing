@@ -7,21 +7,6 @@
 
 @unlock BG_Dialog_Haron
 
-
-@choice "Сцена 1" goto:.Start
-@choice "Сцена 2" goto:Scene2
-@choice "Сцена 3" goto:Scene3
-@choice "Сцене 3.1 - Розмова з Ія" goto:Scene3_Iya
-@choice "Сцена 3.2. - Розмова з Орест" goto:Scene3_Orest
-@choice "Сцена 3.3.- Розмова з Казімір" goto:Scene3_Kazimir
-@choice "Сцена 4" goto:Scene4
-@choice "Титри" goto:Ending
-@stop
-
-#Start
-
-
-
 ???: Так.
 ???: Шо зіграть?
 ???: Може, шось таке веселеньке? Якісь вони тут усі понурі. Повтуплюються ото в телехвони.

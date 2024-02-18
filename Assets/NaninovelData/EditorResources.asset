@@ -656,6 +656,18 @@ MonoBehaviour:
     - name: "Ambience_\u041F\u043E\u0433\u0430\u043D\u0430_\u041A\u0456\u043D\u0446\u0456\u0432\u043A\u0430_\u0406\u044F_\u0417\u0430\u0432\u0456\u0440\u044E\u0445\u0430"
       pathPrefix: Audio
       guid: 7d037355bc31fbe4e9d6c9ea823350fd
+    - name: "\u0414\u043E\u0432\u0433\u0435_\u0425\u043C_\u0422\u0438\u043F\u0443_\u0414\u0430\u0439_\u041F\u043E\u0434\u0443\u043C\u0430\u0442\u0438_(\u0412\u0430\u0440\u0456\u0430\u043D\u0442\u0406)"
+      pathPrefix: Audio
+      guid: f6000cc031b1bec4b976a07fcbca5e17
+    - name: "\u0414\u043E\u0432\u0433\u0435_\u0425\u043C_\u0422\u0438\u043F\u0443_\u0414\u0430\u0439_\u041F\u043E\u0434\u0443\u043C\u0430\u0442\u0438_(\u0412\u0430\u0440\u0456\u0430\u043D\u0442\u0406\u0406)"
+      pathPrefix: Audio
+      guid: 700f799144ac32040ae99bbbfdb8d347
+    - name: "\u041E\u0440\u0435\u0441\u0442_\u0412\u0456\u0440\u0442\u0443\u043E\u0437\u043D\u0438\u0439"
+      pathPrefix: Audio
+      guid: d15761f42144c194fb92792e31a5b359
+    - name: "\u041E\u0440\u0435\u0441\u0442 \u0421\u0443\u043C\u043D\u0438\u0439"
+      pathPrefix: Audio
+      guid: 2ca36adf165100445af4e6626d199e74
   - Id: TextPrinters/93382452-b818-4ba3-8da9-b64d89477159
     Resources:
     - name: People
@@ -1014,6 +1026,9 @@ MonoBehaviour:
     - name: cazik_thoughtfulness
       pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
       guid: 484d3c300475adf4c91b771a8dca648f
+    - name: ChoosingSprite_Cazik
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 795918882df6cdb469395daadf8e40f9
     - name: dark_cazik_awkward_smile
       pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
       guid: e6a700cff840d7a4982cae8e9bedb1d0
@@ -1044,6 +1059,27 @@ MonoBehaviour:
     - name: transparency_cazik_normal
       pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
       guid: 13427a89968f4d14398c37f2505cdc2d
-    - name: ChoosingSprite_Cazik
-      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
-      guid: 795918882df6cdb469395daadf8e40f9
+  - Id: Characters/b00a130a-0f89-4c20-a278-df710d609540
+    Resources: []
+  - Id: Characters/8c1b93b0-a552-413d-949c-7db26dc12ac1
+    Resources:
+    - name: policeman_1_angry
+      pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0430"
+      guid: c8f03d6b8a6d39f4592b628a454e9a06
+    - name: policeman_1_normal
+      pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0430"
+      guid: 8631e704fa9fb364293609aca7c34164
+    - name: policeman_1_smile
+      pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0430"
+      guid: 3bf53570af3b5634887ae64e3c61b630
+  - Id: Characters/16fcc75a-b725-43e1-873d-4da8a08ca9b4
+    Resources:
+    - name: policeman_2_angry
+      pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0438\u0439"
+      guid: 018040805fbcecf49b77570b9f54e17a
+    - name: policeman_2_normal
+      pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0438\u0439"
+      guid: b7f504def75f3fe4c930306877c0bed6
+    - name: policeman_2_smile
+      pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0438\u0439"
+      guid: e8dff005c83fc0f40a670d32ff8652a9

@@ -109,7 +109,7 @@
 
 @bgm Сцена3.2_Орест
 
-Орест.orest_normal pos:75,0
+
 @char Орест.orest_normal pos:75,0
 @char Настя.nastya_menace
 Фух… Ледь мізки не тріснули.
@@ -135,7 +135,7 @@
 @stop
 
 #OrestNotYourBusiness
-@toast "Жінка-кактус!"
+@toast "Отримано досягнення : Жінка-кактус!"
 @char Настя.nastya_menace
 Настя: Ти хто тут такий, інтілігєнт вшивий?
 
@@ -153,7 +153,7 @@
 @goto .OrestIntroduction
 
 #OrestNeverFlied
-@toast "Пташка, яка не літає"
+@toast "Отримано досягнення : Пташка, яка не літає"
 @char Настя.nastya_smile
 Настя: А я і не злітала, шоб опускаться.
 
@@ -189,13 +189,13 @@
 @stop
 
 #OrestNotALady
-@toast "Балда Чесана"
+@toast "Отримано досягнення : Балда Чесана"
 @char Орест.orest_smile
 Орест: Ну дозволь вже мені бути ввічливим, що ти уперлася!
 @goto .OrestFamous
 
 #OrestIAmCommon
-@toast "Своя в дошку"
+@toast "Отримано досягнення : Своя в дошку"
 @sfx Жінка_Зітхає_Сумно
 @char Орест.orest_confident
 Орест: Мене мама вчила жінок поважати. Навіть якщо вони “з простих”.
@@ -244,7 +244,7 @@
 @goto .OrestGlory
 
 #OrestThinksTooMuch
-@toast "Заділа Ореста"
+@toast "Отримано досягнення : Заділа Ореста"
 @set OrestScore=OrestScore+1
 
 @char Орест.orest_confident
@@ -263,7 +263,7 @@
 @goto .OrestGlory
 
 #OrestEverybodyTalksAbout
-@toast "Настюха Брехуха"
+@toast "Отримано досягнення : Настюха Брехуха"
 @char Настя.nastya_complacency
 Настя: Я тебе зразу впізнала.
 
@@ -300,7 +300,7 @@
 
 
 #OrestAwkwardSilence
-@toast "Кентуха"
+@toast "Отримано досягнення : Кентуха"
 @sfx Шурхотіння_Одягу_При_Сіданні
 
 @char Орест.orest_smile
@@ -348,7 +348,7 @@
 @goto .OrestGrave
 
 #OrestPoem
-@toast "Поетка-перекладачка"
+@toast "Отримано досягнення : Поетка-перекладачка"
 @char Настя.nastya_smile
 @char Орест.orest_sigh
 Орест: Ой жінко, не сип мені сіль на рану!
@@ -390,7 +390,7 @@
 @stop
 
 #OrestHaveSomeNails
-@toast "Гостра на язик"
+@toast "Отримано досягнення : Гостра на язик"
 @char Орест.orest_normal
 Орест: Слухай. Я знаю, що інструмент для музиканта — це як частина себе.
 
@@ -412,7 +412,7 @@
 @stop
 
 #OrestGiveGuitar
-@toast "Жінка, яка побачила диво"
+@toast "Отримано досягнення : Жінка, яка побачила диво"
 @hide Орест
 @hide Настя
 @char Настя.no_guitar_nastya_norm
@@ -420,16 +420,19 @@
 
 
 @char Настя.no_guitar_nastya_surprise
-Ото в нього перстеняка. Чекай, він шо… світиться?!
+
+
 
 @back BlackBg
 @hideChars
+Ото в нього перстеняка. Чекай, він шо… світиться?!
+@char Кільце.Abstract_BGs_Orest_Star
 @stopBgm
 
-@char Кільце.Abstract_BGs_Orest_Star
+
 
 @sfx Орест_Віртуозний
-@wait 11
+@wait 3
 @sfx Жіночий_Сміх_(Настя)
 @hideChars
 
@@ -514,7 +517,7 @@
 
 @char Настя.nastya_smile
 Настя: Хочеш сказать, жлобиха? Так так і кажи.
-@toast "Жаба давить"
+@toast "Отримано досягнення : Жаба давить"
 @goto .OrestTheRing
 
 
@@ -555,7 +558,7 @@
 Орест: Для мене це був пік кар'єри, я був на розігріві самого Джимі Молодшого. 
 
 Орест: Я був на сьомому небі від щастя, передчував, що мною нарешті зацікавляться.
-BG_Outside1_Orest_01_Rising
+@back BG_Outside1_Orest_01_Rising
 Орест: Я так старався, готувався до цього виступу! А переді мною була порожня зала…
 
 
@@ -713,12 +716,12 @@ BG_Outside1_Orest_02_Wife
 @stop
 
 #OrestIFeelSorry
-@toast "Милий друже"
+@toast "Отримано досягнення : Милий друже"
 Орест: Так.
 @goto .OrestWantedToDie
 
 #OrestStupidDeath
-@toast "Настя шо ти робиш"
+@toast "Отримано досягнення : Настя шо ти робиш"
 Орест: Та мала б хоч крихту поваги!
 @goto .OrestWantedToDie
 
@@ -891,7 +894,7 @@ BG_Outside1_Orest_02_Wife
 @goto .OrestHasRegrets
 
 #OrestWhatInstead
-@toast "Безстрашна"
+@toast "Отримано досягнення : Безстрашна"
 @char Орест.orest_normal
 Орест: Тому що винуватий в усьому я зі своєю надмірною любов'ю до слави
 @goto .OrestHasRegrets
@@ -1012,6 +1015,7 @@ BG_Outside1_Orest_02_Wife
 @goto .OrestGoodEnding
 
 #OrestEndBad1
+@stopBgm
 @sfx ХоробрийСвітанок
 ...
 
@@ -1082,7 +1086,7 @@ BG_Outside1_Orest_02_Wife
 @stop
 
 #OrestEndPlay
-@toast "Поділилася найціннішим"
+@toast "Отримано досягнення : Поділилася найціннішим"
     @hideChars
     @char Орест.guitar_play_orest_sad
     @char Настя.no_guitar_nastya_norm
@@ -1172,7 +1176,7 @@ BG_Outside1_Orest_02_Wife
 @hide Настя
 @back BG_Dialog_Orest
 
-@char Настя.nastya_complacency pos:30,0
+@char Настя.nastya_complacency
 Ай, балакун який. Ну, триндіть не гріх.
 
 @sfx Жінка_Зітхає_Сумно
@@ -1187,7 +1191,7 @@ BG_Outside1_Orest_02_Wife
 @char Настя.nastya_smile
 У добру путь, козаче!
 
-@goto Scene3.Scene3Choice
+@goto .OrestEndScene
 
 #OrestBadEnding
 
@@ -1214,7 +1218,7 @@ BG_Outside1_Orest_02_Wife
 @wait 1
 @sfx Двері_Вагону_Відчиняються
 @wait 1
-@back BG_StationUnderground_03
+@back BG_StationUnderground_02
 @bgm Ambience_Погана_Кінцівка_Орест_Черви_І_Стогін
 @char Настя.nastya_norm
 @wait 4
@@ -1242,7 +1246,7 @@ BG_Outside1_Orest_02_Wife
 @hide Настя
 @back BG_Dialog_Orest
 
-@char Настя.nastya_meh pos:30,0
+@char Настя.nastya_meh 
 Ех, шкода козака. Молодий ше, і все при ньому… то ж не як я, то ж у людини всьо було. Чесне слово, нахіба так убиваться?
 
 @char Настя.nastya_norm
@@ -1250,7 +1254,7 @@ BG_Outside1_Orest_02_Wife
 
 Ех, Наська-Наська.
 
-@goto Scene3.Scene3Choice
+@goto .OrestEndScene
 
 #OrestEndScene
 
