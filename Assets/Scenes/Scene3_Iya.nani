@@ -370,6 +370,7 @@
     @char Ія.iya_soft_smile
     
     Ія: Тоді ти мене зрозумієш.
+@toast "Майже подружки"
 @goto .IyaBusinessPeople
 
 #IyaIDontUnderstand
@@ -423,7 +424,7 @@
 
 
 #IyaHadIssues
-
+@toast "Недовірлива Настюха"
 @sfx Жінка_Зітхає_Сумно
 @char Ія.iya_sad
 
@@ -492,6 +493,8 @@
 @goto .IyaGotHusband
 
 #IyaDidntDeservedIt
+Настя: Козел.
+@toast "Жіноча солідарність"
     @char Настя.nastya_disgust
     
     Настя: Шо ото домахався.
@@ -699,6 +702,7 @@
 @stop
 
 #IyaHorror
+@toast "На одній хвилі"
     @char Ія.iya_sad
     @char Настя.nastya_surprise
     Ія: Так, саме так…
@@ -706,6 +710,7 @@
 
 #IyaNotHorror
     @char Настя.nastya_irony
+@toast "Цинічна шутчка"
     Настя: Я думала, то тільки в серіалах через бабів самоубиваються.
 
     @char Ія.iya_sad
