@@ -2,50 +2,69 @@
 @stopBgm
 
 @sfx Обережно!_Двері_Зачиняються!
-@back BG_ThreePersonages
-Диктор: Обережно, двері зачиняються.
+@back BG_GhostTrain_ForChosing
+@char Ія.ChoosingSprite_Iya pos:60,25 
+@char Казік.ChoosingSprite_Cazik pos:40,37 
+@char Орест.ChoosingSprite_Orest pos:52,30 
 
+
+
+Диктор: Обережно, двері зачиняються.
 @bgm Ambience_Потяг_Всередині_Пустий
 
-@char Настя.nastya_disgust
 Шо це? Якось тут дивно.
-@char Настя.nastya_norm
 А хоча ніби й як завжди.
-@char Настя.nastya_disgust
 Нє, дивно.
 Шось дупля не ріжу, шо саме не так.
-@char Настя.nastya_laugh
 Настя: Еййй, добрий вечір, хе-хе…
 
-@char Настя.nastya_disgust
 Чекай-но. Це ж ці… примари. Оно, навіть лиць не видно. То ось кого він возить. То куди?.. Невже справді у пекло?..
-@char Настя.nastya_norm
 Може, тойво. Спитати…
 
 
-@set PreviousChar=0
-#Scene3Choice
-@hideChars
-@back BG_ThreePersonages
+@set iya=false 
+@set kazik=false 
+@set orest=false 
 
-@choice "Підійти до силуета 1" goto:.Ch1Option1 
-@choice "Підійти до силуета 2" goto:.Ch1Option2
-@choice "Підійти до силуета 3" goto:.Ch1Option3
+; 0 = Nobody
+; 1 = Iya
+; 2 = Orest
+; 3 = Kazik
+@set PreviousChar=0
+
+#Scene3Choice
+
+@char Ія.ChoosingSprite_Iya pos:60,25 if:iya=false 
+@char Казік.ChoosingSprite_Cazik pos:40,37  if:kazik=false 
+@char Орест.ChoosingSprite_Orest pos:52,30 if:orest=false 
+
+
+@back BG_GhostTrain_ForChosing
+
+@choice "Підійти до силуета дівчини" goto:.Ch1Option1  if:iya=false 
+@choice "Підійти до силуета чоловіка" goto:.Ch1Option2 if:kazik=false 
+@choice "Підійти до силуета підлітка" goto:.Ch1Option3 if:orest=false 
 @stop
 
 #Ch1Option1
-@set PreviousChar=1
+;@set PreviousChar=1
+@hideChars
+@set iya=true 
 @goto Scene3_Iya
 
 @stop
 
 #Ch1Option2
-@set PreviousChar=3
+;@set PreviousChar=3
+@hideChars
+@set kazik=true 
 @goto Scene3_Kazimir
 @stop
 
 #Ch1Option3
-@set PreviousChar=2
+;@set PreviousChar=2
+@hideChars
+@set orest=true 
 @goto Scene3_Orest
 @stop
 

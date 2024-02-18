@@ -96,7 +96,7 @@
 
 
 @choice "Та я той… випадково тут." goto:.IyaTruth
-@choice Настя: Та теж у той бік, ясно шо." goto:.IyaLies
+@choice "Та теж у той бік, ясно шо." goto:.IyaLies
 @stop
 
 #IyaTruth
@@ -265,7 +265,7 @@
 Ія: Але в мене не залишалося вибору.
 
 @‌back BG_OutsideCam2_Iya_01_Alone
-@hideChars
+
 @choice "Вибір завжди є." goto:.IyaThereIsChoice
 @choice "Шо, розкажеш?" goto:.IyaTell
 @stop

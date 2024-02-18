@@ -717,6 +717,24 @@ MonoBehaviour:
     - name: nastya_surprise
       pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
       guid: 313316beb2ed63c408b5ae131738f4b1
+    - name: no_guitar_nastya_disgust
+      pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
+      guid: 16786590e64c33b41ba9e45024de0d31
+    - name: no_guitar_nastya_norm
+      pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
+      guid: f200f571f8b53984b99d926a889a3e78
+    - name: no_guitar_nastya_smile
+      pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
+      guid: ef47d2c8d1faade4d97f774dca7f5fc9
+    - name: no_guitar_nastya_surprise
+      pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
+      guid: 724ad72e0b5ea0d4ba87f1841c96f119
+    - name: ghost_nastya_meh
+      pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
+      guid: 40b07dbb871d679439b0feb10c853d0e
+    - name: ghost_nastya_norm
+      pathPrefix: "Characters/\u041D\u0430\u0441\u0442\u044F"
+      guid: 222b7127d0d374940a63e0336252fa3d
   - Id: Characters/8cbfbfd3-45b9-438d-8724-28ac5d908fa4
     Resources:
     - name: petrivna_doubt
@@ -793,6 +811,9 @@ MonoBehaviour:
     - name: dark_iya_thoughtfulness
       pathPrefix: "Characters/\u0406\u044F"
       guid: 4a2527676c9d57446bf7b6a1be0b4a58
+    - name: transparency_iya_normal
+      pathPrefix: "Characters/\u0406\u044F"
+      guid: b4f029f2e13d38d4aaa2063dad776b76
   - Id: Characters/167a3566-9c47-4208-a6f7-835a1c0e7d05
     Resources:
     - name: charon_active_smile
@@ -813,3 +834,163 @@ MonoBehaviour:
     - name: charon_surprise
       pathPrefix: "Characters/\u0425\u0430\u0440\u0438\u0442\u043E\u043D"
       guid: a6f1df9ba4730c146ba87fa2942aec26
+  - Id: Characters/fefc9a0e-8da5-4044-bd59-611f2cc249e6
+    Resources:
+    - name: dark_orest_confident
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 619d138ad7572c94db8650f5d553ea34
+    - name: dark_orest_disappointed
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 3feb717c5558e974fa6228a933a017ef
+    - name: dark_orest_normal
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: e431c5f3734f22f4e82f1881a2ad1639
+    - name: dark_orest_sad
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 8d230dd4b6c1e0944b9dc7baa694d38d
+    - name: dark_orest_sigh
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: cee4eb275183d774ba141587010125c6
+    - name: dark_orest_smile
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 37849ac7fed9c0149a946ce77b5485f4
+    - name: dark_orest_thoughtful
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 0b4e998ca5c246341981a753e1e79242
+    - name: glow_guitar_play_orest_confident
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 1badb839e772f264bb16b2359b89cfcb
+    - name: glow_guitar_play_orest_disappointed
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 12e093bcfcfd88241b60f5d55da47f33
+    - name: glow_guitar_play_orest_normal
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: c94c1327397d2ae459f4e39afd4e355e
+    - name: glow_guitar_play_orest_sad
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 029bdfceef951ed46a07b954fb9b69b0
+    - name: glow_guitar_play_orest_sigh
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 7f4925d923626d6439189874c918d3a2
+    - name: glow_guitar_play_orest_smile
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: c943fc1961f55d042acaa7324a97f816
+    - name: glow_guitar_play_orest_thoughtful
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 62786eb5c379cd14fa55fd905f5a449d
+    - name: guitar_play_orest_confident
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: a625c4943674d09478cb4d70c4744f51
+    - name: guitar_play_orest_disappointed
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 6222c81d976efd44cb3d7ec8472ca076
+    - name: guitar_play_orest_normal
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: fdc3a3fa94d88a249903a55ce0393bf8
+    - name: guitar_play_orest_sad
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 12fe3bdbebd91be4bb0ac602b9d12d89
+    - name: guitar_play_orest_sigh
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 926837bb30dabf440855afa25981455b
+    - name: guitar_play_orest_smile
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 8884869033d9cae43b3ab104c5e848dd
+    - name: guitar_play_orest_thoughtful
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 159889d4ee69eac40b134a4034fdcc0e
+    - name: no_glow_guitar_play_orest_confident
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: b462931ed750d454883c33f280466a32
+    - name: no_glow_guitar_play_orest_disappointed
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 775afe8234268fe4b8029071d8426787
+    - name: no_glow_guitar_play_orest_normal
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 2299d66025d952c44bc49bb765f8d275
+    - name: no_glow_guitar_play_orest_sad
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: a39ef1c038118884cb48b322b65f9025
+    - name: no_glow_guitar_play_orest_sigh
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 4771f45ffbd626043a6ee07230508184
+    - name: no_glow_guitar_play_orest_smile
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: e9313f70940ed8342a61d3e0c07cad22
+    - name: no_glow_guitar_play_orest_thoughtful
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: af0e170eba8d36e4896c42172f1b53f9
+    - name: orest_confident
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: bda5f47a7ef2edf4f83791ed9945ecda
+    - name: orest_disappointed
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 6c8736f9cc8d41848bf31abf9e173323
+    - name: orest_normal
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: e99b137207750d447bd09140c6f5d758
+    - name: orest_sad
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 2e52064c7e4cc6a44a253d3f7808c251
+    - name: orest_sigh
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 74e173eaf7804fc4ba21ed48fc207b9b
+    - name: orest_smile
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 4318874b3f601ad43ac11d0656473881
+    - name: orest_thoughtful
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 13952cc8866798544a40192ee0b921f4
+    - name: transparency_orest_normal
+      pathPrefix: "Characters/\u041E\u0440\u0435\u0441\u0442"
+      guid: 51ec0075a29add743a5ff21eaaedf4d7
+  - Id: Characters/513a8cd3-c329-4577-b979-e752b2fd1632
+    Resources:
+    - name: cazik_awkward_smile
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 1bbaef32ab08f3b41b6be8fbf30dde24
+    - name: cazik_enthusiasm
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: a9f42f10328ac2044b9cabee5cc6fe29
+    - name: cazik_normal
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: d603823eb1ab8d74b935c3b31f5bbede
+    - name: cazik_sad
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 7dbef02e1490f954ab83cc6bdcb02581
+    - name: cazik_sly_smile
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: c0b5e4d3b8a79654da07595d721582c3
+    - name: cazik_thoughtfulness
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 484d3c300475adf4c91b771a8dca648f
+    - name: dark_cazik_awkward_smile
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: e6a700cff840d7a4982cae8e9bedb1d0
+    - name: dark_cazik_enthusiasm
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 16259b9c0898e8a4996002c0baf36801
+    - name: dark_cazik_fear
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 5776912a416ec8147baa41b0a36594b6
+    - name: dark_cazik_laugh
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 6d7c8cd74f151bf4d954bfcc6d1f0c80
+    - name: dark_cazik_normal
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 860738b789295734aa07512f78a0cf1c
+    - name: dark_cazik_relieved
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 532659b2e2e9f8446a429314611a6a9d
+    - name: dark_cazik_sad
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: eb55d74ad090a9145b0f57d724998586
+    - name: dark_cazik_sly_smile
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 7ae95bcfc3c0c9e44a7dba1fe7afa324
+    - name: dark_cazik_thoughtfulness
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 5633ef92062792f4bbe76bca28876276
+    - name: transparency_cazik_normal
+      pathPrefix: "Characters/\u041A\u0430\u0437\u0456\u043A"
+      guid: 13427a89968f4d14398c37f2505cdc2d
