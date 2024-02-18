@@ -471,12 +471,12 @@
     @char Орест.orest_normal
     Орест: В тебе немає сигарети?
     
-
     @choice "Голяк, вибачай." goto:.OrestIHavNothing
     @choice "В метро не курять, шоб ти знав." goto:.OrestNoSmoking
     @stop
 
     #OrestIHavNothing
+  @char Настя.nastya_meh
         @char Орест.orest_thoughtful
         Орест: Перепрошую?
 
@@ -488,6 +488,7 @@
     @goto .OrestTheRing
 
     #OrestNoSmoking
+        @char Настя.nastya_smile
         @char Орест.orest_smile
         Орест: Боже, які всі святі.
     @goto .OrestTheRing
@@ -518,13 +519,20 @@
 Орест: Але я завжди був винятком. І знаєш, як це почалося?
 
 
-@choice "Ой, ну давай, не тягни вже." goto:.OrestDestiny
-@choice "Як? Розкажи!" goto:.OrestDestiny
+@choice "Ой, ну давай, не тягни вже." goto:.OrestDestiny1
+@choice "Як? Розкажи!" goto:.OrestDestiny2
 @stop
 
 
-#OrestDestiny
+#OrestDestiny1
 
+@char Настя.nastya_irony
+@goto:.OrestDestiny
+#OrestDestiny2
+@char Настя.nastya_smile
+@goto:.OrestDestiny
+
+#OrestDestiny
 @char Орест.orest_normal
 Орест: Мою долю змінив один стариган. 
 
