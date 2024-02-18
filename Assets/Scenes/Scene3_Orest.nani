@@ -69,7 +69,6 @@
 @char Настя.nastya_menace
 Настя: …
 
-
 @if PreviousChar==0 
     ; @printer Thoughts
     @char Настя.nastya_norm
@@ -106,8 +105,10 @@
 #OrestTalk
 
 @sfx Звук_Появи_Привида_(Варіант І)
-@bgm Сцена3.2_Орест
 @hide Орест
+
+@bgm Сцена3.2_Орест
+
 Орест.orest_normal pos:75,0
 @char Орест.orest_normal pos:75,0
 @char Настя.nastya_menace
@@ -177,12 +178,10 @@
 @char Настя.nastya_smile
 Настя: А я — Настя. Наська, по-простому. Або Сансанівна. Як кому більше подобається.
 
-; @sfx чоловік зітхає
-
 @char Орест.orest_disappointed
 Орест: Боже, як же треба себе не поважати. "Наська", "Сансанівна"... Пані Анастасія! Приємно познайомитися.
 
-
+@char Настя.nastya_menace
 @choice "Яка я тобі пані, балда ти нечесана!" goto:.OrestNotALady
 @choice "Та можна без церемоній, козаче, я ж з простих." goto:.OrestIAmCommon
 @stop
@@ -204,6 +203,7 @@
 @char Настя.nastya_irony
 Настя: Ну нехай. "Пан Орест".
 
+@char Настя.nastya_smile
 Настя: То ти мій колега, так?
 
 @char Орест.orest_smile
@@ -219,7 +219,7 @@
 Настя: А маю?
 
 @char Орест.orest_disappointed
-Орест: І не читала в новинах про те, що відомий музикант і співак, *Орест Лубієвіч*, зник безвісти?
+Орест: І не читала в новинах про те, що відомий музикант і співак, Орест Лубієвіч, зник безвісти?
 
 
 @choice "Нє, шось про такого не чула." goto:.OrestNeverHearedOf
@@ -254,7 +254,7 @@
     Настя: Я завжди права. У тебе на морді написано: зухвалий піжон.
 
     @char Орест.orest_sad
-    Орест: Так! Я був пихатий і зухвалий. За те й наказаний.
+    Орест: Так! Я був пихатий і зухвалий. За те й покараний.
 @goto .OrestGlory
 
 #OrestEverybodyTalksAbout
@@ -271,6 +271,8 @@
 
     @char Орест.orest_sad
     Орест: Нічого не кажи, жінко — знаю, я сам винуватий.
+    @char Настя.nastya_meh
+
 @goto .OrestGlory
 
 
@@ -297,16 +299,14 @@
 
 @char Орест.orest_smile
 Орест: …
-
+@char Настя.nastya_smile
 @char Орест.orest_normal
 Орест: ……
-
+@char Настя.nastya_meh
 @char Орест.orest_disappointed
 Орест: ………
-
-@char Настя.nastya_facepalm
 Настя: …
-
+@char Настя.nastya_facepalm
 
 @choice "Шо, на гастроля їдеш, пане Оресте?" goto:.OrestTour
 @choice "Розкажи, трупе, живій свою історію…" goto:.OrestTellMeYourStory
@@ -342,6 +342,7 @@
 @goto .OrestGrave
 
 #OrestPoem
+    @char Настя.nastya_smile
     @char Орест.orest_sigh
     Орест: Ой жінко, не сип мені сіль на рану!
 
@@ -389,6 +390,7 @@
 @goto .OrestGuitar
 
 #OrestLastSong
+  @char Настя.nastya_meh
     @char Орест.orest_normal
     Орест: Це дуже важливо. Я маю показати тобі дещо. Дозволь, будь ласка, пані Анастасіє.
 
@@ -435,12 +437,13 @@
     @char Орест.orest_thoughtful
     Орест: Раніше я грав гірше.
 
-    @char Настя.nastya_smile
+    @char Настя.nastya_surprise
     Настя: Йой, шось зі мною тільки шо сталось. Якийсь дивний тріп.
 
     @char Орест.orest_smile
     Орест: Еге ж. Тільки це набагато краще за наркотики, правда?
 
+    @char Настя.nastya_irony
     Настя: …
 
 @‌sfx Жінка_Зітхає_Сумно
@@ -636,17 +639,17 @@ BG_Outside1_Orest_01_Rising
 
 #OrestYouGotLucky
     @char Орест.orest_smile
-    Орест: Розумієш мене, так?!
+    Настя: У цім світі рішає тіки опиниться у правильнім місці у правильний час.
 @goto .OrestAndHisLove
 
 #OrestYouAreTalented
     @char Орест.orest_disappointed
-    Орест: Не перебивай!
+    Настя: Може, все-таки іноді мистецтво визнають люди.
 @goto .OrestAndHisLove
 
 #OrestItsTheRing
     @char Орест.orest_disappointed
-    Орест: Не перебивай!
+    Настя: Я бачила, як він світивсь. То якась точно магія
 @goto .OrestAndHisLove
 
 
@@ -656,11 +659,14 @@ BG_Outside1_Orest_01_Rising
 @back Abstract_BGs_OrestWife
 
 @stopBgm
+
 @bgm Сцена3.2_Орест
 
 Орест: Яка різниця?
 
 Орест: А далі мене запросили грати у крутій польській рок-групі. І я відправився в подорож усім світом.
+
+@‌char Орест.orest_smile
 
 Орест: В один день я зустрів її, і моє життя змінилося. Ми обидва були молоді. Вона обожнювала мою музику, а я молився на її тіло.
 
@@ -739,36 +745,42 @@ BG_Outside1_Orest_02_Wife
 @stop
 
 #OrestYouLie
-    Орест: Так.
+    Орест: Я б і сам не повірив, якби мені розказали.
 @goto .OrestUndeadWife
 
 #OrestAreYouSerious
-    Орест: Та мала б хоч крихту поваги!
+@char Настя.nastya_surprise
+Настя: А шо її болячка? Пройшла?
+Орест: О, вона була повністю здорова. Майже така, як була за життя. Досконала.
+
 @goto .OrestUndeadWife
 
 
 #OrestUndeadWife
 
 @back BG_Dialog_Orest_02_Wife
-@stopBgm
-@bgm Ambience_Потяг_Всередині_Пустий
 
 @char Орест.orest_normal
 @char Настя.nastya_menace
 Настя: І шо, так і почав жить з небіжчицею?
 
+;відзеркалена Настя
+@‌char Настя.nastya_norm pos:30,0
+
 @char Орест.orest_disappointed
 Орест: Так. Спочатку вона повернулася бліда — тінь самої себе.
-
+@stopBgm
 Орест: Вуста її заніміли після поцілунку смерті. Вона не говорила. Не впізнавала мене. Мені доводилося переховувати її від усіх.
 
 @char Орест.orest_smile
 Орест: Але на п'ятий день вона назвала мене по імені…
 
 Орест: День за днем вона ставала все жвавішою, щоки її теплішали, рожевішали, вуста згадували старі слова. Ніби частини її свідомості поверталися.
-
+@bgm Ambience_Потяг_Всередині_Пустий
 @char Орест.orest_thoughtful
 Орест: Я був такий щасливий, що не відразу помітив відмінність.
+
+@bgm Сцена3.2_Орест
 
 Орест: Практично всі наші розмови були про її нові вбрання, зачіску. Я був радий.
 
@@ -918,10 +930,12 @@ BG_Outside1_Orest_02_Wife
 @stop
 
 #OrestEndGood1
+@set CharsSaved = CharsSaved+1
+@sfx ЩастяДляДвох
     ...
     
     @char Орест.orest_thoughtful
-    Орест: Орест: Чекай, твоя музика… Здається, я це вже десь чув. Як вона, кажеш, називається?
+    Орест: Чекай, твоя музика… Здається, я це вже десь чув. Як вона, кажеш, називається?
 
     @char Настя.nastya_norm
     Настя: Щастя для двох. 
@@ -946,6 +960,8 @@ BG_Outside1_Orest_02_Wife
 @goto .OrestGoodEnding
 
 #OrestEndGood2
+@set CharsSaved = CharsSaved+1
+@sfx НічПоїдаєНас
     ...
 
     @char Орест.orest_sad
@@ -968,6 +984,7 @@ BG_Outside1_Orest_02_Wife
 @goto .OrestGoodEnding
 
 #OrestEndBad1
+@sfx ХоробрийСвітанок
     ...
 
     @char Орест.orest_normal
@@ -983,6 +1000,8 @@ BG_Outside1_Orest_02_Wife
 @goto .OrestBadEnding
 
 #OrestEndBad2
+    @sfx КучерявеСонце
+    
     ...
 
     @char Орест.dark_orest_confident
@@ -1039,7 +1058,9 @@ BG_Outside1_Orest_02_Wife
             @hideChars
             @char Орест.guitar_play_orest_sad
             @char Настя.no_guitar_nastya_norm
-            ; @sfx Орест Сумний
+            @sfx Орест_Сумний
+            @wait 10
+            @‌sfx Жінка_Зітхає_Сумно
             Орест: ...
 
             @hideChars
