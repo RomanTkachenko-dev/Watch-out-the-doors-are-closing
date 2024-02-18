@@ -362,10 +362,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis vitae
-    tellus a pharetra. Aenean vitae ipsum in est lobortis vulputate a blandit ipsum.
-    Nullam in felis purus. Donec gravida tincidunt dui, non ultricies lorem. Proin
-    euismod tellus at iaculis volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Nunc mollis vienean vitae ipsum in est lobortis vulputate a blandit ipsum. '
+    tellus a pharetra. Aenean vitae ipsum in est lobortis vulputate a blandit ipsum. '
   revealFadeWidth: 100
   slideClipRect: 1
   italicSlantAngle: 10
@@ -545,7 +542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -10, y: -28}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &114488557935533276
@@ -1078,7 +1075,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 357f0f9ce0161584b87213397d8a06cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7854c57956b97224c9ccdc34ccd3795a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

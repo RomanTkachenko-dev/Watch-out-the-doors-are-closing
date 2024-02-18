@@ -42,14 +42,15 @@
 @back BG_GhostTrain_ForChosing
 
 @choice "Підійти до силуета дівчини" goto:.Ch1Option1  if:iya=false 
-@choice "Підійти до силуета чоловіка" goto:.Ch1Option2 if:kazik=false 
-@choice "Підійти до силуета підлітка" goto:.Ch1Option3 if:orest=false 
+@choice "Підійти до силуета підлітка" goto:.Ch1Option2 if:kazik=false 
+@choice "Підійти до силуета чоловіка" goto:.Ch1Option3 if:orest=false 
 @stop
 
 #Ch1Option1
 ;@set PreviousChar=1
 @hideChars
 @set iya=true 
+@set PreviousChar=1
 @goto Scene3_Iya
 
 @stop
@@ -58,6 +59,7 @@
 ;@set PreviousChar=3
 @hideChars
 @set kazik=true 
+@set PreviousChar=3
 @goto Scene3_Kazimir
 @stop
 
@@ -65,6 +67,7 @@
 ;@set PreviousChar=2
 @hideChars
 @set orest=true 
+@set PreviousChar=2
 @goto Scene3_Orest
 @stop
 
