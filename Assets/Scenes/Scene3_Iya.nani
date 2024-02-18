@@ -45,20 +45,16 @@
 @bgm Assets/Music/Сцена3.1_Ія.mp3
 @back BG_Dialog_Iya
 
-@char Настя.nastya_complacency pos:25,0
-
+@char Настя.nastya_complacency pos:30,0
 Настя: Паню, добрий вечір…
 
 @sfx Звук_Появи_Привида_(ВаріантІІ)
 
-@char Ія.iya_soft_smile pos:70,0
-
+@char Ія.transparency_iya_normal pos:75,0
 Пасажирка: А~мбр~і~а~ ~
 
 @char Настя.nastya_meh
-
 Настя: Га?
-
 
 Пасажирка: А~мбр~і~а~ ~ 
 
@@ -69,12 +65,10 @@
 @stop
 
 #IyaNameChoice
-    @char Ія.iya_soft_smile 
-    
+    @char Ія.transparency_iya_normal 
     Пасажирка: А~мбр~і~а~ ~
 
     @char Настя.nastya_surprise
-    
     Настя: Чекай, це типу як… ім’я?
 
 
@@ -85,12 +79,10 @@
 
 #IyaDialog
 
-@char Ія.iya_soft_smile 
-
+@char Ія.iya_soft_smile pos:75,0
 Ія: Насправді правильно Ія.
 
 @char Настя.nastya_complacency
-
 Настя: Йой, інша справа! Як ся маєш, Іє! Куди їдеш? 
 
 
@@ -151,7 +143,7 @@
 
 
 @choice "Дивна вона. Але хороша. Шо, підсяду." goto:.SitWithIya
-@choice "Та додому, ясно шо. *Збрехати*" goto:.StandWithIya
+@choice "Якась вона непонятна. Постою." goto:.StandWithIya
 @stop
 
 #SitWithIya
@@ -877,7 +869,7 @@
     Ія: ...
     @sfx Зупинка_Або_Ж_Прибуття_Потяга
 
-@char Ія.dark_iya_doubts
+    @char Ія.dark_iya_doubts
 
     @‌sfx Радіо _Рипіння_Коротке_Півтори_Секунди
 '   @wait 1    
