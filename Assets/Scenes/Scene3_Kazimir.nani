@@ -1325,21 +1325,48 @@
 
 ; Наводимо на трек в списку — і він звучить, але тихо, на 30 відсотків загального звуку.
 
-@choice "Непозбувна Бентега" goto:.horoshakintsivkakazik
-@choice "Хоробрий Світанок" goto:.poganakintsivkakazik
-@choice "Крокуючі Крізь Час" goto:.poganakintsivkakazik
-@choice "Втрата" goto:.horoshakintsivkakazik
+@choice "Непозбувна Бентега" goto:.KazikBentega
+@choice "Хоробрий Світанок" goto:.KazikSvitanok
+@choice "Крокуючі Крізь Час" goto:.KazikTime
+@choice "Втрата" goto:.KazikLoss
 @stop
 
-;7 секунд заблокованого екрану. ніхто нічого не клацає - тільки слухає
+#KazikBentega
+    @sfx НепозбувнаБентега
+    @char Настя.guitar_play_nastya_norm
+    ...
+    @stopSfx
+@goto .horoshakintsivkakazik
+
+#KazikSvitanok
+    @sfx ХоробрийСвітанок
+    @char Настя.guitar_play_nastya_norm
+    ...
+    @stopSfx
+@goto .poganakintsivkakazik
+
+#KazikTime
+    @sfx КрокуючіКрізьЧас
+    @char Настя.guitar_play_nastya_norm
+    ...
+    @stopSfx
+@goto .poganakintsivkakazik
+
+#KazikLoss
+    @sfx Втрата
+    @char Настя.guitar_play_nastya_norm
+    ...
+    @stopSfx
+@goto .horoshakintsivkakazik
 
 
 ;ХОРОША КІНЦІВКА
 #horoshakintsivkakazik
-;Якщо З, Б — хороша
+
 @char Казік.cazik_normal
 @char Настя.nastya_norm
 Казік: Я зазвичай не люблю сумну музику… В мене весь плейліст на позитиві.
+
 Казік: Але зараз знаєш що… в ній такий надрив прозвучав, така печаль. 
 Казік: Така затишна музика… Дякую тобі.
 @char Казік.cazik_sly_smile
@@ -1411,7 +1438,6 @@
 
 @stopBgm
 
-
 @sfx Радіо_Рипіння_Коротке_Півтори_Секунди
 
 @char Настя.nastya_norm
@@ -1482,13 +1508,15 @@
 Може, і мені не пізно.
 
 @set PreviousChar=3
+@set CharsSaved=CharsSaved+1
 
-
+@goto .KazikEnd
 
 
 
 ;ПОГАНА КІНЦІВКА
 #poganakintsivkakazik
+
 @char Казік.dark_cazik_sly_smile
 Казік: Супер! Аж зігрівся. Поки ти грала, я уявив себе якимось супергероєм, який рятує світ!
 
@@ -1573,3 +1601,10 @@
 Може, він і правий. Треба просто взять і зійти. І не мучиться.
 
 @set PreviousChar=3
+
+@goto .KazikEnd
+
+
+#KazikEnd
+
+@goto Scene3.Scene3Choice
