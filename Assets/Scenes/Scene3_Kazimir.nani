@@ -46,7 +46,7 @@
 
 
 #Vitanya
-
+@bgm Сцена3.3_Казік
 @back BG_Dialog_Kazimir
 @char Настя.nastya_norm pos:30,0
 @char.Казік.cazik_normal pos:75,0
