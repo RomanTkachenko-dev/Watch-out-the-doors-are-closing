@@ -47,7 +47,7 @@
 
 
 #OrestHello
-
+@‌char Орест.transparency_orest_normal pos:75,0
 @set PreviousChar=2
 
 @back BG_Dialog_Orest
