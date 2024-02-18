@@ -175,6 +175,9 @@ MonoBehaviour:
     - name: MusicGallery
       pathPrefix: UI
       guid: 58eb7170a8f994040a7fece706867294
+    - name: PostGameTitle
+      pathPrefix: UI
+      guid: 1971b803bd9e5f14e80e5b03cb7a386d
   - Id: Backgrounds/1b44676d-f2fa-41c3-b005-1aea6b4f8ba3
     Resources:
     - name: 'MainMenuBackground '
@@ -326,10 +329,10 @@ MonoBehaviour:
     - name: Ending
       pathPrefix: Scripts
       guid: 1b69f6604b7783f42bcd57a8a9dac9ec
-    - name: NewScript
+    - name: Scene5_1
       pathPrefix: Scripts
       guid: c1aae91ba60d08f459aa27d11cb4968e
-    - name: Scene5_1 1
+    - name: Scene5_2
       pathPrefix: Scripts
       guid: 75aa83cfb2b440c40b5288f04d0dac0d
   - Id: Unlockables
