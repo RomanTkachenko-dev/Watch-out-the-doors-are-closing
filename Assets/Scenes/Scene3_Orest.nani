@@ -135,6 +135,7 @@
 @stop
 
 #OrestNotYourBusiness
+@toast "Жінка-кактус!"
     @char Настя.nastya_menace
     Настя: Ти хто тут такий, інтілігєнт вшивий?
 
@@ -152,6 +153,7 @@
 @goto .OrestIntroduction
 
 #OrestNeverFlied
+    @toast "Пташка, яка не літає"
     @char Настя.nastya_smile
     Настя: А я і не злітала, шоб опускаться.
 
@@ -187,11 +189,13 @@
 @stop
 
 #OrestNotALady
+@toast "Балда Чесана"
     @char Орест.orest_smile
     Орест: Ну дозволь вже мені бути ввічливим, що ти уперлася!
 @goto .OrestFamous
 
 #OrestIAmCommon
+@toast "Своя в дошку"
 @‌sfx Жінка_Зітхає_Сумно
     @char Орест.orest_confident
     Орест: Мене мама вчила жінок поважати. Навіть якщо вони “з простих”.
@@ -240,6 +244,7 @@
 @goto .OrestGlory
 
 #OrestThinksTooMuch
+@toast "Заділа Ореста"
     @set OrestScore=OrestScore+1
 
     @char Орест.orest_confident
@@ -258,6 +263,7 @@
 @goto .OrestGlory
 
 #OrestEverybodyTalksAbout
+@toast "Настюха Брехуха"
     @char Настя.nastya_complacency
     Настя: Я тебе зразу впізнала.
 
@@ -294,7 +300,7 @@
 
 
 #OrestAwkwardSilence
-
+@toast "Кентуха"
 @sfx Шурхотіння_Одягу_При_Сіданні
 
 @char Орест.orest_smile
@@ -342,6 +348,7 @@
 @goto .OrestGrave
 
 #OrestPoem
+@toast "Поетка-перекладачка"
     @char Настя.nastya_smile
     @char Орест.orest_sigh
     Орест: Ой жінко, не сип мені сіль на рану!
@@ -383,6 +390,7 @@
 @stop
 
 #OrestHaveSomeNails
+@toast "Гостра на язик"
     @char Орест.orest_normal
     Орест: Слухай. Я знаю, що інструмент для музиканта — це як частина себе.
 
@@ -404,7 +412,7 @@
 @stop
 
 #OrestGiveGuitar
-    
+    @toast "Жінка, яка побачила диво"
     @hide Орест
     @hide Настя
     @char Настя.no_guitar_nastya_norm
@@ -499,12 +507,13 @@
 #OrestDontGiveGuitar
     @char Настя.nastya_menace
     Настя: Нє, не дам. Ця крихітка моя.
-
+    
     @char Орест.orest_disappointed
     Орест: Не даси гітару? Гордовита панянка!
 
     @char Настя.nastya_smile
     Настя: Хочеш сказать, жлобиха? Так так і кажи.
+  @toast "Жаба давить"
 @goto .OrestTheRing
 
 
@@ -704,10 +713,12 @@ BG_Outside1_Orest_02_Wife
 @stop
 
 #OrestIFeelSorry
+  @toast "Милий друже"
     Орест: Так.
 @goto .OrestWantedToDie
 
 #OrestStupidDeath
+  @toast "Настя шо ти робиш"
     Орест: Та мала б хоч крихту поваги!
 @goto .OrestWantedToDie
 
@@ -880,6 +891,7 @@ BG_Outside1_Orest_02_Wife
 @goto .OrestHasRegrets
 
 #OrestWhatInstead
+  @toast "Безстрашна"
     @char Орест.orest_normal
     Орест: Тому що винуватий в усьому я зі своєю надмірною любов'ю до слави
 @goto .OrestHasRegrets
@@ -1070,7 +1082,7 @@ BG_Outside1_Orest_02_Wife
         @stop
 
         #OrestEndPlay
-
+        @toast "Поділилася найціннішим"
             @hideChars
             @char Орест.guitar_play_orest_sad
             @char Настя.no_guitar_nastya_norm
