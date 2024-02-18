@@ -15,7 +15,7 @@
 ; 3 = Kazimir
 
 @if PreviousChar==0 
-    ; @printer Thoughts
+    
     Нє, ну не стирчати ж тут? Піду ото хоть з людьми порозмовляю. 
     Чи як їх назвать? З привидами.…
     Ну, шо розповіси, кульбабо?
@@ -24,14 +24,14 @@
 
 
 @elseIf PreviousChar==2
-    ; @printer Thoughts
+    
     Ех, Орестушка, буду сумувать за твоїми понтами.
     Треба чимось себе зайнять — піду он в того палкою потикаю.
 
     @goto .Vitanya
 
 @elseIf PreviousChar==1
-    ; @printer Thoughts
+    
     Така дівка була хороша. На мене взагалі не схожа. 
     Ну, шо розповіси, кульбабо?
 
@@ -49,41 +49,43 @@
 @bgm Сцена3.3_Казік
 @back BG_Dialog_Kazimir
 @char Настя.nastya_norm pos:30,0
-@char.Казік.cazik_normal pos:75,0
+@char Казік.cazik_normal pos:75,0
 
 ;тут казік прозорий
-@char.Казік.cazik_normal pos:75,0
+@char Казік.cazik_normal pos:75,0
 
-; @printer Настя
-@char.Настя.nastya_smile
+
+@char Настя.nastya_smile
 Настя: Привіт…
 
 @printer ???
-@char.Казік.cazik_sly_smile
+@char Казік.cazik_sly_smile
 Пасажир: вгтівлогтлгпотя*
 Пасажир: ~~367``
 
 #Dobrenko
-; @printer Настя
-@char.Настя.nastya_norm
+
+@char Настя.nastya_norm
 Добренько, треба, знач, якось на нього налаштуваться. Ану, дай придивлюсь… 
-@choice [Сконцентрувати свою увагу на привиді] goto:.Ch1Option2
+
+@choice "Сконцентрувати свою увагу на привиді" goto:.Ch1Option2
 @stop
 
-    ;  @char спрайт Казіка перестає бути прозорим
-	@sfx Звук_Появи_Привида_(ВаріантІІ)
+#Ch1Option2
+;  @char спрайт Казіка перестає бути прозорим
+@sfx Звук_Появи_Привида_(ВаріантІІ)
 
 @printer ???
-@char.Казік.cazik_enthusiasm
+@char Казік.cazik_enthusiasm
 Пасажир: Ха-а, ти диво! Ніби 367-й день в році!
 
 @‌sfx Короткий_Чоловічий_Сімшок_Типу_Хе_Хе
 
-@char.Настя.nastya_surprise
-; @printer Настя
+@char Настя.nastya_surprise
+
 Настя: Я? Шо?
 
-@char.Казік.cazik_normal
+@char Казік.cazik_normal
 @printer ???
 Пасажир: Так, думаєш, я не бачу? Ти не з цього потягу! Ти ж іще не помирала, я вгадав?
 
@@ -92,100 +94,100 @@
 @stop 
 
 #Nichoyane
-@char.Настя.nastya_norm
+@char Настя.nastya_norm
 Настя: Нічо я не помирала.
 Настя: Потяг під'їхав, двері відкрилися. Ну я і зайшла.
 
 #tachortzna
-@char.Настя.nastya_menace
+@char Настя.nastya_menace
 Настя: Та чорт його зна, вже, може, й помирала.
-@char.Настя.nastya_norm
+@char Настя.nastya_norm
 Настя: Піди розбери з такою житухою.
 
 @printer ???
 
-@char.Казік.cazik_thoughtfulness
+@char Казік.cazik_thoughtfulness
 Пасажир: Ні, ну якщо ти змогла зайти, то мабуть все ж таки помирала. Хоча виглядаєш ніби жива. 
-@char.Казік.cazik_normal
+@char Казік.cazik_normal
 Пасажир: Казімір. Для друзів просто Казік.
-; @printer Настя
-@char.Настя.nastya_norm
+
+@char Настя.nastya_norm
 Настя: Анастасія Олександрівна, школярику. Можна просто Сансанівна.
 ; @printer Казік
-@char.Казік.cazik_awkward_smile
+@char Казік.cazik_awkward_smile
 Казік: Ха-ха, ну, я університет не закінчив, як пішов — тут ти в десяточку. А ти непогано збереглася, як на Сансанівну.
-; @printer Настя
-@char.Настя.nastya_surprise
+
+@char Настя.nastya_surprise
 Настя: Шо?!
 ; @printer Казік
-@char.Казік.casik_normal
+@char Казік.casik_normal
 Казік: Упс. Не вгадав твій вайб. Хотів сказати, ім'я-по-батькові — це ж так викладачів називають. А ти, як на викладачку, дуже непогано виглядаєш. Стильно.
-; @printer Настя
-@char.Настя.nastya_disgust
+
+@char Настя.nastya_disgust
 Настя: Тю.
 ; @printer Казік
-@char.Казік.cazik_awkward_smile
+@char Казік.cazik_awkward_smile
 Казік: Образив? Вибач.
 
 @choice "Та нє. Просто шось не зрозуміла тебе." goto:.Tanie
 @choice "Так, шкет, образив." goto:.Takshket
 
 #Tanie
-; @printer Настя
-@char.Казік.casik_normal
-@char.Настя.nastya_facepalm
+
+@char Казік.casik_normal
+@char Настя.nastya_facepalm
 Настя: Та нє. Просто шось не зрозуміла тебе.
 ; @printer Казік
-@char.Казік.cazik_sly_smile
+@char Казік.cazik_sly_smile
 Казік: По тобі видно, що ти не з тих, хто зазнається.
-; @printer Настя
-@char.Настя.nastya_smile
+
+@char Настя.nastya_smile
 Настя: Та куда там.
 @goto .Dyvnyi
 
 
 #Takshket
 ;бали відносини_казік=+1
-; @printer Настя
-@char.Казік.cazik_normal
-@char.Настя.nastya_disgust
+
+@char Казік.cazik_normal
+@char Настя.nastya_disgust
 Настя: Слідкуй, шо кому кажеш.
 ; @printer Казік
 Казік: Блін, я дурний.
-@char.Казік.cazik_sad
+@char Казік.cazik_sad
 Казік: Я не хотів, чесне слово!
-; @printer Настя
-@char.Настя.nastya_irony
+
+@char Настя.nastya_irony
 Настя: Та годі, ти ще розплачся мені тут!
 ; @printer Казік
-@char.Казік.cazik_sly_smile
-@char.Настя.nastya_norm
+@char Казік.cazik_sly_smile
+@char Настя.nastya_norm
 Казік: Та ні, все не настільки погано.
 @goto .Dyvnyi
 
 
 #Dyvnyi
-; @printer Настя
-@char.Настя.nastya_disgust
+
+@char Настя.nastya_disgust
 Дивний шрам на шиї. Шо це в нього?
 ; @printer Казік
-@char.Казік.cazik_normal
+@char Казік.cazik_normal
 Казік: Настя, а Настя, а розкажи що-небудь! Все одно їхати довго. Мені так точно.
 
 @‌sfx Короткий_Чоловічий_Сімшок_Типу_Хе_Хе
 
-; @printer Настя
-@char.Настя.nastya_surprise
+
+@char Настя.nastya_surprise
 Настя: Шо тобі розказать?
 ; @printer Казік
-@char.Казік.cazik_enthusiasm
+@char Казік.cazik_enthusiasm
 Казік: Ну не знаю… Може, історію якусь? Зі свого довгого і захопливого життя.
 
 @‌sfx Довге_Хм_Типу_Дай_Подумати_(ВаріантІ)
 
-; @printer Настя
-@char.Настя.nastya_menace
-@char.Казік.cazik_normal
+
+@char Настя.nastya_menace
+@char Казік.cazik_normal
 А чого я маю розповідати? Це ж він привид, а не я.
 
 @choice "О. Розкажу тобі, як я на поїзд запізнилась." goto:.zapiznylas
@@ -194,53 +196,53 @@
 
 
 #zapiznylas
-@char.Настя.nastya_surprise
-; @printer Настя 
+@char Настя.nastya_surprise
+ 
 Настя: О. Розкажу тобі, як я на поїзд запізнилась.
 ; @printer Казік
-@char.Казік.cazik_enthusiasm
+@char Казік.cazik_enthusiasm
 Казік: Давай!
-; @printer Настя
-@char.Настя.nastya_smile
-@char.Казік.cazik_normal
+
+@char Настя.nastya_smile
+@char Казік.cazik_normal
 Настя: Ну каротше, купила я якось квитoк на квартирник до друзів.
-; @printer Настя
-@char.Настя.nastya_norm
+
+@char Настя.nastya_norm
 Настя: Квартирник мав би буть 3-го. І от. Я ледь встигла на той потяг…
 ; @printer Казік 
-@char.Казік.cazik_thoughtfulness
+@char Казік.cazik_thoughtfulness
 Казік: Ти ж сказала, що спізнилася.
-; @printer Настя 
-@char.Настя.nastya_meh
-@char.Казік.cazik_normal
+ 
+@char Настя.nastya_meh
+@char Казік.cazik_normal
 Настя: Та не лізь поперед мамки в пекло! Слухай…
 
 @‌back BG_Outside1_Kazimir_01_Todler_
 @hideChars
 
-; @printer Настя 
+ 
 Настя: І от, а в потягу моя знайома сидить. І я ж така вся радісна, шо ми будем в одному вагоні їхать, думаю, хоть поговорить буде з ким.
-; @printer Настя 
+ 
 Настя: Топаю через весь отой вагон до свого місця. А там якийсь мужик.
-; @printer Настя 
+ 
 Настя: Кажу: то моє місце, петляй. В мене двадцяте. А він: в мене теж двадцяте.
-; @printer Настя 
+ 
 Настя: Ну я вже, ясно шо, готуюсь його розпікать по мамці, бо шо він собі дозволяє.
 ; @printer Казік 
 Казік: І що, як би ти його розпекла?
-; @printer Настя 
+ 
 Настя: Малуват ще такі слова знать!
-; @printer Настя 
+ 
 Настя: Каротше. Я ж стою така, вже ротяку свою відкрила. І тут мені хтось кричить: дату подивіться!
-; @printer Настя 
+ 
 Настя: Дивлюсь в дату. А там, де мало б бути “третє” пише “перше”.
-; @printer Настя 
+ 
 Настя: Я така з серйозною міною — ага! Цікаво, цікаво.
 ; @printer Казік 
 Казік: Пфф! Ну ти даєш.
-; @printer Настя 
+ 
 Настя: Виходжу з вагона і ше так, знаєш, машу своїй знайомій, як порядошна — типу, там у мене є справа, зараз повернусь.
-; @printer Настя 
+ 
 Настя: Виходжу на вулицю, і… як заржу сама з себе.
 ; @printer Казік 
 Казік: Ну ти мочиш, жінко, я з тебе шалію!
@@ -249,24 +251,24 @@
 @goto .toonyaktypomer
 
 #yakossusidy
-; @printer Настя
-@char.Казік.cazik_normal
-@char.Настя.nastya_meh
+
+@char Казік.cazik_normal
+@char Настя.nastya_meh
 Настя: Якось раз мої сусіди придурошні…
-; @printer Настя
-@char.Настя.nastya_surprise
+
+@char Настя.nastya_surprise
 Настя: Цей…
-; @printer Настя 
-@char.Настя.nastya_norm
+ 
+@char Настя.nastya_norm
 Настя: …
 ; @printer Казік 
-@char.Казік.cazik_enthusiasm
+@char Казік.cazik_enthusiasm
 Казік: Ну, ти чого замовкла? Сказала А — говори Б.
 
 @‌sfx Довге_Хм_Типу_Дай_Подумати_(ВаріантІ)
 
-; @printer Настя
-@char.Настя.nastya_irony
+
+@char Настя.nastya_irony
 Настя: Та думала розказать тобі про сусідів моїх, але згадала шось, шо останній раз в них махачем скінчилось. Уф.
 ; @printer Казік 
 Казік: Так розкажи, це ж… ну… не те що найцікавіше, але. Ну, ти шариш
@@ -274,15 +276,15 @@
 @‌back BG_Outside1_Kazimir_01_Todler_
 @hideChars
 
-; @printer Настя 
+ 
 Настя: Та шо розказувать. Він її побив, і вона з дитям ночувала в мене.
 ; @printer Казік 
 Казік: М-м…
 ; @printer Казік 
 Казік: А про що спочатку розказати хотіла? Там було щось веселе?
-; @printer Настя 
+ 
 Настя: Ой, там умора! Раніше вони як почнуть сраться… А в них якась чи домовленість була, чи шо — при дитині не матюкаться.
-; @printer Настя 
+ 
 Настя: І там такі слова… Знаєш, "курка", "пінгвін", "пилосос", "колода болотна", але таким тоном, ніби зара одне одне повбивають.
 ; @printer Казік 
 Казік: Ха, клас… Але ти безстрашна. Я б там на місці від страху помер.
@@ -294,20 +296,20 @@
 
 @‌back BG_Dialog_Kazimir
 @char Настя.nastya_surprise pos:75,0
-@char.Казік.cazik_normal; pos:30,0
+@char Казік.cazik_normal; pos:30,0
 
 
-; @printer Настя 
+ 
 Настя: То ти он як помер?
 ; @printer Казік 
-@char.Казік.cazik_thoughtfulness
+@char Казік.cazik_thoughtfulness
 @char Настя.nastya_norm
 Казік: Га, що? Та ні. А що, бачила коли-небудь глупу смерть?
-; @printer Настя
+
 @char Настя.nastya_surprise 
 Настя: Ну ти як спитаєш!
 ; @printer Казік
-@char.Казік.cazik_enthusiasm
+@char Казік.cazik_enthusiasm
 Казік: Ні, серйозно.
 
 @choice "Ну, одного разу я бачила глупу смерть." goto:.bachilaglupusmert
@@ -316,17 +318,17 @@
 
 
 #bachilaglupusmert
-; @printer Настя
+
 @char Настя.nastya_laugh
 Настя: Ну, одного разу я бачила глупу смерть.
 ; @printer Казік 
 @char Казік.cazik_enthusiasm
 Казік: Я весь увага!
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 @char Казік.cazik_normal
 Настя: Шо, розказать? Ну, то теж було в потязі. Я їхала на нижній поличці. А на верхній спав мужик.
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: І він там і відкинувся прямо наді мною.
 ; @printer Казік 
@@ -338,12 +340,12 @@
 
 
 @char Настя.nastya_irony
-; @printer Настя 
+ 
 Настя: Не знаю. Я вранці прокидаюсь — за півгодини Київ. Його провідниця тик-тик, а він ноль на масу.
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Пішла перевірить, а він не дихає. Так і не доїхав, куда він там їхав.
-; @printer Настя 
+ 
 Настя: Шкода козака.
 @char Настя.nastya_disgust
 ; @printer Казік 
@@ -356,7 +358,7 @@
 @goto .arozkazhipro
 
 #glupusmertneest
-; @printer Настя
+
 @char Настя.nastya_surprise
 Настя: Глупих смертей не буває.
 @char Казік.cazik_thoughtfulness
@@ -365,7 +367,7 @@
 @‌sfx Замислене_Чоловіче_Хм_Типу_Он_Як
 
 Казік: Думаєш, всі смерті мудрі?
-; @printer Настя 
+ 
 @char Настя.nastya_surprise
 Настя: Сумні, пацан. Сумні.
 ; @printer Казік 
@@ -383,7 +385,7 @@
 @stop
 
 #rozkaazhishos
-; @printer Настя 
+ 
 @char Настя.nastya_laugh
 Настя: Шось я одна весь час розказую. Давай вже ти мені розкажи шось.
 ; @printer Казік 
@@ -392,7 +394,7 @@
 ; @printer Казік 
 @char Казік.cazik_normal
 Казік: Неочікувано! Зазвичай люди люблять говорити про себе.
-; @printer Настя 
+ 
 @char Настя.nastya_facepalm
 Настя: Я про себе вже все знаю. Давай про тебе тепер.
 ; @printer Казік 
@@ -410,12 +412,12 @@
 
 #prosho
 @char Настя.nastya_complacency
-; @printer Настя 
+ 
 Настя: Про шо?
 ; @printer Казік 
 @char Казік.cazik_thoughtfulness
 Казік: Іще не придумав.
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 @char Казік.cazik_normal
 Настя: А шо тоді питаєш?
@@ -424,7 +426,7 @@
 ; @printer Казік 
 @char Казік.cazik_enthusiasm
 Казік: О, а розкажи про свій перший поцілунок.
-; @printer Настя 
+ 
 @char Настя.nastya_laugh
 Настя: Ого, ну ти губу розкатав.
 ; @printer Казік 
@@ -439,32 +441,32 @@
 @stop
 
 #naytupishii
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Про мій найтупіший вчинок?
 ; @printer Казік 
 @char Казік.cazik_enthusiasm
 Казік: Точно! Про це точно цікаво послухати.
-; @printer Настя 
+ 
 Настя: Ну, якось мій хахєль залишив в мене нормальний такий пакет дурі, каже, до моїх сусідів мент підселився, виручай, кохана.
 @char Настя.nastya_irony
 @char Казік.cazik_normal
-; @printer Настя 
+ 
 Настя: Я молода була, дурна, згодилась, а вранці приїхали до мене і обшмонали.
 @char Настя.nastya_norm
 ; @printer Казік 
 Казік: Та що тут дурного? Я б теж погодився.
 @char Казік.cazik_thoughtfulness
-; @printer Настя 
+ 
 Настя: Ну, тепер зате знаю, яка у тюрячці їжа.
 @char Настя.nastya_smile
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Ну давай вже всьо про мене, давай ти тепер шось розкажи.
 @goto .kazikhochegraty
 
 #nenene
-; @printer Настя 
+ 
 @char Настя.nastya_complacency
 Настя: Нє-нє, Казік, ти давай тепер. Ти розкажи.
 ; @printer Казік
@@ -474,7 +476,7 @@
 
 Казік: Про що?
 
-; @printer Настя 
+ 
 @char Настя.nastya_laugh
 Настя: А шо, нема здогадок якихсь, шо може буть мені про тебе цікаво?
 @goto .kazikhochegraty
@@ -488,19 +490,19 @@
 @char Казік.cazik_enthusiasm
 @char Настя.nastya_norm
 Казік: Я знаю! Ти точно захочеш пограти в одну гру.
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Шо за гра?
 ; @printer Казік 
 @char Казік.cazik_sly_normal
 Казік: Міст чи парк?
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Шо?
 ; @printer Казік 
 @char Казік.cazik_sly_smile
 Казік: Міст чи парк — що б ти обрала?
-; @printer Настя
+
 ;наступна строка - курсів
 @char Настя.nastya_meh
 @char Казік.cazik_sly_normal
@@ -512,15 +514,15 @@
 @stop
 
 #mist
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Міст. З нього можна стрибнуть.
 ; @printer Казік
 Казік: Цікаво! Думаєш про це?
-; @printer Настя 
+ 
 @char Настя.nastya_facepalm
 Настя: Та не те шоб…
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Іноді.
 ; @printer Казік 
@@ -529,7 +531,7 @@
 @goto .mostiliparkdva
 
 #park
-; @printer Настя 
+ 
 @char Настя.nastya_laugh
 Настя: Парк. Там можна сісти собі на лаву й зіграти.
 ; @printer Казік 
@@ -580,7 +582,7 @@
 @stop
 
 #zgorit
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Згоріть. Швидко й яскраво.
 ; @printer Казік 
@@ -590,7 +592,7 @@
 @goto .nastupnepytanna
 
 #pogasnut
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Погаснуть, але до того горіть довго.
 ; @printer Казік 
@@ -606,13 +608,13 @@
 
 Казік: Наступне питання… Дай подумати…
 
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: А як ця гра називається?
 ; @printer Казік
 @char Казік.cazik_normal
 Казік: "Міст чи парк", одна моя знайома її придумала. Вона в тюрмі відсиділа за наркоту, як і ти. Там її придумала. Тепер це вже народна гра. 
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Я в тюрязі ніхріна не придумала.
 ; @printer Казік 
@@ -631,26 +633,26 @@
 #daypodumat
 
 @char Настя.nastya_norm
-; @printer Настя 
+ 
 Настя: Дай подумать.
-; @printer Настя 
+ 
 @char Настя.nastya_smile
 Настя: Стоять на місці.
 ; @printer Казік 
 @char Казік.cazik_enthusiasm
 Казік: Йой! Чому?
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Ой, козаче, шо я в тому житті не бачила? Та й ноги вже не ті.
 ; @printer Казік 
 Казік: Розумію… Але щастя спіткає того, хто якось іде.
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: Та я кожного дня ходжу, з гітарою, із вагона в вагон. І шо, ти думаєш, щастя бачила? Нє, одні кислі харі.
 ; @printer Казік 
 @char Казік.cazik_normal
 Казік: Може й так. Ти мудріша за мене.
-; @printer Настя 
+ 
 @char Настя.nastya_facepalm
 Настя: Ну шо, може тепер вже твоя черга?
 ; @printer Казік 
@@ -659,20 +661,20 @@
 @goto .nuokpitay
 
 #tashopromene
-; @printer Настя 
+ 
 @char Настя.nastya_surprise
 Настя: Та шо все про мене тільки?! Дорогу молодим! Твоя черга.
 ; @printer Казік 
 @char Казік.cazik_normal
 Казік: Не хочу.
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 @char Казік.cazik_awkward_smile
 Настя: Шо значить, не хочу? Засцяв?
 ; @printer Казік 
 Казік: Ні, просто не люблю говорити про себе. Про інших — обожнюю.
 @char Казік.cazik_thoughtfulness
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Я тут, бач, душу йому розкриваю…
 ; @printer Казік 
@@ -690,7 +692,7 @@
 ; @printer Казік 
 @char Казік.cazik_normal
 Казік: Питай.
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Міст чи парк?
 ; @printer Казік 
@@ -699,7 +701,7 @@
 @‌sfx Довге_Хм_Типу_Дай_Подумати_(ВаріантІ)
 
 Казік: Міст. На ньому був мій перший поцілунок.
-; @printer Настя
+
 @char Настя.nastya_smile
 Настя: О-о, інша справа. Хе-хе. І скільки тобі було?
 ; @printer Казік 
@@ -723,19 +725,19 @@
 ;тут може бути проблимування казіка на дарк версію, яка налякана
 
 @char Настя.nastya_surprise
-; @printer Настя 
+ 
 Настя: …
 ; @printer Казік 
 @char Казік.cazik_enthusiasm
 Казік: А мені подобається! Наступне питання.
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Ну пішли вже по твоїх. Згоріть чи погаснуть?
 ; @printer Казік 
 @char Настя.nastya_norm
 @char Казік.cazik_normal
 Казік: Якби в мене був вибір, я б обрав погаснути. Але життя зробило вибір за мене, і я згорів.
-; @printer Настя
+
 @char Настя.nastya_surprise
 Настя: Типу шо, заживо згорів? А шрам на шиї?
 ; @printer Казік 
@@ -744,7 +746,7 @@
 @‌sfx Замислене_Чоловіче_Хм_Типу_Он_Як
 
 Казік: Бачу, тобі цікаво, як я помер.
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Ну!
 ; @printer Казік
@@ -753,20 +755,20 @@
 
 @char Казік.cazik_normal
 Казік: Давай наступне питання.
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Ай, чорт би з тобою…
 @goto .rozmovyzasmert
 
 
 #rozmovyzasmert
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Ну давай: піти не в ту сторону чи стоять на місці?
 ; @printer Казік 
 @char Казік.cazik_awkward_smile
 Казік: Перше.
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: І шо, не боїшся скінчить, як Сансанівна?
 ; @printer Казік 
@@ -793,13 +795,13 @@
 @stop
 
 #poschastylokazhesh
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: Пощастило, кажеш?
 ; @printer Казік 
 @char Казік.cazik_thoughtfulness
 Казік: Смерть завжди переслідувала мене.
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Знаю я таких, шо недоля їх любе… Але ти шось чистенький дуже, шоб буть з таких.
 ; @printer Казік 
@@ -809,12 +811,12 @@
 @goto .mawzagynuty
 
 #zaganyaeschsya
-; @printer Настя
+
 @char Настя.nastya_meh
 Настя: От ти заганяєшся, малий.
 ; @printer Казік 
 Казік: Смерть завжди переслідувала мене.
-; @printer Настя 
+ 
 
 ;тут казік може проблимати на дарк версію
 @char Настя.nastya_facepalm
@@ -829,7 +831,7 @@
 
 
 #mawzagynuty
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Ну давай.
 ; @printer Казік 
@@ -864,31 +866,31 @@
 @‌back BG_Outside1_Kazimir_01_Todler_
 @hideChars
 
-; @printer Настя 
+ 
 Настя: Асасі шо?
 ; @printer Казік 
 Казік: Забий… Вдало відкотився від колеса. Дід тоді й каже — Казік, ти в сорочці народився.
-; @printer Настя 
+ 
 Настя: Ого, я думала, ти хлопчик-мажорчик.
 ; @printer Казік 
 Казік: Та який мажорчик, я як школу закінчив, пішов працювати. 
-; @printer Настя 
+ 
 Настя: А вчиться?
 ; @printer Казік 
 Казік: То вже як виходило.
-; @printer Настя 
+ 
 Настя: От і в мене так було. Жила, як виходило. І диви, шо з мене вийшло.
 
 
 @back BG_Dialog_Kazimir
 @char Настя.nastya_norm pos:30,0
-@char.Казік.cazik_normal pos:75,0
+@char Казік.cazik_normal pos:75,0
 
 
 @char Настя.nastya_surprise
 @char Казік.
 @char Казік.cazik_sly_smile
-; @printer Настя 
+ 
 Настя: Ти шо ж, не любиш себе, чи шо?
 ; @printer Казік 
 @char Казік.cazik_normal
@@ -900,7 +902,7 @@
 @stop
 
 #atreba
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: А треба за себе думать в першу чергу!
 ; @printer Казік 
@@ -910,7 +912,7 @@
 @goto .forwhatulive
 
 #pravylno
-; @printer Настя 
+ 
 @char Казік.cazik_normal
 @char Настя.nastya_smile
 Настя: Правильно. Є такі люди, шо для них хочеться шось хороше робить.
@@ -920,7 +922,7 @@
 @goto .forwhatulive
 
 #tyumenib
-; @printer Настя
+
 @char Настя.nastya_meh
 Настя: Тю. Мені б на всіх по барабану було. І на себе теж.
 ; @printer Казік 
@@ -962,7 +964,7 @@
 
 @back BG_Dialog_Kazimir
 @char Настя.nastya_surprise pos:30,0
-@char.Казік.cazik_normal pos:75,0
+@char Казік.cazik_normal pos:75,0
 
 @‌sfx Замислене_Чоловіче_Хм_Типу_Он_Як
 
@@ -975,13 +977,13 @@
 @stop
 
 #nutayakasm
-; @printer Настя 
+ 
 @char Настя.nastya_meh
 Настя: Та ну, яка смерть. Дорога — то завжди лотерея.
 
 #nutatsevzhe
 @char Настя.nastya_disgust
-; @printer Настя 
+ 
 Настя: Ну та, це вже на випадковість не тягне.
 ; @printer Казік 
 @char Казік.cazik_enthusiasm
@@ -999,10 +1001,10 @@
 Казік: То смерть за мною гналася, я відчув її подих потилицею.
 @char Казік.cazik_sly_smile
 Казік: Але бачиш, та жіночка не побоялася двері відкрити. Собаки теж могли забігти і її загризти, але вона все одно мене впустила. 
-; @printer Настя 
+ 
 @char Казік.cazik_normal
 Настя: Ніколи не знаєш, кому життя врятуєш, ну.
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: Але щастя в тебе, козаче… Страшне!
 ; @printer Казік 
@@ -1037,14 +1039,14 @@
 @goto .tyotshorozk
 
 #tyotshorozk
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Ти от шо розкажи, як ти коні двинув?
 ; @printer Казік 
 @char Казік.cazik_sly_smile
 Казік: Не повіриш: мене барберша зарізала.
 @char Настя.nastya_surprise
-; @printer Настя 
+ 
 Настя: Хто?..
 ; @printer Казік 
 @char Казік.cazik_awkward_smile
@@ -1057,7 +1059,7 @@
 @stop
 
 #shotyiyzrobyv
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: Ти шо, бабнік якийсь? Гуляв з перукаркою, а потім пішов гулять з… медсестрою якою-небудь?
 ; @printer Казік 
@@ -1071,7 +1073,7 @@
 
 #poyehavsha
 @char Настя.nastya_disgust
-; @printer Настя Настя: Маньячка?
+ Настя: Маньячка?
 @char Казік.cazik_awkward_smile
 ; @printer Казік Казік: Ні-ні-ні! Вона хороша! Класна спеціалістка. Зараз розкажу.
 @goto .pishovubarbershop
@@ -1106,12 +1108,12 @@
 @back BG_Dialog_Kazimir
 @back BG_GhostTrain
 @char Настя.nastya_surprise pos:30,0
-@char.Казік.cazik_normal pos:75,0
+@char Казік.cazik_normal pos:75,0
 
 @char Настя.nastya_surprise
 @char Казік.
 
-; @printer Настя 
+ 
 Настя: Капець…
 ; @printer Казік 
 @char Казік.cazik_awkward_smile
@@ -1126,8 +1128,8 @@
 
 
 @char Настя.nastya_surprise pos:30,0
-@char.Казік.cazik_normal pos:75,0
-; @printer Настя Настя: Ну чисто як в кіні! Можеш пишаться.
+@char Казік.cazik_normal pos:75,0
+ Настя: Ну чисто як в кіні! Можеш пишаться.
 @char Казік.cazik_sly_smile
 ; @printer Казік Казік: Дякую.
 @goto .doyouremember
@@ -1159,7 +1161,7 @@
 ; @printer Казік 
 @char Казік.cazik_sly_smile
 Казік: Я ні про що не шкодую. Мені все кумедне.
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Шо так?
 ; @printer Казік 
@@ -1174,7 +1176,7 @@
 ; @printer Казік 
 @char Казік.cazik_sly_smile
 Казік: Тому й кумедно це все. Я тоді в нове круте місце пішов, записався до найкращої майстрині. Був такий гарний день.
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: А до речі, шо вона? Посадили?
 ; @printer Казік 
@@ -1189,7 +1191,7 @@
 @‌stop
 
 #radyishokarma
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: Шо, мабуть, радий, шо її карма догнала?
 ; @printer Казік 
@@ -1199,10 +1201,10 @@
 @‌goto .yidudoneyi
 
 #shkodayy
-; @printer Настя 
+ 
 @char Настя.nastya_norm
 Настя: Шкода тобі її?
-; @printer Настя 
+ 
 Настя: Молода, мабуть?
 ; @printer Казік 
 @char Казік.cazik_sad
@@ -1215,13 +1217,13 @@
 Казік: Їду ось до неї. Хочу завітати до неї в сновидіння — попрощатися, сказати, що не тримаю зла... 
 ; @printer Казік 
 Казік: Бо якось воно все не по-людськи вийшло.
-; @printer Настя 
+ 
 @char Настя.nastya_irony
 Настя: А потім шо?
 ; @printer Казік 
 @char Казік.cazik_sly_smile
 Казік: Не знаю, не думав. Як карти ляжуть.
-; @printer Настя 
+ 
 @char Настя.nastya_surprise
 Настя: Чекай. Ми тутка про твою вічну житуню, а тобі шо, по барабану?
 ; @printer Казік 
@@ -1237,7 +1239,7 @@
 
 @‌sfx Короткий_Чоловічий_Сімшок_Типу_Хе_Хе
 
-; @printer Настя 
+ 
 Настя: Ти шось таке кажеш… я б таке сказала. А тобі не до лиця.
 
 @‌choice "Ти давай закінчуй з цим." goto:.tyzakinchuy
@@ -1245,10 +1247,10 @@
 @‌stop
 
 #tyzakinchuy
-; @printer Настя 
+ 
 @char Настя.nastya_disgust
 Настя: Ти давай закінчуй з цим.
-; @printer Настя 
+ 
 @char Настя.nastya_smile
 Настя: Давай я краще тобі шось злабаю. Шоб ти голову не забивав.
 @char Казік.cazik_enthusiasm
@@ -1256,12 +1258,12 @@
 @‌goto .nutilkiyakshohochesh
 
 #yakospidtrymati
-; @printer Настя 
+ 
 
 ; наступна репліка - курсив!
 @char Настя.nastya_disgust
 Хочеться якось шось підтримать, чи шо.
-; @printer Настя 
+ 
 @char Настя.nastya_smile
 Настя: Хочеш, може, зіграю тобі? Я не то шоб красномовна, але гітарку маю.
 @char Казік.cazik_enthusiasm
@@ -1272,14 +1274,14 @@
 ; @printer Казік 
 @char Казік.cazik_awkward_smile
 Казік: Ну… тільки якщо тобі хочеться.
-; @printer Настя 
+ 
 @char Настя.nastya_surprise
 Настя: Так я ж пропоную.
 ; @printer Казік 
 @char Настя.nastya_norm
 @char Казік.cazik_normal
 Казік: Я просто подумав, для тебе ж це робота. Робота завжди всіх дістає.
-; @printer Настя 
+ 
 @char Настя.nastya_laugh
 Настя: Мені моя в радість.
 @char Настя.nastya_norm
@@ -1324,7 +1326,7 @@
 ;нижче - курсив
 
 Так буде йому краще. Він вже за порогом, куда підштовхнеш, туда й понесеться. Ну, і шо зіграть?
-; @printer Настя 
+ 
 
 @char Настя.nastya_smile
 Настя: Ну давай, зара як зіграю тобі на доріжку.
