@@ -4,6 +4,7 @@
 
 @bgm Ambience_Потяг_Всередині_Пустий
 
+
 @back BG_GhostTrain
 
 ; PreviousChar - це змінна, яка змінюється в залежності від того, кого з персонажів ми обрали до цього
@@ -50,7 +51,7 @@
 
 
 #IyaHello
-
+@bgm Assets/Music/Сцена3.1_Ія.mp3
 @back BG_Dialog_Iya
 
 @char Настя.nastya_complacency pos:25,0
