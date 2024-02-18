@@ -40,10 +40,14 @@
 
 
 @back BG_GhostTrain_ForChosing
+;@set iya=true 
+;@set kazik=true 
+;@set orest=true 
 
 @choice "Підійти до силуета дівчини" goto:.Ch1Option1  if:iya=false 
 @choice "Підійти до силуета підлітка" goto:.Ch1Option2 if:kazik=false 
 @choice "Підійти до силуета чоловіка" goto:.Ch1Option3 if:orest=false 
+@choice "Шо, більше нікого нема? Всі повиходили?" goto:Scene4 if:orest=true&&kazik=true&&iya=true  
 @stop
 
 #Ch1Option1
