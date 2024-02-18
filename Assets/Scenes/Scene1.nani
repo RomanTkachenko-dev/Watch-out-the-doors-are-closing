@@ -36,12 +36,12 @@
 @sfx Зупинка_Або_Ж_Прибуття_Потяга 
 
 @back BG_Sc1_Train.CircleReveal
-@char Настя.guitar_play_nastya_norm pos:80,0
+@char Настя.guitar_play_nastya_norm pos:30,0
 
 Дитина: Тьотя, на!
-@char Настя.guitar_play_nastya_laugh pos:80,0
+@char Настя.guitar_play_nastya_laugh
 ???: Ой ти моє зайчик, дякую-дякую! Рости велике і здорове, мамі-папі на радість!
-@char Настя.guitar_play_nastya_norm pos:40,0
+@char Настя.guitar_play_nastya_norm
 Чоловік: Не займай дитини, стара курва. Порозвелося нахлібників…
 
 @choice "Май сором при дитині таке казать!" goto:.Ch1Option1 
