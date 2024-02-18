@@ -127,6 +127,7 @@
 
 Харитон Андронович: А саме той факт, що пані не мертва.
 
+@char Настя.nastya_surprise
 Харитон Андронович: Чи є цьому певне пояснення?
 
 @stopbgm
@@ -252,9 +253,9 @@
         @char Харитон.charon_normal
         Харитон Андронович: Музика — прекрасна річ. Проте пані час відпочити. Час послухати.
 
+        @char Настя.nastya_meh
         Харитон Андронович: І до того ж. Хіба музика принесла пані те, що пані шукала? Єднання людських душ? Вираження творчого пориву душі?
 
-        @char Настя.nastya_meh
         Настя: Моя оддушина була…
 
         @char Харитон.charon_seriousness
@@ -275,7 +276,7 @@
         Настя: Петрівна ні в жисть. Вона хороша баба, але така вже нудна. Ніколи слова доброго не дождешся.
 
         @char Настя.nastya_norm
-        Настя: Миколаївна б може сказала. Але тоже не знати.
+        Настя: Миколаївна б, може, сказала. Але тоже не знати.
 
         @char Харитон.charon_gallant_smile
         Харитон Андронович: Хіба це найкраще, на що ви заслуговуєте, Анастасіє Олександрівно?
@@ -299,10 +300,18 @@
     Харитон Андронович: За розкладом саме час від’їжджати, пані.
 
     
-    @choice "Поїхали скорше." goto:.EndingRideOutOfLife
-    @choice "Ну шо ж… нехай." goto:.EndingRideOutOfLife
+    @choice "Поїхали скорше." goto:.EndingRideOutOfLife1
+    @choice "Ну шо ж… нехай." goto:.EndingRideOutOfLife2
     @stop
-    
+
+    #EndingRideOutOfLife1
+        @char Настя.nastya_norm
+    @goto .EndingRideOutOfLife
+
+    #EndingRideOutOfLife2
+        @char Настя.nastya_meh
+    @goto .EndingRideOutOfLife
+
 
     #EndingRideOutOfLife
 
