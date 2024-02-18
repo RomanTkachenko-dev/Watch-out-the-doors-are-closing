@@ -10,7 +10,7 @@
 @bgm Ambience_Станція_Порожня
 
 @back BG_Sc2_Statoin_Empty
-; має бути без потягу
+
 
 @char Настя.nastya_norm pos:30,0
 
@@ -23,7 +23,7 @@
 @sfx Кроки_(Наближаються)
 @char Настя.nastya_surprise pos:30,0
 @char Петрівна.petrivna_smile pos:75,0
-; @printer ???
+
 
 
 ???: Сансанівна!

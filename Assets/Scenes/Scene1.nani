@@ -15,8 +15,6 @@
 @choice "Сцена 3.2. - Розмова з Орест" goto:Scene3_Orest
 @choice "Сцена 3.3.- Розмова з Казімір" goto:Scene3_Kazimir
 @choice "Сцена 4" goto:Scene4
-@choice "Сцена 5.1 - поїхати з життя" goto:Scene5_1
-@choice "Сцена 5.2: кондукторка між світами" goto:Scene5_2
 @choice "Титри" goto:Ending
 @stop
 
@@ -38,7 +36,7 @@
 @back BG_Sc1_Train.CircleReveal
 @char Настя.guitar_play_nastya_norm pos:30,0
 
-; @sfx В. Хоробрий Світанок
+@sfx ХоробрийСвітанок
 
 Дитина: Тьотя, на!
 @char Настя.guitar_play_nastya_laugh

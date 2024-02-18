@@ -132,7 +132,7 @@
 Харитон: Чи є цьому певне пояснення?
 
 @stopBgm
-@bgm Сцена 4 Харон
+@bgm Сцена4_Харон
 
 ; CharsSaved - змінна, що відповідає за кількість персонажів, які отримали гарну кінцівку. Тобто, якщо Настя рятує персонажа, змінна CharsSaved має збільшуватися на 1, і так до максимуму 3. 0 означає, що жодного з персонажів не врятовано (погана кінцівка). 1 або 2 - що не всі персонажі врятовані (нормальна кінцівка). 3 - що врятовані всі персонажі (хороша кінцівка).
 
@@ -342,7 +342,7 @@
     @hideChars
     @back BlackBg
 
-    @goto SceneEnding
+    @goto Ending
 
 
 @elseIf CharsSaved>0&&CharsSaved<3
@@ -516,7 +516,7 @@
 
     @back BlackBg
 
-    @goto SceneEnding
+    @goto Ending
 
 
 @elseIf CharsSaved>3
@@ -694,6 +694,6 @@
     @hide Nastya
     @back BlackBg
 
-    @goto SceneEnding
+    @goto Ending
 
 @endIf
