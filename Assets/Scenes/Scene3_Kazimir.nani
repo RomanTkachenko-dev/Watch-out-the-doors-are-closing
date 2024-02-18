@@ -81,6 +81,7 @@
 @stop 
 
 #Nichoyane
+  @toast "Настюха - самовпевнена житуха"
 @char Настя.nastya_norm
 Настя: Нічо я не помирала.
 Настя: Потяг під'їхав, двері відкрилися. Ну я і зайшла.
@@ -132,6 +133,7 @@
 
 
 #Takshket
+  @toast "Вище ніс"
 ;бали відносини_казік=+1
 
 @char Казік.cazik_normal
@@ -181,6 +183,7 @@
 
 
 #zapiznylas
+  @toast "Розкована та щедра"
 @char Настя.nastya_surprise
  
 Настя: О. Розкажу тобі, як я на поїзд запізнилась.
@@ -236,7 +239,7 @@
 @goto .toonyaktypomer
 
 #yakossusidy
-
+@toast "На шо б поскаржитись"
 @char Казік.cazik_normal
 @char Настя.nastya_meh
 Настя: Якось раз мої сусіди придурошні…
@@ -301,7 +304,7 @@
 
 
 #bachilaglupusmert
-
+  @toast "Спостерігачка"
 @char Настя.nastya_laugh
 Настя: Ну, одного разу я бачила глупу смерть.
 ; @printer Казік 
@@ -368,7 +371,7 @@
 @stop
 
 #rozkaazhishos
- 
+   @toast "Попіклувалась про малого"
 @char Настя.nastya_laugh
 Настя: Шось я одна весь час розказую. Давай вже ти мені розкажи шось.
 ; @printer Казік 
@@ -424,7 +427,7 @@
 @stop
 
 #naytupishii
- 
+  @toast "Така відкрита жінка" 
 @char Настя.nastya_irony
 Настя: Про мій найтупіший вчинок?
 ; @printer Казік 
@@ -529,6 +532,7 @@
 @goto .mostiliparkdva
 
 #nemistnepark
+  @toast "Ведуча"
 @char Настя.nastya_meh
 Настя: Не буду обирати, не хочу грати в цю гру.
 @char Казік.cazik_normal
@@ -778,7 +782,7 @@
 @stop
 
 #poschastylokazhesh
- 
+  @toast "Мудра-мудрюща"
 @char Настя.nastya_disgust
 Настя: Пощастило, кажеш?
 ; @printer Казік 
@@ -885,7 +889,7 @@
 @stop
 
 #atreba
- 
+   @toast "Здорова егоїстка"
 @char Настя.nastya_disgust
 Настя: А треба за себе думать в першу чергу!
 ; @printer Казік 
@@ -895,7 +899,7 @@
 @goto .forwhatulive
 
 #pravylno
- 
+@toast "Візьми моє серце"
 @char Казік.cazik_normal
 @char Настя.nastya_smile
 Настя: Правильно. Є такі люди, шо для них хочеться шось хороше робить.
@@ -908,6 +912,7 @@
 
 @char Настя.nastya_meh
 Настя: Тю. Мені б на всіх по барабану було. І на себе теж.
+  @toast "Різні квіти в одному вагоні"
 ; @printer Казік 
 @char Казік.cazik_normal
 Казік: Ну, я так не можу.
@@ -965,6 +970,7 @@
 Настя: Та ну, яка смерть. Дорога — то завжди лотерея.
 
 #nutatsevzhe
+  @toast "Розділи мій рок"
 @char Настя.nastya_disgust
  
 Настя: Ну та, це вже на випадковість не тягне.
@@ -1012,11 +1018,13 @@
 @stop
 
 #svyataliudina
+@toast "Піду за тобою в вогонь і воду"
 @char Настя.nastya_surprise
 Настя: Свята людина! 
 @goto .tyotshorozk
 
 #prosebedumay
+@toast "Ти знаєш, що ти - людина?"
 @char Настя.nastya_disgust
 Настя: Про себе б подумав перше.
 @goto .tyotshorozk
@@ -1104,7 +1112,7 @@
 @goto .doyouremember
 
 #nuchistoyak
-
+@toast "Кіно на двох"
 
 @back BG_Dialog_Kazimir
 @back BG_GhostTrain
