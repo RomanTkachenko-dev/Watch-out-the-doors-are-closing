@@ -456,6 +456,8 @@
     @choice "Всього хорошого." goto:.CharonNotTellingYou
     @stop
 
+    @goto Ending
+
     #CharonGetWork
         @char Харитон.charon_active_smile
         Харитон: О, красно дякую! Запрошення від такої чарівної і талановитої пані ніяк не можна відхилити.
@@ -492,7 +494,7 @@
     @char Настя.nastya_surprise
     Настя: Га?
 
-    @char policeman_2_normal pos:75,0
+    @char Поліцейський.policeman_2_normal pos:75,0
     Поліцейський: Пані, ви що там робите? Вам не можна тут знаходитися.
 
     @char Настя.nastya_norm
@@ -501,14 +503,16 @@
     Поліцейська: Це ваш інструмент?
 
     Настя: Та мій, чий же.
-
-    @char policeman_2_angry
+    
+    @char Поліцейська.policeman_1_angry
+    @char Поліцейський.policeman_2_angry
     Поліцейська: Це на неї викликали. Пані, перепрошую, вам доведеться пройти з нами.
 
     @char Настя.nastya_meh
     Настя: Шо?! Чого?! Куди?!
 
-    @char policeman_2_normal
+    @char Поліцейський.policeman_2_normal
+    @char Поліцейська.policeman_1_normal
     Поліцейський: Будь ласка, не чиніть опору. Пройдіть із нами до машини.
 
     @char Настя.nastya_surprise

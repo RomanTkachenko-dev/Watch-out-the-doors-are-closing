@@ -1187,7 +1187,7 @@ BG_Outside1_Orest_02_Wife
 @char Настя.nastya_smile
 У добру путь, козаче!
 
-@goto Scene3
+@goto Scene3.Scene3Choice
 
 #OrestBadEnding
 
@@ -1250,7 +1250,7 @@ BG_Outside1_Orest_02_Wife
 
 Ех, Наська-Наська.
 
-@goto Scene3
+@goto Scene3.Scene3Choice
 
 #OrestEndScene
 
