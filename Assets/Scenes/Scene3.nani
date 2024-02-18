@@ -25,6 +25,7 @@
 
 @set PreviousChar=0
 #Scene3Choice
+@hideChars
 @back BG_ThreePersonages
 
 @choice "Підійти до силуета 1" goto:.Ch1Option1 
