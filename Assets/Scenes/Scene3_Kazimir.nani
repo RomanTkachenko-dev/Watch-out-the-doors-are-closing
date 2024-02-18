@@ -39,31 +39,21 @@
 
 @endIf
 
-
-
 @stopSfx
-
 
 
 #Vitanya
 @bgm Сцена3.3_Казік
 @back BG_Dialog_Kazimir
 @char Настя.nastya_norm pos:30,0
-@char Казік.cazik_normal pos:75,0
-
-;тут казік прозорий
-@char Казік.cazik_normal pos:75,0
-
+@char Казік.transparency_cazik_normal pos:75,0
 
 @char Настя.nastya_smile
 Настя: Привіт…
 
-@printer ???
-@char Казік.cazik_sly_smile
+@char Казік.transparency_cazik_normal
 Пасажир: вгтівлогтлгпотя*
 Пасажир: ~~367``
-
-#Dobrenko
 
 @char Настя.nastya_norm
 Добренько, треба, знач, якось на нього налаштуваться. Ану, дай придивлюсь… 
@@ -72,21 +62,18 @@
 @stop
 
 #Ch1Option2
-;  @char спрайт Казіка перестає бути прозорим
+@char Казік.cazik_normal pos:75,0
 @sfx Звук_Появи_Привида_(ВаріантІІ)
 
-@printer ???
 @char Казік.cazik_enthusiasm
 Пасажир: Ха-а, ти диво! Ніби 367-й день в році!
 
 @‌sfx Короткий_Чоловічий_Сімшок_Типу_Хе_Хе
 
 @char Настя.nastya_surprise
-
 Настя: Я? Шо?
 
 @char Казік.cazik_normal
-@printer ???
 Пасажир: Так, думаєш, я не бачу? Ти не з цього потягу! Ти ж іще не помирала, я вгадав?
 
 @choice "Нічо я не помирала." goto:.Nichoyane
@@ -103,8 +90,6 @@
 Настя: Та чорт його зна, вже, може, й помирала.
 @char Настя.nastya_norm
 Настя: Піди розбери з такою житухою.
-
-@printer ???
 
 @char Казік.cazik_thoughtfulness
 Пасажир: Ні, ну якщо ти змогла зайти, то мабуть все ж таки помирала. Хоча виглядаєш ніби жива. 
