@@ -428,15 +428,18 @@
     @back BG_Dialog_Orest
     @bgm Ambience_Потяг_Всередині_Пустий
 
-    @char Орест.orest_normal pos:75,0
-    @char Настя.nastya_surprise pos:30,0
+    @char Орест.guitar_play_orest_smile pos:75,0
+    @char Настя.no_guitar_nastya_surprise pos:30,0
+
+
     Орест: Ну як, пані Анастасіє?
-
+@char Настя.no_guitar_nastya_irony
     Настя: То точно моя гітарка була?
+  @char Орест.guitar_play_orest_normal
 
-    @char Орест.orest_thoughtful
     Орест: Раніше я грав гірше.
 
+    @char Орест.orest_thoughtful
     @char Настя.nastya_surprise
     Настя: Йой, шось зі мною тільки шо сталось. Якийсь дивний тріп.
 
@@ -1077,11 +1080,11 @@ BG_Outside1_Orest_02_Wife
             Орест: ...
 
             @hideChars
-            @char Орест.orest_smile
-            @char Настя.nastya_norm
+            @char Орест.guitar_play_orest_smile
+            @char Настя.no_guitar_nastya_norm
             Орест: Як приємно було заграти без персня.
 
-            @char Настя.nastya_smile
+            @char Настя.no_guitar_nastya_smile
             Настя: Музичка завжди помагає, еге ж?
 
             @char Орест.orest_normal
@@ -1200,14 +1203,17 @@ BG_Outside1_Orest_02_Wife
     @sfx Двері_Вагону_Відчиняються
 @wait 1
     @back BG_StationUnderground_03
-    ; @bgm ембієнт червів і стогону
- 
+    @bgm Ambience_Погана_Кінцівка_Орест_Черви_І_Стогін
+  @char Настя.nastya_norm
+     @wait 4
+    Орест: ...
+  @char Настя.nastya_norm
+    Настя: ...
     @sfx Радіо_Рипіння
     Диктор: Станція "Сира Могила".
 
     @char Орест.dark_orest_smile
     Орест: “І він пішов, і ліг в могилу ще живим, і там згнив і зник, як усі ми зникаємо, коли подих наш покидає тіла наші…”
-
     Орест: Пахне смертю, вологою землею. Моя станція. Тож бувай.
 
     @char Настя.nastya_meh
