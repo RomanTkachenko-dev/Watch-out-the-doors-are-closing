@@ -47,10 +47,10 @@
 
 
 #OrestHello
-@‌char Орест.transparency_orest_normal pos:75,0
 @set PreviousChar=2
 
 @back BG_Dialog_Orest
+@‌char Орест.transparency_orest_normal pos:75,0
 
 @char Настя.nastya_norm pos:30,0
 ; @printer Настя
