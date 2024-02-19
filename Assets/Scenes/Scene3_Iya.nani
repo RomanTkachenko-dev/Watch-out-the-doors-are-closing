@@ -44,6 +44,7 @@
 #IyaHello
 @bgm Сцена3.1_Ія
 @back BG_Dialog_Iya
+@unlock CG/BG_Dialog_Iya
 
 @char Настя.nastya_complacency pos:30,0
 Настя: Паню, добрий вечір…
@@ -234,6 +235,7 @@
 #IyaStory
 
 @back Abstract_BGs_IyaLonely
+@unlock CG/Abstract_BGs_IyaLonely
 @hideChars
 
 @sfx Жінка_Зітхає_Сумно
@@ -248,6 +250,7 @@
 Настя: Життя найбільший дар, і всьо таке, нє?
 
 @back BG_OutsideCam2_Iya_01_Alone
+@unlock CG/BG_OutsideCam2_Iya_01_Alone
 
 Ія: Згодна.
 @goto .IyaNoChoice
@@ -285,7 +288,7 @@
 Ія: В мене, в принципі, було все. Квартира з панорамним вікном на місто… Про таку всі дівчата мріють!
 
 @back BG_Dialog_Iya_01_Alone
-
+@unlock CG/BG_Dialog_Iya_01_Alone
 
 @char Настя.nastya_norm pos:30,0
 @char Ія.iya_normal pos:75,0
@@ -390,6 +393,7 @@
 
 #IyaBusinessPeople
 @hideChars
+
 @back BG_OutsideCam2_Iya_01_Alone
 
 
@@ -650,7 +654,7 @@
 
 @hideChars
 @back Abstract_BGs_IyaHappy
-
+@unlock CG/Abstract_BGs_IyaHappy
 Ія: Ая.
 
 Настя: Ія, Ая. Це шо, простибоже, люди так тепер дітей називають?
@@ -659,6 +663,7 @@
 Ія: Ні. Але в вісімнадцять люди люблять брати собі нові імена. Ми разом вчилися в університеті, були найкращими подругами.
 
 @back BG_OutsideCam2_Iya_02_Happy
+@unlock CG/BG_OutsideCam2_Iya_02_Happy
 
 Ія: Але нас розлучило життя.
 Ія: А тоді ми зустрілися випадково в вечірньому місті, і провели разом вечір, який почався з дружньої зустрічі і закінчився як побачення.
@@ -688,6 +693,7 @@
 Ія: Бо вона мене приймала.
 
 @back BG_Dialog_Iya_02_Happy
+@unlock CG/BG_Dialog_Iya_02_Happy
 @char Настя.nastya_norm pos:30,0
 @char Ія.iya_normal pos:75,0
 
@@ -734,17 +740,19 @@
 
 @hideChars
 @back Abstract_BGs_IyaLoss
+@unlock CG/Abstract_BGs_IyaLoss
 
 Ія: І ось я знову всім винна, всі пишуть мені і чекають, що я буду тією, ким я не є.
 Ія: Всюди треба постаратися, щоб дотягнути хоча б до норми.
 Ія: І тому я піднялася на дах над тридцять шостим поверхом.
 
 @back BG_OutsideCam2_Iya_03_Loss
-
+@unlock CG/BG_OutsideCam2_Iya_03_Loss
 Ія: І зупинила мить. Щоб більше ніщо не забруднювало відлуння щастя в мені.
 Ія: Тепер я вільна. Я їду до Аї. У місто, де ми колись зустрілися.
 
 @back BG_Dialog_Iya_03_Loss
+@unlock CG/BG_Dialog_Iya_03_Loss
 @char Настя.nastya_norm pos:30,0
 @char Ія.iya_normal pos:75,0
 
@@ -857,6 +865,7 @@
     @bgm Ambience_Станція_Порожня
 
     @back BG_StationUnderground_03
+@unlock CG/BG_StationUnderground_03
     @hide Настя
 @char Ія.dark_iya_fear
 
@@ -1080,6 +1089,7 @@
 @hide Настя
 
 @back BG_UpperSt_03
+@unlock CG/BG_UpperSt_03
 @char Ія.iya_normal pos:30,0
 Ія: ...
 Диктор: Місто Ер. 
