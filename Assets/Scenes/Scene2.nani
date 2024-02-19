@@ -10,7 +10,7 @@
 @bgm Ambience_Станція_Порожня
 
 @back BG_Sc2_Statoin_Empty
-
+@unlock CG/BG_Sc2_Statoin_Empty
 
 @char Настя.nastya_norm pos:30,0
 
@@ -212,7 +212,7 @@
 @sfx Зупинка_Або_Ж_Прибуття_Потяга 
 
 @back BG_Sc2_Station_GhostTrain
-
+@unlock CG/BG_Sc2_Station_GhostTrain
 @char Настя.nastya_surprise
 Настя: Га? Шо?
 
