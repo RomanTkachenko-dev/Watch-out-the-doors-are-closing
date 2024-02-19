@@ -1,6 +1,7 @@
 @stopSfx
 @stopBgm
 @back BG_GhostTrain_ForChosing
+@unlock CG/BG_GhostTrain_ForChosing
 
 @char Ія.ChoosingSprite_Iya pos:60,25 
 @char Казік.ChoosingSprite_Cazik pos:40,37 
