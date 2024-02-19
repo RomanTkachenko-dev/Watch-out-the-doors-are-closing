@@ -19,6 +19,7 @@
 @sfx Зупинка_Або_Ж_Прибуття_Потяга 
 
 @back BG_Sc1_Train.CircleReveal
+@unlock CG/BG_Sc1_Train.CircleReveal
 @char Настя.guitar_play_nastya_norm pos:30,0
 
 @sfx ХоробрийСвітанок
