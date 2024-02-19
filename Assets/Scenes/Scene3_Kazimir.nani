@@ -44,6 +44,7 @@
 #Vitanya
 @bgm Сцена3.3_Казік
 @back BG_Dialog_Kazimir
+@unlock CG/BG_Dialog_Kazimir
 @char Настя.nastya_norm pos:30,0
 @char Казік.transparency_cazik_normal pos:75,0
 
@@ -213,13 +214,14 @@
 
 @hideChars
 @back Abstract_BGs_Kazimir_01_Todler_
- 
+@unlock CG/Abstract_BGs_Kazimir_01_Todler_
 Настя: І от, а в потягу моя знайома сидить. І я ж така вся радісна, шо ми будем в одному вагоні їхать, думаю, хоть поговорить буде з ким.
  
 Настя: Топаю через весь отой вагон до свого місця. А там якийсь мужик.
  
 Настя: Кажу: то моє місце, петляй. В мене двадцяте. А він: в мене теж двадцяте.
 @back BG_Outside1_Kazimir_01_Todler_
+@unlock CG/BG_Outside1_Kazimir_01_Todler_
 Настя: Ну я вже, ясно шо, готуюсь його розпікать по мамці, бо шо він собі дозволяє.
  
 Казік: І що, як би ти його розпекла?
@@ -289,6 +291,7 @@
 
 
 @back BG_Dialog_Kazimir_01_Todler
+@unlock CG/BG_Dialog_Kazimir_01_Todler
 @char Настя.nastya_surprise pos:30,0
 @char Казік.cazik_normal pos:75,0
 
@@ -881,6 +884,7 @@
 
 #atreba
 @back BG_Dialog_Kazimir_02_Courier
+@unlock CG/BG_Dialog_Kazimir_02_Courier
 
 ;@toast "Здорова егоїстка"
 @char Настя.nastya_meh
@@ -924,13 +928,17 @@
 Казік: Нам затримували зарплату, автопарк почав розвалюватись.
 
 @hideChars
-@back BG_Outside1_Kazimir_02_Courier
+@‌back Abstract_BGs_KazimirCourier
+@unlock CG/Abstract_BGs_KazimirCourier
  
 Казік: Спочатку там були фірмові автівки, а потім вони почали наймати людей зі своїми. І якось нам треба було доставити вантаж.
  
 Казік: Так от, мене з колегою якось попросили сісти на стару автівку. 
 Казік: Починається злива, а двірники не працюють. Їдемо — і геть нічого не бачимо. Тільки розмиті силуети.
  
+@back BG_Outside1_Kazimir_02_Courier
+@unlock CG/BG_Outside1_Kazimir_02_Courier
+
 Казік: А трафік шалений. І на кожному перехресті ми зупиняємося, і хтось із нас вибігає й починає мити скло перед водієм. 
 Казік: Залізли, зелений загорівся, погнали далі.
  
@@ -1039,6 +1047,7 @@
 
 @hideChars
 @back Abstract_BGs_KazimirBarber
+@unlock CG/Abstract_BGs_KazimirBarber
 
 
 Казік: Не повіриш: мене барберша зарізала.
@@ -1074,6 +1083,7 @@
 
 #pishovubarbershop
 @back BG_Outside1_Kazimir_03_Barber
+@unlock CG/BG_Outside1_Kazimir_03_Barber
  
 Казік: Пішов я якось у барбершоп. Завтра побачення, думаю, треба привести себе в порядок. Хочеться ж враження справити.
  
@@ -1085,9 +1095,9 @@
  
 Казік: Я голову в бік вікна повертаю — а там авто врізалося в вітрину. В нашу вітрину. Ось в неї рука і сіпнулась.
  
-Казік: Всі під столами поховалися, а моя барберша стоїть з отакенними очима, дивиться на мене. І я чую, в мене щось ось тут булькає. Дивлюсь — весь светр і руки червоні, мокрі.
+Казік: Всі під столами поховалися, а моя барберша стоїть з отакенними очима, дивиться на мене. І я чую, в мене щось ось тут булькає. 
+Казік: Дивлюсь — весь светр і руки червоні, мокрі.
 Казік: Все в крові.
- 
 Казік: Так я смерті і попався.
 
 @choice "Капець…" goto:.kapets
@@ -1097,6 +1107,7 @@
 #kapets
 
 @back BG_Dialog_Kazimir_03_Barber
+@unlock CG/BG_Dialog_Kazimir_03_Barber
 @char Настя.nastya_surprise pos:30,0
 @char Казік.cazik_normal pos:75,0
 
@@ -1456,6 +1467,7 @@
 @bgm Ambience_Станція_Пуста
 @hide Настя
 @back BG_UpperSt_01
+@unlock CG/BG_UpperSt_01
 
 @char Казік.cazik_sly_smile pos:69
 Казік: Алія Носова. Запам'ятала?
@@ -1474,6 +1486,7 @@
 
 @hide Казік
 @back BG_Dialog_Kazimir_03_Barber
+
 @char Настя.nastya_norm pos:30,0
 ‌Настя: ...
 @sfx Радіо_Рипіння
@@ -1551,6 +1564,7 @@
 @char Казік.cazik_normal pos:28,0
 @stopSfx
 @back BG_StationUnderground_01
+@unlock CG/BG_StationUnderground_01
 @bgm Ambience_Погана_Кінцівка_Казіка_Кріпі_Колискова
 
 @char Казік.dark_cazik_relieved
