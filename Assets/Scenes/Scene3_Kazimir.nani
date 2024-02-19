@@ -1548,7 +1548,6 @@
 
 @char Казік.dark_cazik_sad
 Казік: Я не знаю…
-@char Казік.dark_cazik_normal
 @char Настя.nastya_norm
 Казік: Але яка різниця! Все кльово! Все, не капай мені. Що ти як моя мама?
 
@@ -1560,7 +1559,7 @@
 Казік: ...
 @sfx Двері_Вагону_Відчиняються
 @hide Настя
-@char Казік.cazik_normal pos:28,0
+@char Казік.dark.cazik_normal pos:28,0
 @stopSfx
 @back BG_StationUnderground_01
 @unlock CG/BG_StationUnderground_01
