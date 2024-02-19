@@ -1033,9 +1033,9 @@ BG_Dialog_Orest_02_Wife
 @goto .OrestBadEnding
 
 #OrestEndBad2
+@char Орест.orest_smile
 @sfx КучерявеСонце
 ...
-
 @char Орест.dark_orest_smile
 Орест: Панянко з душею, повною радості! Ти надихнула мене повірити в себе на цьому останньому в житті шляху.
 @goto .OrestBadEnding
