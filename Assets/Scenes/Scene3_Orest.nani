@@ -50,6 +50,7 @@
 @set PreviousChar=2
 
 @back BG_Dialog_Orest
+@unlock CG/BG_Dialog_Orest
 @char Орест.transparency_orest_normal pos:75,0
 
 @char Настя.nastya_norm pos:30,0
@@ -416,6 +417,7 @@
 Настя: ...
 @hide Настя
 @back Abstract_BGs_Orest_Star-BG
+@unlock CG/Abstract_BGs_Orest_Star-BG
 @sfx Орест_Віртуозний
 Ото в нього перстеняка. Чекай, воно шо… світиться?
 @hideChars
@@ -538,13 +540,14 @@
 Орест: Мою долю змінив один стариган. 
 
 @back Abstract_BGs_OrestRise
-
+@unlock CG/Abstract_BGs_OrestRise
 @hideChars
 
 Орест: Для мене це був пік кар'єри, я був на розігріві самого Джимі Молодшого. 
 
 Орест: Я був на сьомому небі від щастя, передчував, що мною нарешті зацікавляться.
 @back BG_Outside1_Orest_01_Rising
+@unlock CG/BG_Outside1_Orest_01_Rising
 Орест: Я так старався, готувався до цього виступу! А переді мною була порожня зала…
 
 
@@ -610,6 +613,7 @@
 #OrestStoryContinues
 
 @back BG_Dialog_Orest_01_Rising
+@unlock CG/BG_Dialog_Orest_01_Rising
 @char Орест.orest_normal pos:75,0
 @char Настя.nastya_norm pos:30,0
 Орест: Я вже вдягав піджак, щоб піти геть, але тут цей старий спіймав мене за рукав і сказав…
@@ -682,6 +686,7 @@
 
 @hideChars
 @back Abstract_BGs_OrestWife
+@unlock CG/Abstract_BGs_OrestWife
 
 Орест: Я був на гастролях, коли мені подзвонили: "Ваша дружина в важкому стані".
 Орест: Єдиний рейс до її міста був з пересадкою, і я не встиг з нею попрощатися. 
@@ -726,6 +731,7 @@
 Орест: Я сидів біля вікна з пляшкою джину, і дивився, як сонце скочується за палаючий горизонт. 
 
 @back BG_Dialog_Orest_02_Wife
+@unlock CG/BG_Dialog_Orest_02_Wife
 @char Настя.nastya_norm pos:30,0
 @char Орест.orest_normal pos:75,0
 
@@ -1137,6 +1143,7 @@ BG_Outside1_Orest_02_Wife
 @bgm Ambience_Станція_Порожня
 @hide Настя
 @back BG_UpperSt_02
+@unlock CG/BG_UpperSt_02
 
 @sfx Радіо_Рипіння
 Диктор: Станція "Переродження".
@@ -1216,6 +1223,7 @@ BG_Outside1_Orest_02_Wife
 
 @hide Настя
 @back BG_StationUnderground_02
+@unlock CG/BG_StationUnderground_02
 @bgm Ambience_Погана_Кінцівка_Орест_Черви_І_Стогін
 @char Настя.nastya_surprise
 Настя: Це...
