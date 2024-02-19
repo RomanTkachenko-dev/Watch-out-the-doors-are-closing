@@ -166,9 +166,6 @@ MonoBehaviour:
     - name: ToastUI
       pathPrefix: UI
       guid: dd85ce99288c2f8488447fa511b1c0d6
-    - name: PostGameTitle
-      pathPrefix: UI
-      guid: e823e3ba4d4173841a2e8c5f77e9d6ee
     - name: Credits
       pathPrefix: UI
       guid: 9419269e850b6d9439581c8fa565cd95
