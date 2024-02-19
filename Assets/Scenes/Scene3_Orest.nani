@@ -421,7 +421,7 @@
 @sfx Орест_Віртуозний
 Ото в нього перстеняка. Чекай, воно шо… світиться?
 @hideChars
-@char Кільце.Abstract_BGs_Orest_Star
+@char Орест.Abstract_BGs_Orest_Star
 @wait 2
 @sfx Жіночий_Сміх_(Настя)
 @hideChars
