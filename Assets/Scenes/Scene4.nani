@@ -6,7 +6,7 @@
 @bgm Ambience_Потяг_Всередині_Пустий
 
 @back BG_GhostTrain_Final
-
+@unlock CG/BG_GhostTrain_Final
 @sfx Зупинка_Або_Ж_Прибуття_Потяга
 
 @char Настя.nastya_norm pos:30,0
@@ -23,7 +23,7 @@
 @stopbgm
 @bgm Ambience_Станція_Порожня
 @back BG_Dialog_Haron
-
+@unlock CG/BG_Dialog_Haron
 @char Настя.nastya_meh
 Настя: …
 
