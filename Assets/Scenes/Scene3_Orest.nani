@@ -133,7 +133,7 @@
 @stop
 
 #OrestNotYourBusiness
-@toast "Отримано досягнення : Жінка-кактус!"
+;@toast "Отримано досягнення : Жінка-кактус!"
 @char Настя.nastya_menace
 Настя: Ти хто тут такий, інтілігєнт вшивий?
 
@@ -151,7 +151,7 @@
 @goto .OrestIntroduction
 
 #OrestNeverFlied
-@toast "Отримано досягнення : Пташка, яка не літає"
+;@toast "Отримано досягнення : Пташка, яка не літає"
 @char Настя.nastya_smile
 Настя: А я і не злітала, шоб опускаться.
 
@@ -187,13 +187,13 @@
 @stop
 
 #OrestNotALady
-@toast "Отримано досягнення : Балда Чесана"
+;@toast "Отримано досягнення : Балда Чесана"
 @char Орест.orest_smile
 Орест: Ну дозволь вже мені бути ввічливим, що ти уперлася!
 @goto .OrestFamous
 
 #OrestIAmCommon
-@toast "Отримано досягнення : Своя в дошку"
+;@toast "Отримано досягнення : Своя в дошку"
 @sfx Жінка_Зітхає_Сумно
 @char Орест.orest_confident
 Орест: Мене мама вчила жінок поважати. Навіть якщо вони “з простих”.
@@ -242,7 +242,7 @@
 @goto .OrestGlory
 
 #OrestThinksTooMuch
-@toast "Отримано досягнення : Заділа Ореста"
+;@toast "Отримано досягнення : Заділа Ореста"
 @set OrestScore=OrestScore+1
 
 @char Орест.orest_confident
@@ -261,7 +261,7 @@
 @goto .OrestGlory
 
 #OrestEverybodyTalksAbout
-@toast "Отримано досягнення : Настюха Брехуха"
+;@toast "Отримано досягнення : Настюха Брехуха"
 @char Настя.nastya_complacency
 Настя: Я тебе зразу впізнала.
 
@@ -298,7 +298,7 @@
 
 
 #OrestAwkwardSilence
-@toast "Отримано досягнення : Кентуха"
+;@toast "Отримано досягнення : Кентуха"
 @sfx Шурхотіння_Одягу_При_Сіданні
 
 @char Орест.orest_smile
@@ -346,7 +346,7 @@
 @goto .OrestGrave
 
 #OrestPoem
-@toast "Отримано досягнення : Поетка-перекладачка"
+;@toast "Отримано досягнення : Поетка-перекладачка"
 @char Настя.nastya_smile
 @char Орест.orest_sigh
 Орест: Ой жінко, не сип мені сіль на рану!
@@ -388,7 +388,7 @@
 @stop
 
 #OrestHaveSomeNails
-@toast "Отримано досягнення : Гостра на язик"
+;@toast "Отримано досягнення : Гостра на язик"
 @char Орест.orest_normal
 Орест: Слухай. Я знаю, що інструмент для музиканта — це як частина себе.
 
@@ -503,7 +503,7 @@
 
 @char Настя.nastya_smile
 Настя: Хочеш сказать, жлобиха? Так так і кажи.
-@toast "Отримано досягнення : Жаба давить"
+;@toast "Отримано досягнення : Жаба давить"
 @goto .OrestTheRing
 
 
@@ -697,12 +697,12 @@ BG_Outside1_Orest_02_Wife
 @stop
 
 #OrestIFeelSorry
-@toast "Отримано досягнення : Милий друже"
+;@toast "Отримано досягнення : Милий друже"
 Орест: Так.
 @goto .OrestWantedToDie
 
 #OrestStupidDeath
-@toast "Отримано досягнення : Настя шо ти робиш"
+;@toast "Отримано досягнення : Настя шо ти робиш"
 Орест: Та мала б хоч крихту поваги!
 @goto .OrestWantedToDie
 
@@ -887,7 +887,7 @@ BG_Dialog_Orest_02_Wife
 @goto .OrestHasRegrets
 
 #OrestWhatInstead
-@toast "Отримано досягнення : Безстрашна"
+;@toast "Отримано досягнення : Безстрашна"
 @char Орест.orest_normal
 Орест: Тому що винуватий в усьому я зі своєю надмірною любов'ю до слави
 @goto .OrestHasRegrets
@@ -1076,7 +1076,7 @@ BG_Dialog_Orest_02_Wife
 @stop
 
 #OrestEndPlay
-@toast "Отримано досягнення : Поділилася найціннішим"
+;@toast "Отримано досягнення : Поділилася найціннішим"
     @stopBgm
     @char Орест.guitar_play_orest_sad
     @char Настя.no_guitar_nastya_norm
