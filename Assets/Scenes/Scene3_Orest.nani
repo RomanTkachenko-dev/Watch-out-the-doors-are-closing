@@ -427,12 +427,12 @@
 @back BG_Dialog_Orest
 @char Настя.no_guitar_nastya_surprise pos:30,0
 Настя: ...
-@‌char Орест.orest_normal pos:75,0
+@char Орест.orest_normal pos:75,0
 
 @bgm Ambience_Потяг_Всередині_Пустий
 
 Орест: Ну як, пані Анастасіє?
-@‌char Орест.orest_smile
+@char Орест.orest_smile
 @char Настя.no_guitar_nastya_irony
 Настя: То точно моя гітарка була?
 @char Орест.guitar_play_orest_normal
@@ -725,21 +725,21 @@
 #OrestResurrectsWife
 Орест: Я сидів біля вікна з пляшкою джину, і дивився, як сонце скочується за палаючий горизонт. 
 
-BG_Dialog_Orest_02_Wife
+@back BG_Dialog_Orest_02_Wife
 @char Настя.nastya_norm pos:30,0
-@‌char Орест.orest_normal pos:75,0
+@char Орест.orest_normal pos:75,0
 
-@‌char Орест.orest_sigh
+@char Орест.orest_sigh
 Орест: Аж раптом останній промінь впав на перстень, який я не знімав роками.
 Орест: Він був зі мною весь час. Увесь цей клятий час.
 
-@‌char Орест.orest_sad
+@char Орест.orest_sad
 @char Настя.nastya_surprise
 Настя: Перстень?
-@‌char Орест.orest_smile
+@char Орест.orest_smile
 Орест: Вихід. Я пригадав слова старого. "З цим перснем твоя музика підніме з могили мертвого".
 @char Настя.nastya_norm
-@‌char Орест.orest_thoughtful
+@char Орест.orest_thoughtful
 Орест: Я купив квиток на найближчий рейс до міста, де її поховали, і взяв із собою тільки косуху й гітару.
 
 BG_Outside1_Orest_02_Wife
@@ -751,9 +751,9 @@ BG_Outside1_Orest_02_Wife
 Орест: Кілька треків, що я там зіграв, стали би хітами, якби їх хтось записав. Але я там був не за тим. Мені взагалі було начхати на музику!
 Орест: І коли я вже витратив усі сили, і пальці мої почали німіти, земля на могилі заворушилася, ніби жива.
 
-BG_Dialog_Orest_02_Wife
+@back BG_Dialog_Orest_02_Wife
 @char Настя.nastya_norm pos:30,0
-@‌char Орест.orest_smile pos:75,0
+@char Орест.orest_smile pos:75,0
 
 Орест: Кохана моя вийшла з могили жива й здорова. Сама смерть відпустила її.
 
@@ -762,7 +762,7 @@ BG_Dialog_Orest_02_Wife
 @stop
 
 #OrestYouLie
-@‌char Орест.orest_sigh
+@char Орест.orest_sigh
 Орест: Я б і сам не повірив, якби мені розказали.
 @goto .OrestUndeadWife
 
@@ -770,7 +770,7 @@ BG_Dialog_Orest_02_Wife
 @char Настя.nastya_surprise
 Настя: А шо її болячка? Пройшла?
 @char Настя.nastya_norm
-@‌char Орест.orest_smile
+@char Орест.orest_smile
 Орест: О, вона була повністю здорова. Майже така, як була за життя. Досконала.
 
 @goto .OrestUndeadWife

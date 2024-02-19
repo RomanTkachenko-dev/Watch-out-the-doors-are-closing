@@ -1936,7 +1936,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1948,7 +1948,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0437\u0430\u0434"
+  m_Text: "\u041D\u0410\u0417\u0410\u0414"
 --- !u!114 &1265031570045268893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: General.Return
-  defaultValue: "\u041D\u0430\u0437\u0430\u0434"
+  defaultValue: "\u041D\u0410\u0417\u0410\u0414"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:

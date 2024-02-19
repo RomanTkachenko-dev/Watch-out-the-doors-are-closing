@@ -247,7 +247,7 @@
 #IyaVSensi
 Настя: Життя найбільший дар, і всьо таке, нє?
 
-@‌back BG_OutsideCam2_Iya_01_Alone
+@back BG_OutsideCam2_Iya_01_Alone
 
 Ія: Згодна.
 @goto .IyaNoChoice
@@ -390,7 +390,7 @@
 
 #IyaBusinessPeople
 @hideChars
-@‌back BG_OutsideCam2_Iya_01_Alone
+@back BG_OutsideCam2_Iya_01_Alone
 
 
 Ія: Знаєш таке поняття — "ділові люди"? Ти маєш вести себе як серйозна людина.
@@ -417,7 +417,7 @@
 Ія: На момент моєї смерті у нас вже дев'ять людей було. Спочатку ми робили прикраси на замовлення, потім стали робити своє.
 
 
-@‌back BG_Dialog_Iya_01_Alone
+@back BG_Dialog_Iya_01_Alone
 @char Настя.nastya_surprise pos:30,0
 @char Ія.iya_normal pos:75,0
 
@@ -430,12 +430,14 @@
 @char Настя.nastya_irony
 ;@toast "Недовірлива Настюха"
 @sfx Жінка_Зітхає_Сумно
-@goto:.Skladnoz
+
+@goto .Skladnoz
+
 
 #IyaHadIssues1
 @char Настя.nastya_smile
 @sfx Жінка_Зітхає_Сумно
-@goto:.Skladnoz
+@goto .Skladnoz
 
 #Skladnoz
 @char Ія.iya_sad
@@ -963,8 +965,8 @@
 
 @hide Ія
 
-@‌back BG_Dialog_Iya_03_Loss
-@‌char Настя.nastya_norm pos:30,0
+@back BG_Dialog_Iya_03_Loss
+@char Настя.nastya_norm pos:30,0
 @sfx Обережно!_Двері_Зачиняються!
 Диктор: Обережно, двері зачиняються.
 @stopBgm
@@ -1078,7 +1080,7 @@
 @hide Настя
 
 @back BG_UpperSt_03
-@‌char Ія.iya_normal pos:30,0
+@char Ія.iya_normal pos:30,0
 Ія: ...
 Диктор: Місто Ер. 
 @bgm Ambience_Станція_Порожня
@@ -1090,8 +1092,8 @@
 Ая: Кохана! Я так довго тебе чекала!
 
 @hide Ія
-@‌back BG_Dialog_Iya_03_Loss
-@‌char Настя.nastya_norm pos:30,0
+@back BG_Dialog_Iya_03_Loss
+@char Настя.nastya_norm pos:30,0
 
 Настя: Ех. Адьйос, мала.
 @char Настя.nastya_smile

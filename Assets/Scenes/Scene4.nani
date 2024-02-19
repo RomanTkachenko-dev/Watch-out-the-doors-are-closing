@@ -345,6 +345,7 @@
     @goto Ending
 
 
+
 @elseIf CharsSaved>0&&CharsSaved<3
 
     @choice "Нє, не мертва. Живіше всіх." goto:.CharonIAmAlive
@@ -415,7 +416,8 @@
         Харитон: Пані хотіли б музичну освіту?
 
         @char Настя.nastya_menace
-        Настя: А шо? Шо я, гірша? Я оно як лабаю! Може, воно не пізно ніколи. Оно деяким навіть після смерті якісь другі шанси понавипадали.
+        Настя: А шо? Шо я, гірша? Я оно як лабаю! Може, воно не пізно ніколи. 
+        Настя: Оно деяким навіть після смерті якісь другі шанси понавипадали.
     @goto .CharonGoodbye
 
     #CharonStopDrinking
@@ -452,29 +454,29 @@
     Настя: І ти бувай здоров, Харитончику. Дякую за сігу.
 
 
-    @choice "Ти цей… як будеш проїжджать знов, то виходь. Потриндим." goto:.CharonGetWork
-    @choice "Всього хорошого." goto:.CharonStopDrinking
+    @choice "Ти цей… як будеш проїжджать знов, то виходь. Потриндим." goto:.CharonGetWork1
+    @choice "Всього хорошого." goto:.CharonStopDrinking1
     @stop
 
     @goto Ending
 
-    #CharonGetWork
+    #CharonGetWork1
         @char Харитон.charon_active_smile
         Харитон: О, красно дякую! Запрошення від такої чарівної і талановитої пані ніяк не можна відхилити.
 
         Харитон: Гарного вечора і до зустрічі вам, Анастасіє Олександрівно.
 
-        @hide Charon
+        @hide Харитон
         @sfx Кроки_(Віддаляються)
         @char Настя.nastya_complacency
         Настя: Ги… ото чолов’яга. Мабуть, цілується як бог.
     @goto .CharonMeetThePolice
 
-    #CharonStopDrinking
+    #CharonStopDrinking1
         @char Харитон.charon_gallant_smile
         Харитон: Гарного вечора вам, Анастасіє Олександрівно.
 
-        @hide Charon
+        @hide Харитон
         @sfx Кроки_(Віддаляються)
     @goto .CharonMeetThePolice
 
@@ -483,7 +485,9 @@
 
     @back BlackBg
     @sfx Обережно!_Двері_Зачиняються!
+    Настя: ...
     @sfx Двері_Вагону_Зачиняються
+    Настя: ...
     @sfx Потяг_Метро_(Відбуває)
 
     @bgm Ambience_Станція_Людна
@@ -503,7 +507,7 @@
     Поліцейська: Це ваш інструмент?
 
     Настя: Та мій, чий же.
-    
+    @hide Настя
     @char Поліцейська.policeman_1_angry
     @char Поліцейський.policeman_2_angry
     Поліцейська: Це на неї викликали. Пані, перепрошую, вам доведеться пройти з нами.
@@ -523,7 +527,9 @@
     @goto Ending
 
 
-@elseIf CharsSaved>3
+
+
+@elseIf CharsSaved>2
 
     @choice "Може, не мертва, але виглядає, шо і не зовсім жива, еге ж?" goto:.CharonSomewhereInBetween
     @choice "Вибачай, Харитоне Андроновичу." goto:.CharonIAmKindaSorry
@@ -656,8 +662,8 @@
 
     #CharonContract
 
-    @hide Charon
-    @hide Nastya
+    @hide Харитон
+    @hide Настя
 
     @back BlackBg
     @sfx Обережно!_Двері_Зачиняються!
@@ -695,9 +701,8 @@
     @char Настя.nastya_smile
     Настя: О, це твоя. Ну бувай. Передавай привіти.
 
-    @hide Nastya
+    @hide Настя
     @back BlackBg
 
     @goto Ending
 
-@endIf

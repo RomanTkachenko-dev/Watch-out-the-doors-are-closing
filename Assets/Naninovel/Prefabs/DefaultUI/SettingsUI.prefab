@@ -217,7 +217,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417\u0432\u0443\u043A"
+  m_Text: "\u0417\u0412\u0423\u041A"
 --- !u!114 &5797688280398014687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: SettingsMenu.Tab.Sound
-  defaultValue: "\u0417\u0432\u0443\u043A"
+  defaultValue: "\u0417\u0412\u0423\u041A"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2209,7 +2209,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2221,7 +2221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0413\u043E\u043B\u043E\u0432\u043D\u0435"
+  m_Text: "\u0413\u041E\u041B\u041E\u0412\u041D\u0415"
 --- !u!114 &3378840709377267584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,7 +2236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: SettingsMenu.Tab.Basic
-  defaultValue: "\u0413\u043E\u043B\u043E\u0432\u043D\u0435"
+  defaultValue: "\u0413\u041E\u041B\u041E\u0412\u041D\u0415"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -7661,8 +7661,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7673,7 +7673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0437\u0430\u0434"
+  m_Text: "\u041D\u0410\u0417\u0410\u0414"
 --- !u!114 &1985841593147337628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8772,7 +8772,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -8784,7 +8784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0422\u0435\u043A\u0441\u0442\n"
+  m_Text: "\u0422\u0415\u041A\u0421\u0422"
 --- !u!114 &2238414700024086884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8799,7 +8799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: SettingsMenu.Tab.Text
-  defaultValue: "\u0422\u0435\u043A\u0441\u0442 "
+  defaultValue: "\u0422\u0415\u041A\u0421\u0422"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:

@@ -136,7 +136,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: https://t.me/Hannabelkin
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &871118624791957862
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: 
-  scriptText: '@openURL "{arg}"'
+  scriptText: '@openURL "{arg}" '
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!114 &7475831660122145463
@@ -229,14 +229,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9215687, g: 0.909804, b: 0.6862745, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17b43b48347aa0246960029f5b7fd169, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 469adf42b5b6fe74e9d2c62f2b38d2cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

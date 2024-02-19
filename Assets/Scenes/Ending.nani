@@ -1,5 +1,5 @@
-@printer Fullscreen
-@bgm 
+
+@bgm Сцена1_Настя
 
 @unlock CG/BG_MMenu
 @unlock CG/BG_Dialog_Haron
@@ -36,43 +36,83 @@
 @unlock CG/BG_UpperSt_02
 @unlock CG/BG_UpperSt_GoodEnding
 
-@wait 3
 
 
-Над грою працювали: 
-
-Анна Ржевська (художниця фонів і 3D моделювання)
-
-Анка Сидорова (художниця персонажів) 
-
-Роман Ткаченко (программіст)
-
-Дарія Селищева (сценаристка) 
-
-Наталія Грінь (сценаристка)
-
-Артем Бемба (музика та звуки)
-
-Валерій Петров (продюсер)
-
+@printer Fullscreen
+@skip
+Над грою працювали:
+@skip false
 @wait 2
-
 @resetText
+
+
+@skip
+Анна Ржевська (художниця фонів і 3D моделювання)
+@skip false
+@wait 2
+@resetText
+
+@skip
+Анка Сидорова (художниця персонажів) 
+@skip false
+@wait 2
+@resetText
+
+
+@skip
+Дарія Селищева (сценаристка) 
+@skip false
+@wait 2
+@resetText
+
+
+@skip
+Наталія Грінь (сценаристка)
+@skip false
+@wait 2
+@resetText
+
 @printer Fullscreen
 
+@skip
+Артем Бемба (музика та звуки)
+@skip false
+@wait 2
+@resetText
 
+@printer Fullscreen
+@skip
+Валерій Петров (продюсер)
+@skip false
+@wait 2
+@resetText
+
+@printer Fullscreen
+@skip
+Роман Ткаченко (программіст)
+@skip false
+@wait 2
+@resetText
+
+@printer Fullscreen
+@skip
 Гра була створена спеціально для Ukrainian Visual Novel Jam №4
+@skip false
+@wait 2
+@resetText
 
+@printer Fullscreen
 Дякуємо!!
+@skip false
+@wait 2
 
-
-@wait 1
 
 @hideAll
 @stopBgm
 @stopSfx
 
-
 @showUI PostGameTitle
+
+
 
 ;@goto CreditsUI

@@ -364,7 +364,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -376,7 +376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u0430 \u0433\u0440\u0430"
+  m_Text: "\u041D\u041E\u0412\u0410 \u0413\u0420\u0410"
 --- !u!114 &2313093535186906755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.NewGame
-  defaultValue: "\u041D\u043E\u0432\u0430 \u0433\u0440\u0430"
+  defaultValue: "\u041D\u041E\u0412\u0410 \u0413\u0420\u0410"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 0.40000004, g: 0.40000004, b: 0.40000004, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1209,7 +1209,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1220,8 +1220,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438"
+    m_LineSpacing: 0.99
+  m_Text: "\u041F\u0420\u041E\u0414\u041E\u0412\u0416\u0418\u0422\u0418"
 --- !u!114 &393797796732479932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.Continue
-  defaultValue: "\u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438"
+  defaultValue: "\u041F\u0420\u041E\u0414\u041E\u0412\u0416\u0418\u0422\u0418"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1319,7 +1319,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1331,7 +1331,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F"
+  m_Text: "\u041D\u0410\u041B\u0410\u0428\u0422\u0423\u0412\u0410\u041D\u041D\u042F"
 --- !u!114 &7721458622273571885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.Settings
-  defaultValue: "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F"
+  defaultValue: "\u041D\u0410\u041B\u0410\u0428\u0422\u0423\u0412\u0410\u041D\u041D\u042F"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1619,7 +1619,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1631,7 +1631,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u0438\u0439\u0442\u0438"
+  m_Text: "\u0412\u0418\u0419\u0422\u0418"
 --- !u!114 &8775093668750196248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,7 +1646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.Exit
-  defaultValue: "\u0412\u0438\u0439\u0442\u0438"
+  defaultValue: "\u0412\u0418\u0419\u0422\u0418"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2188,7 +2188,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7d24045dcfc9abb4b809014e4a26b613, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2200,7 +2200,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0422\u0438\u0442\u0440\u0438"
+  m_Text: "\u0422\u0418\u0422\u0420\u0418"
 --- !u!114 &3473082843312114525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,7 +2215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.Credits
-  defaultValue: "\u0422\u0438\u0442\u0440\u0438"
+  defaultValue: "\u0422\u0418\u0422\u0420\u0418"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2408,7 +2408,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1a421903aae24b8409fe3c546275ebb1, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2420,7 +2420,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0413\u0430\u043B\u0435\u0440\u0435\u044F"
+  m_Text: "\u0413\u0410\u041B\u0415\u0420\u0415\u042F"
 --- !u!114 &187598123784170841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,7 +2435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.CGGallery
-  defaultValue: "\u0413\u0430\u043B\u0435\u0440\u0435\u044F"
+  defaultValue: "\u0413\u0410\u041B\u0415\u0420\u0415\u042F"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2486,7 +2486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -13, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9087202898837458576
@@ -3313,7 +3313,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7d24045dcfc9abb4b809014e4a26b613, type: 3}
+    m_Font: {fileID: 12800000, guid: 07ea586fd37fe4948a1d978abfaec479, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -3325,7 +3325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041F\u043B\u0435\u0454\u0440 "
+  m_Text: "\u041F\u041B\u0415\u0404\u0420"
 --- !u!114 &6580958423731399473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3340,7 +3340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   category: DefaultUI
   key: TitleMenu.MusicGallery
-  defaultValue: "\u041F\u043B\u0435\u0454\u0440"
+  defaultValue: "\u041F\u041B\u0415\u0404\u0420"
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
