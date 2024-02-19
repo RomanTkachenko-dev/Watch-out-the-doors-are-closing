@@ -2247,14 +2247,12 @@ PrefabInstance:
     - {fileID: 4598343269787106753, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1541708195142626, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
+    - {fileID: 1439409874862029630, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5881419306610276608, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8856938254840560738}
-    - targetCorrespondingSourceObject: {fileID: 2885375983568701341, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8457919049154868924}
     - targetCorrespondingSourceObject: {fileID: 1195436783546742, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3447528544852597724}
@@ -2306,41 +2304,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: fdd0a5b1c542d6749bc1214a419d76ab, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &6606654238364350854 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2885375983568701341, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
-  m_PrefabInstance: {fileID: 8333180131837705755}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8457919049154868924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6606654238364350854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89e76b228cc5a2241ac06daf8a4bdfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
