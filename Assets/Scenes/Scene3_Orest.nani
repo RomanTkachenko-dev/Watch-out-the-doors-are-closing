@@ -410,45 +410,33 @@
 @stop
 
 #OrestGiveGuitar
-@toast "Отримано досягнення : Жінка, яка побачила диво"
-@hide Орест
-@hide Настя
-@char Настя.no_guitar_nastya_norm
-@char Орест.glow_guitar_play_orest_normal pos:75,0
-
-
-@char Настя.no_guitar_nastya_surprise
-
-
-
-@back BlackBg
-@hideChars
-Ото в нього перстеняка. Чекай, він шо… світиться?!
-@char Кільце.Abstract_BGs_Orest_Star
 @stopBgm
-
-
-
+@char Орест.glow_guitar_play_orest_normal pos:75,0
+@char Настя.no_guitar_nastya_surprise
+Настя: ...
+@hide Настя
+@back Abstract_BGs_Orest_Star-BG
 @sfx Орест_Віртуозний
-@wait 3
+Ото в нього перстеняка. Чекай, воно шо… світиться?
+@hideChars
+@char Кільце.Abstract_BGs_Orest_Star
+@wait 2
 @sfx Жіночий_Сміх_(Настя)
 @hideChars
 
-
 @back BG_Dialog_Orest
+@char Настя.no_guitar_nastya_surprise pos:30,0
+Настя: ...
+@‌char Орест.orest_normal pos:75,0
+
 @bgm Ambience_Потяг_Всередині_Пустий
 
-@char Орест.guitar_play_orest_smile pos:75,0
-@char Настя.no_guitar_nastya_surprise pos:30,0
-
-
 Орест: Ну як, пані Анастасіє?
+@‌char Орест.orest_smile
 @char Настя.no_guitar_nastya_irony
 Настя: То точно моя гітарка була?
 @char Орест.guitar_play_orest_normal
-
 Орест: Раніше я грав гірше.
-
 @char Орест.orest_thoughtful
 @char Настя.nastya_surprise
 Настя: Йой, шось зі мною тільки шо сталось. Якийсь дивний тріп.
