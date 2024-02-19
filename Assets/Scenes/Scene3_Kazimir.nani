@@ -85,7 +85,7 @@
 @stop 
 
 #Nichoyane
-@toast "Настюха - самовпевнена житуха"
+;@toast "Настюха - самовпевнена житуха"
 @char Настя.nastya_norm
 Настя: Потяг під'їхав, двері відкрилися. Ну я і зайшла.
 
@@ -138,7 +138,7 @@
 
 
 #Takshket
-@toast "Вище ніс"
+;@toast "Вище ніс"
 
 @char Казік.cazik_normal
 @char Настя.nastya_disgust
@@ -189,7 +189,7 @@
 
 
 #zapiznylas
-@toast "Розкована та щедра"
+;@toast "Розкована та щедра"
 @char Настя.nastya_surprise
  
 Настя: О. Розкажу тобі, як я на поїзд запізнилась.
@@ -248,7 +248,7 @@
 @goto .toonyaktypomer
 
 #yakossusidy
-@toast "На шо б поскаржитись"
+;@toast "На шо б поскаржитись"
 @char Казік.cazik_normal
 @char Настя.nastya_meh
 Настя: Якось раз мої сусіди придурошні…
@@ -310,7 +310,7 @@
 
 
 #bachilaglupusmert
-  @toast "Спостерігачка"
+  ;@toast "Спостерігачка"
 @char Настя.nastya_laugh
 Настя: Ну, одного разу я бачила глупу смерть.
  
@@ -378,7 +378,7 @@
 @stop
 
 #rozkaazhishos
-@toast "Попіклувалась про малого"
+;@toast "Попіклувалась про малого"
 @char Настя.nastya_laugh
 
  
@@ -431,7 +431,7 @@
 @stop
 
 #naytupishii
-  @toast "Така відкрита жінка" 
+  ;@toast "Така відкрита жінка" 
 @char Настя.nastya_irony
 Настя: Про мій найтупіший вчинок?
  
@@ -535,7 +535,7 @@
 
 #nemistnepark
 
-  @toast "Ведуча"
+  ;@toast "Ведуча"
 @char Настя.nastya_meh
 Настя: Нічо не буду обирать, не хочу цю гру грать.
 @char Казік.cazik_normal
@@ -778,7 +778,7 @@
 @stop
 
 #poschastylokazhesh
-  @toast "Мудра-мудрюща"
+  ;@toast "Мудра-мудрюща"
 @char Настя.nastya_disgust
 Настя: Пощастило, кажеш?
  
@@ -840,8 +840,8 @@
 @char Казік.cazik_enthusiasm
 Казік: Я під колеса впав, але вчасно відкотився. Знаєш, як в Асасінс Крід — вжух!
 
-@back BG_Outside1_Kazimir_01_Todler_
 @hideChars
+@back BG_Outside1_Kazimir_01_Todler_
 
  
 Настя: Асасі шо?
@@ -859,7 +859,7 @@
 Настя: От і в мене так було. Жила, як виходило. І диви, шо з мене вийшло.
 
 
-@back BG_Dialog_Kazimir
+@‌back BG_Dialog_Kazimir_01_Todler
 @char Настя.nastya_norm pos:30,0
 @char Казік.cazik_normal pos:75,0
 
@@ -879,7 +879,9 @@
 @stop
 
 #atreba
-@toast "Здорова егоїстка"
+@‌back BG_Dialog_Kazimir_02_Courier
+
+;@toast "Здорова егоїстка"
 @char Настя.nastya_meh
 Настя: А треба за себе думать в першу чергу!
  
@@ -889,7 +891,9 @@
 @goto .forwhatulive
 
 #pravylno
-@toast "Візьми моє серце"
+@‌back BG_Dialog_Kazimir_02_Courier
+
+;@toast "Візьми моє серце"
 @char Казік.cazik_normal
 @char Настя.nastya_smile
 Настя: Правильно. Є такі люди, шо для них хочеться шось хороше робить.
@@ -899,11 +903,12 @@
 @goto .forwhatulive
 
 #tyumenib
-
+@‌back BG_Dialog_Kazimir_02_Courier
 @char Настя.nastya_meh
 Настя: Тю. Мені б на всіх по барабану було. І на себе теж.
-  @toast "Різні квіти в одному вагоні"
- 
+;@toast "Різні квіти в одному вагоні"
+
+
 @char Казік.cazik_normal
 Казік: Ну, я так не можу.
 @goto .forwhatulive
@@ -917,8 +922,8 @@
 Казік: У мене був колись підробіток в кур'єрській компанії, і у них почались фінансові проблеми.
 Казік: Нам затримували зарплату, автопарк почав розвалюватись.
 
-@back BG_Outside1_Kazimir_02_Courier
 @hideChars
+@‌back BG_Outside1_Kazimir_02_Courier
  
 Казік: Спочатку там були фірмові автівки, а потім вони почали наймати людей зі своїми. І якось нам треба було доставити вантаж.
  
@@ -942,7 +947,7 @@
 Казік: А через тиждень я таки потрапив в аварію — страшне було ДТП. Всі загинули, один я вижив. Ані синця! 
 
 
-@back BG_Dialog_Kazimir
+@‌back BG_Dialog_Kazimir_02_Courier
 @char Настя.nastya_surprise pos:30,0
 @char Казік.cazik_normal pos:75,0
 
@@ -962,7 +967,7 @@
 @goto .nuische
 
 #nutatsevzhe
-  @toast "Розділи мій рок"
+;@toast "Розділи мій рок"
 @char Настя.nastya_disgust 
 Настя: Ну та, це вже на випадковість не тягне.
 @goto .nuische
@@ -992,7 +997,8 @@
  
 @char Настя.nastya_disgust
 Настя: Але щастя в тебе, козаче… Страшне!
- 
+
+@char Настя.nastya_norm
 @char Казік.cazik_enthusiasm
 Казік: А, та чому страшне! Навпаки, я щасливий від тих подій.
  
@@ -1003,7 +1009,7 @@
 @char Казік.cazik_thoughtfulness
 Казік: Знаєш, ми зазвичай за чимось ганяємося, чогось нам весь час кортить…
  
-@char Настя.nastya_norm
+@char Настя.nastya_meh
 Казік: А як виживеш в такій ситуації, думаєш — ха, живий! Пронесло — і то добре.
  
 @char Казік.cazik_normal
@@ -1014,13 +1020,13 @@
 @stop
 
 #svyataliudina
-@toast "Піду за тобою в вогонь і воду"
+;@toast "Піду за тобою в вогонь і воду"
 @char Настя.nastya_surprise
 Настя: Свята людина! 
 @goto .tyotshorozk
 
 #prosebedumay
-@toast "Ти знаєш, що ти - людина?"
+;@toast "Ти знаєш, що ти - людина?"
 @char Настя.nastya_disgust
 Настя: Про себе б подумав перше.
 @goto .tyotshorozk
@@ -1029,14 +1035,17 @@
  
 @char Настя.nastya_irony
 Настя: Ти от шо розкажи, як ти коні двинув?
- 
-@char Казік.cazik_sly_smile
+
+@‌hideChars
+@‌back Abstract_BGs_KazimirBarber
+
+
 Казік: Не повіриш: мене барберша зарізала.
-@char Настя.nastya_surprise
+
  
 Настя: Хто?..
  
-@char Казік.cazik_awkward_smile
+
 Казік: Ну… перукарка.
 
 @sfx Короткий_Чоловічий_Сімшок_Типу_Хе_Хе
@@ -1047,29 +1056,23 @@
 
 #shotyiyzrobyv
  
-@char Настя.nastya_disgust
+
 Настя: Ти шо, бабнік якийсь? Гуляв з перукаркою, а потім пішов гулять з… медсестрою якою-небудь?
  
-@char Казік.cazik_normal
 Казік: Оце ти, Настю, в молоко попала!
-@char Настя.nastya_irony
- 
-@char Казік.cazik_awkward_smile
+
 Казік: Я не такий, я б ніколи!
 @goto .pishovubarbershop
 
 #poyehavsha
-@char Настя.nastya_disgust
+
  Настя: Маньячка?
-@char Казік.cazik_awkward_smile
+
  Казік: Ні-ні-ні! Вона хороша! Класна спеціалістка. Зараз розкажу.
 @goto .pishovubarbershop
 
 #pishovubarbershop
-
 @back BG_Outside1_Kazimir_03_Barber
-@hideChars
-
  
 Казік: Пішов я якось у барбершоп. Завтра побачення, думаю, треба привести себе в порядок. Хочеться ж враження справити.
  
@@ -1092,9 +1095,7 @@
 
 #kapets
 
-
-@back BG_Dialog_Kazimir
-@back BG_GhostTrain
+@‌back BG_Dialog_Kazimir_03_Barber
 @char Настя.nastya_surprise pos:30,0
 @char Казік.cazik_normal pos:75,0
 
@@ -1109,16 +1110,16 @@
 @goto .doyouremember
 
 #nuchistoyak
-@toast "Кіно на двох"
+;@toast "Кіно на двох"
 
-@back BG_Dialog_Kazimir
-@back BG_GhostTrain
-
-@char Настя.nastya_surprise pos:30,0
+@‌back BG_Dialog_Kazimir_03_Barber
+@char Настя.nastya_irony pos:30,0
 @char Казік.cazik_normal pos:75,0
- Настя: Ну чисто як в кіні! Можеш пишаться.
+
+Настя: Ну чисто як в кіні! Можеш пишаться.
 @char Казік.cazik_sly_smile
 Казік: Дякую.
+@char Настя.nastya_norm
 @goto .doyouremember
 
 
@@ -1288,11 +1289,11 @@
 
 #napuskne
 
-@char Настя.nastya_disgust
+@char Настя.nastya_meh
 Але, здається мені, воно напускне.
 @char Казік.cazik_enthusiasm
-@char Настя.nastya_irony
 Шось мені не віриться, шо люди такі добрі бувають, і шоб ніде воно їм не обернулося на якусь сраку.
+@char Настя.nastya_irony
 @goto .takbudekrasche
 
 
@@ -1305,6 +1306,7 @@
 Мені б таких побільше.
 @goto .takbudekrasche
 
+
 #takbudekrasche
 Він вже за порогом, куда підштовхнеш, туда й понесеться. Ну, і шо зіграть?
 @char Настя.nastya_smile
@@ -1314,8 +1316,7 @@
 Казік: Давай!
 
 
-@sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІІ)
-
+@sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІ)
 
 @choice "Непозбувна Бентега" goto:.KazikBentega
 @choice "Хоробрий Світанок" goto:.KazikSvitanok
@@ -1326,38 +1327,35 @@
 #KazikBentega
     @sfx НепозбувнаБентега
     @char Настя.guitar_play_nastya_norm
-    ...
-    @stopSfx
+    Настя: ...
+    Казік: ...
 @goto .horoshakintsivkakazik
 
 #KazikSvitanok
     @sfx ХоробрийСвітанок
-    @char Настя.guitar_play_nastya_norm
-    ...
+    @char Настя.guitar_play_nastya_smile
+    Настя: ...
     @stopSfx
 @goto .poganakintsivkakazik
 
 #KazikTime
     @sfx КрокуючіКрізьЧас
     @char Настя.guitar_play_nastya_norm
-    ...
-    @stopSfx
+    Казік: ...
 @goto .poganakintsivkakazik
 
 #KazikLoss
     @sfx Втрата
     @char Настя.guitar_play_nastya_norm
-    ...
-    @stopSfx
+    Настя: ...
 @goto .horoshakintsivkakazik
 
 
 #horoshakintsivkakazik
-
+@bgm Ambience_Потяг_Всередині_Пустий
 @char Казік.cazik_normal
 @char Настя.nastya_norm
 Казік: Я зазвичай не люблю сумну музику… В мене весь плейліст на позитиві.
-
 Казік: Але зараз знаєш що… в ній такий надрив прозвучав, така печаль. 
 Казік: Така затишна музика… Дякую тобі.
 @char Казік.cazik_sly_smile
@@ -1424,7 +1422,6 @@
 Настя: Я б сказала, шо треба з цим трохи пожить, але ти ж вже всьо…
 
 @sfx Смачне_Позіхання
-@wait 1
 Казік: Так хочеться спати — я б проспав цілу вічність! А ще якби сни були солодкі.
 @char Казік.cazik_awkward_smile
 
@@ -1435,61 +1432,58 @@
 @char Настя.nastya_norm
 Диктор: Потяг прямує до станції Вічний Сон. Шановні пасажири, підготуйтесь, будь ласка, до виходу завчасно. Не забувайте свої речі.
 @char Казік.cazik_enthusiasm
-Казік: Ого, це, мабуть, моя. Але як же моя барберка?
-@char Настя.nastya_smile
 
 @bgm Ambience_Потяг_Всередині_Пустий
 
+Казік: Ого, це, мабуть, моя. Але як же моя барберка?
+@char Настя.nastya_smile
 Настя: Може, треба її відпустить? Про себе попіклуваться раз в житті.
-@char Настя.nastya_norm
+@char Настя.nastya_meh
 Настя: Ну… або не в житті. Ну ти шариш.
 Настя: Можеш мені сказать, як її звать. Якшо хоч. Я попрошу Миколаївни  доньку…
 @char Казік.cazik_enthusiasm
 Казік: І вона знайде її в соцмережах і передасть моє послання! Супер! І це точно не налякає її.
 
 @stopBgm
-
-@wait 1
 @sfx Зупинка_Або_Ж_Прибуття_Потяга
-@wait 1
+Настя: ...
+@char Казік.cazik_normal
 @sfx Двері_Вагону_Відчиняються
-
-@back BG_UpperSt_01
+Казік: ...
+@sfx Радіо_Рипіння
+Диктор: Станція Вічний Сон.
 @bgm Ambience_Станція_Пуста
+@hide Настя
+@back BG_UpperSt_01
 
+@‌char Казік.cazik_sly_smile pos:69
 Казік: Алія Носова. Запам'ятала?
 
 @char Казік.cazik_normal
-@char Настя.nastya_norm
 Настя: Ага.
-
-@sfx Радіо_Рипіння
-@wait 1
-Диктор: Станція Вічний Сон.
-
-@char Настя.nastya_complacency
 Настя: Добраніч, шо.
-@bgm Ambience_Станція_Людна
+
 Казік: ...
 @char Казік.cazik_awkward_smile
 Казік: Дяк. Ти хороша, Настя.
 
 @sfx Смачне_Позіхання
-@char Настя.nastya_norm
 @char Казік.cazik_normal
 Казік: Бувай.
 
 @hide Казік
-@wait 1
+@‌back BG_Dialog_Kazimir_03_Barber
+@‌char Настя.nastya_norm pos:30,0
+‌Настя: ...
 @sfx Радіо_Рипіння
 @wait 1
 Диктор: Обережно! Двері зачиняються.
 @sfx Обережно!_Двері_Зачиняються!
 
 @stopBgm
-@wait 1
+Настя: ...
 @sfx Двері_Вагону_Зачиняються
-@bgm Ambience_Потяг_Всередині_Пустий
+@sfx Зупинка_Або_Ж_Прибуття_Потяга
 
 
 @char Настя.nastya_norm
@@ -1507,12 +1501,12 @@
 
 
 #poganakintsivkakazik
-
+@bgm Ambience_Потяг_Всередині_Пустий
 @char Казік.dark_cazik_sly_smile
 Казік: Супер! Аж зігрівся. Поки ти грала, я уявив себе якимось супергероєм, який рятує світ!
 
 @sfx Короткий_Чоловічий_Сімшок_Типу_Хе_Хе
-@wait 2
+Казік: ...
 @char Настя.nastya_meh
 @sfx Жінка_Зітхає_Сумно
 Настя: Ото тобі робить нема шо.
@@ -1526,7 +1520,6 @@
 @stopBgm
 @sfx Радіо_Рипіння
 Диктор: Наближається станція Двері в Сновидіння. Шановні пасажири, приготуйтесь до виходу завчасно. Не забувайте свої речі.
-@wait 1
 @bgm Ambience_Потяг_Всередині_Пустий
 
 @char Казік.dark_cazik_fear
@@ -1551,9 +1544,11 @@
 Диктор: Станція "Двері в Сновидіння".
 
 @sfx Зупинка_Або_Ж_Прибуття_Потяга
-@wait 1
+Казік: ...
 @sfx Двері_Вагону_Відчиняються
-
+@hide Настя
+@‌char Казік.cazik_normal pos:28,0
+@stopSfx
 @back BG_StationUnderground_01
 @bgm Ambience_Погана_Кінцівка_Казіка_Кріпі_Колискова
 
@@ -1566,18 +1561,15 @@
 @char Казік.dark_cazik_sly_smile
 Казік: Ну, мабуть, потім буде зрозуміло?..
 @hide Казік
-@wait 1
+@stopBgm
 @sfx Радіо_Рипіння
 @wait 1
-
+@stopSfx
 @sfx Обережно!_Двері_Зачиняються!
 Диктор: Обережно! Двері зачиняються.
 
-@stopBgm
-@wait 1
 @sfx Двері_Вагону_Зачиняються
 
-@wait 1
 @bgm Ambience_Потяг_Всередині_Пустий
 
 
