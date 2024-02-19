@@ -1,4 +1,5 @@
-
+@stopBgm fade
+@stopSfx fade
 @bgm Сцена1_Настя
 
 @unlock CG/BG_MMenu
