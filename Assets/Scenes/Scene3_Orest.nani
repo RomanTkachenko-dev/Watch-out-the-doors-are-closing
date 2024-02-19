@@ -429,13 +429,13 @@
 @back BG_Dialog_Orest
 @char Настя.no_guitar_nastya_surprise pos:30,0
 Настя: ...
-@char Кільце.Abstract_BGs_Orest_Starl pos:75,0
+@char Орест.Abstract_BGs_Orest_Starl pos:75,0
 
 @bgm Ambience_Потяг_Всередині_Пустий
 
 Орест: Ну як, пані Анастасіє?
-@char Кільце.Abstract_BGs_Orest_Star
-@char Настя.no_guitar_nastya_irony
+@char Орест.Abstract_BGs_Orest_Star
+@char Настя.no_guitar_nastya_norm
 Настя: То точно моя гітарка була?
 @char Орест.guitar_play_orest_smile
 Орест: Раніше я грав гірше.
