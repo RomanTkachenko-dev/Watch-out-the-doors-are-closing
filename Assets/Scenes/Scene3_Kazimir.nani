@@ -1280,7 +1280,7 @@
 @char Настя.nastya_norm
 @char Казік.cazik_normal
 Казік: Я просто подумав, для тебе ж це робота. Робота завжди всіх дістає.
- 
+ @bgm Ambience_Потяг_Всередині_Пустий
 @char Настя.nastya_laugh
 Настя: Мені моя в радість.
 
@@ -1327,9 +1327,8 @@
 @char Казік.cazik_awkward_smile
 Казік: Давай!
 
-
+@stopBgm
 @sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІ)
-
 @choice "Непозбувна Бентега" goto:.KazikBentega
 @choice "Хоробрий Світанок" goto:.KazikSvitanok
 @choice "Крокуючі Крізь Час" goto:.KazikTime
