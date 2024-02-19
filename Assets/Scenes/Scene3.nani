@@ -1,15 +1,18 @@
 @stopSfx
 @stopBgm
-
-@sfx Обережно!_Двері_Зачиняються!
 @back BG_GhostTrain_ForChosing
+
 @char Ія.ChoosingSprite_Iya pos:60,25 
 @char Казік.ChoosingSprite_Cazik pos:40,37 
 @char Орест.ChoosingSprite_Orest pos:52,30 
 
-
-
+@sfx Обережно!_Двері_Зачиняються!
 Диктор: Обережно, двері зачиняються.
+Настя: ...
+
+@stopBgm
+
+
 @bgm Ambience_Потяг_Всередині_Пустий
 
 Шо це? Якось тут дивно.
