@@ -948,10 +948,10 @@
 @char Настя.nastya_smile
 Та, так і зіграю.
 Настя: Тож... Музичкою й скажу свою думку.
-@choice "Відпусти, я благаю, відпусти." goto:.OrestEndGood1
+@choice "Відпусти її..." goto:.OrestEndGood1
 @choice "Не губи себе." goto:.OrestEndGood2
-@choice "Твій хоробрий вчинок" goto:.OrestEndBad1
-@choice "Усміхнись мені, козаче" goto:.OrestEndBad2
+@choice "Твій хоробрий вчинок." goto:.OrestEndBad1
+@choice "Усміхнись мені, козаче!" goto:.OrestEndBad2
 @stop
 
 #OrestEndGood1
