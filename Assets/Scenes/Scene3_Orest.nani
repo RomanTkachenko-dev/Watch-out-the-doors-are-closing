@@ -947,15 +947,16 @@
 
 @char Настя.nastya_smile
 Та, так і зіграю.
-
-@choice "Щастя Для Двох" goto:.OrestEndGood1
-@choice "Ніч Поїдає Нас" goto:.OrestEndGood2
-@choice "Хоробрий Світанок" goto:.OrestEndBad1
-@choice "Кучеряве Сонце" goto:.OrestEndBad2
+Настя: Тож... Музичкою й скажу свою думку.
+@choice "Відпусти, я благаю, відпусти." goto:.OrestEndGood1
+@choice "Не губи себе." goto:.OrestEndGood2
+@choice "Твій хоробрий вчинок" goto:.OrestEndBad1
+@choice "Усміхнись мені, козаче" goto:.OrestEndBad2
 @stop
 
 #OrestEndGood1
 @set CharsSaved=CharsSaved+1
+Композиція "Щастя для двох".
 @sfx ЩастяДляДвох
 ...
 @char Настя.nastya_irony
@@ -985,6 +986,7 @@
 @goto .OrestGoodEnding
 
 #OrestEndGood2
+Композиція "Ніч поїдає нас".
 @set CharsSaved=CharsSaved+1
 @sfx НічПоїдаєНас
 ...
@@ -1010,6 +1012,7 @@
 
 #OrestEndBad1
 @stopBgm
+Композиція "Хоробрий світанок".
 @sfx ХоробрийСвітанок
 ...
 
@@ -1026,6 +1029,7 @@
 @goto .OrestBadEnding
 
 #OrestEndBad2
+Композиція "Кучеряве сонце".
 @char Орест.orest_smile
 @sfx КучерявеСонце
 ...
