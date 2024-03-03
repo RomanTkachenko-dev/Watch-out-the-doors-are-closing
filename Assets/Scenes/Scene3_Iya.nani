@@ -48,44 +48,28 @@
 
 @char Настя.nastya_complacency pos:30,0
 Настя: Паню, добрий вечір…
+	Пасажирка: А~мбр~і~а~ ~
+    @char Настя.nastya_meh
+	Настя: Ну годі загробним голосом мені оце віщать.
+    Пасажирка: ...
 
-@sfx Звук_Появи_Привида_(ВаріантІІ)
+@char Настя.nastya_surprise
+Настя Як мені налагодити контакт з привидом?
 
-@char Ія.transparency_iya_normal pos:75,0
-Пасажирка: А~мбр~і~а~ ~
-
-@char Настя.nastya_meh
-Настя: Га?
-
-Пасажирка: А~мбр~і~а~ ~ 
-
-
-@choice "Ти як Миколаївнин Санька? Не говориш?" goto:.IyaNameChoice
-@choice "Тебе звуть Іа?" goto:.IyaDialog
-@choice "Тебе звуть Амбріа?" goto:.IyaDialog
+@choice "Сконцентрувати увагу на привиді" goto:.IyaDialog
 @stop
-
-#IyaNameChoice
-    @char Ія.transparency_iya_normal 
-    Пасажирка: А~мбр~і~а~ ~
-
-    @char Настя.nastya_surprise
-    Настя: Чекай, це типу як… ім’я?
-
-
-    @choice "Тебе звуть Іа?" goto:.IyaDialog
-    @choice "Тебе звуть Амбріа?" goto:.IyaDialog
-    @stop
 
 
 #IyaDialog
 
+@sfx Звук_Появи_Привида_(ВаріантІІ)
+@char Ія.transparency_iya_normal pos:75,0
+
 @char Ія.iya_soft_smile pos:75,0
-Ія: Насправді правильно Ія.
+Ія: Кажу, мене звуть Ія!
 
 @char Настя.nastya_complacency
 Настя: Йой, інша справа! Як ся маєш, Іє! Куди їдеш? 
-
 
 Ти диви, яка… така усмішка гарна. Я ще такої ні в кого не бачила. Навіть в малявки.
 
