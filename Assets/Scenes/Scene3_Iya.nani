@@ -798,13 +798,14 @@
 ; Наводимо на трек в списку — і він звучить, але тихо, на 30 відсотків загального звуку.
 
 
-@choice "Непозбувна Бентега" goto:.IyaEndBad1
-@choice "Хоробрий Світанок" goto:.IyaEndBad2
-@choice "Щастя Для Двох" goto:.IyaEndGood1
-@choice "Втрата" goto:.IyaEndGood2
+@choice "В сраку цей світ." goto:.IyaEndBad1
+@choice "Просто треба жить!" goto:.IyaEndBad2
+@choice "Хрєнь собача твоя ситуація..." goto:.IyaEndGood1
+@choice "Ти не винна." goto:.IyaEndGood2
 @stop
 
 #IyaEndBad1
+Композиція "Непозбувна Бентега"
 @sfx НепозбувнаБентега
 @char Ія.dark_iya_sad
     
@@ -890,7 +891,7 @@
 
 #IyaEndBad2
     @sfx ХоробрийСвітанок
-    
+    Композиція "Хоробрий Світанок"
     @char Ія.dark_iya_doubts
     Ія: Така життєствердна музика… Про стійкість, і я не знаю… 
     @sfx Дівчина_Хіхікнула
@@ -979,6 +980,7 @@
 @goto .IyaEnd
 
 #IyaEndGood1
+    Композиція "Щастя для двох".
     @sfx ЩастяДляДвох
     
     @char Ія.iya_soft_smile
@@ -1004,6 +1006,7 @@
 @goto .IyaEpilogue
 
 #IyaEndGood2
+    Композиція "Втрата".
     @sfx Втрата
     
     @char Ія.iya_sad
