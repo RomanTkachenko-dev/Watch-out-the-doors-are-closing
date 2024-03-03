@@ -1326,16 +1326,17 @@
  
 @char Казік.cazik_awkward_smile
 Казік: Давай!
-
+Настя: Що я хочу йому сказати цією музикою?
 @stopBgm
 @sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІ)
-@choice "Непозбувна Бентега" goto:.KazikBentega
-@choice "Хоробрий Світанок" goto:.KazikSvitanok
-@choice "Крокуючі Крізь Час" goto:.KazikTime
-@choice "Втрата" goto:.KazikLoss
+@choice "Не мають вмиратм юні." goto:.KazikBentega
+@choice "Смійся, сонячний хлопчику." goto:.KazikSvitanok
+@choice "Наснися їй." goto:.KazikTime
+@choice "А хто подумає про тебе?" goto:.KazikLoss
 @stop
 
 #KazikBentega
+    Композиція "Непозбувна бентега".
     @sfx НепозбувнаБентега
     @char Настя.guitar_play_nastya_norm
     Настя: ...
@@ -1343,6 +1344,7 @@
 @goto .horoshakintsivkakazik
 
 #KazikSvitanok
+    Композиція "Хоробрий світанок".
     @sfx ХоробрийСвітанок
     @char Настя.guitar_play_nastya_smile
     Настя: ...
@@ -1350,12 +1352,14 @@
 @goto .poganakintsivkakazik
 
 #KazikTime
+    Композиція "Крокуючі крізь час".
     @sfx КрокуючіКрізьЧас
     @char Настя.guitar_play_nastya_norm
     Казік: ...
 @goto .poganakintsivkakazik
 
 #KazikLoss
+    Композиція "Втрата".
     @sfx Втрата
     @char Настя.guitar_play_nastya_norm
     Настя: ...
