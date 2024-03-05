@@ -1329,22 +1329,46 @@
 Казік: Давай!
 Настя: Що я хочу йому сказати цією музикою?
 @stopBgm
+
+
 @sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІ)
-@choice "Не мають вмиратм юні." goto:.KazikBentega
-@choice "Смійся, сонячний хлопчику." goto:.KazikSvitanok
-@choice "Наснися їй." goto:.KazikTime
-@choice "А хто подумає про тебе?" goto:.KazikLoss
+
+
+@choice "Не мають вмиратм юні." handler:НепозбувнаБентега goto:.KazikBentega
+@choice "Смійся, сонячний хлопчику." handler:ХоробрийСвітанок goto:.KazikSvitanok
+@choice "Наснися їй." handler:КрокуючіКрізьЧас goto:.KazikTime 
+@choice "А хто подумає про тебе?" handler:Втрата goto:.KazikLoss
 @stop
 
 #KazikBentega
+    @stopBgm
+    ;@hide НепозбувнаБентега
+    @hide ХоробрийСвітанок
+    @hide КрокуючіКрізьЧас
+    @hide Втрата
+    @bgm Ambience_Потяг_Всередині_Пустий
+
+    @char Настя.guitar_play_nastya_norm pos:30,0
+    @char Казік.cazik_awkward_smile pos:75,0
+
     Композиція "Непозбувна бентега".
     @sfx НепозбувнаБентега
-    @char Настя.guitar_play_nastya_norm
     Настя: ...
     Казік: ...
 @goto .horoshakintsivkakazik
 
 #KazikSvitanok
+
+    @stopBgm
+    @hide НепозбувнаБентега
+    ;@hide ХоробрийСвітанок
+    @hide КрокуючіКрізьЧас
+    @hide Втрата
+    @bgm Ambience_Потяг_Всередині_Пустий
+
+    @char Настя.guitar_play_nastya_smile pos:30,0
+    @char Казік.cazik_awkward_smile pos:75,0
+
     Композиція "Хоробрий світанок".
     @sfx ХоробрийСвітанок
     @char Настя.guitar_play_nastya_smile
@@ -1353,13 +1377,35 @@
 @goto .poganakintsivkakazik
 
 #KazikTime
+    @stopBgm
+    @hide НепозбувнаБентега
+    @hide ХоробрийСвітанок
+    ;@hide КрокуючіКрізьЧас
+    @hide Втрата
+    @bgm Ambience_Потяг_Всередині_Пустий
+
+    @char Настя.guitar_play_nastya_norm pos:30,0
+    @char Казік.cazik_awkward_smile pos:75,0
+    
     Композиція "Крокуючі крізь час".
+
+
     @sfx КрокуючіКрізьЧас
     @char Настя.guitar_play_nastya_norm
     Казік: ...
 @goto .poganakintsivkakazik
 
 #KazikLoss
+    @stopBgm
+    @hide НепозбувнаБентега
+    @hide ХоробрийСвітанок
+    @hide КрокуючіКрізьЧас
+    ;@hide Втрата
+    @bgm Ambience_Потяг_Всередині_Пустий
+
+    @char Настя.guitar_play_nastya_norm pos:30,0
+    @char Казік.cazik_awkward_smile pos:75,0
+
     Композиція "Втрата".
     @sfx Втрата
     @char Настя.guitar_play_nastya_norm
@@ -1514,6 +1560,69 @@
 @set PreviousChar=3
 @set CharsSaved=CharsSaved+1
 
+#SituationsKazikGoodEnd1
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @elseIf CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @elseIf CharsSaved==0
+        @toast "Невже долі немає?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @elseIf CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @elseIf CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @elseIf CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikGoodEnd1
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsKazikGoodEnd1
+
 @goto Scene3.Scene3Choice
 
 
@@ -1582,6 +1691,71 @@
 @sfx Радіо_Рипіння
 @wait 1
 @stopSfx
+
+#SituationsKazikBadEnd1
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @elseIf CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @elseIf CharsSaved==0
+        @toast "Невже долі немає?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @elseIf CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @elseIf CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @elseIf CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsKazikBadEnd1
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsKazikBadEnd1
+
+
 @sfx Обережно!_Двері_Зачиняються!
 Диктор: Обережно! Двері зачиняються.
 @back BG_Dialog_Kazimir_01_Todler

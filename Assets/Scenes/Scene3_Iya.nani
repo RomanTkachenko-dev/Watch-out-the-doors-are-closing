@@ -799,16 +799,23 @@
 
 Настя: Музикою і скажу їй, шо думаю.
 
-@choice "В сраку цей світ." goto:.IyaEndBad1
-@choice "Просто треба жить!" goto:.IyaEndBad2
-@choice "Хрєнь собача твоя ситуація..." goto:.IyaEndGood1
-@choice "Ти не винна." goto:.IyaEndGood2
+@choice "В сраку цей світ." handler:НепозбувнаБентега goto:.IyaEndBad1
+@choice "Просто треба жить!" handler:ХоробрийСвітанок goto:.IyaEndBad2
+@choice "Хрєнь собача твоя ситуація..." handler:ЩастяДляДвох goto:.IyaEndGood1
+@choice "Ти не винна." handler:Втрата  goto:.IyaEndGood2
 @stop
 
 #IyaEndBad1
+@stopBgm
+@hide ХоробрийСвітанок
+@hide ЩастяДляДвох
+@hide Втрата
+@bgm Ambience_Потяг_Всередині_Пустий
+
 Композиція "Непозбувна Бентега"
 @sfx НепозбувнаБентега
-@char Ія.dark_iya_sad
+@char Настя.guitar_play_nastya_norm pos:30,0
+@char Ія.dark_iya_sad pos:75,0
     
 @sfx Дівчина_Зітхає_Задумливо    
 Ія: Така сумна мелодія. Ти знаєш, я її слухала і пригадала дещо.
@@ -876,6 +883,75 @@
 @sfx Потяг_Метро_(Відбуває)
 Настя: ...
 Настя: От і все.
+
+@goto .SituationsIyaEndBad1
+
+#SituationsIyaEndBad1
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @elseIf CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @elseIf CharsSaved==0
+        @toast "Невже долі немає?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @elseIf CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @elseIf CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @elseIf CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad1
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsIyaEndBad1
+
+
+
+
 @wait 1
 
 @bgm Ambience_Потяг_Всередині_Пустий
@@ -891,14 +967,24 @@
 @goto .IyaEnd
 
 #IyaEndBad2
-    @sfx ХоробрийСвітанок
-    Композиція "Хоробрий Світанок"
-    @char Ія.dark_iya_doubts
-    Ія: Така життєствердна музика… Про стійкість, і я не знаю… 
-    @sfx Дівчина_Хіхікнула
-    @char Ія.dark_iya_doubts
-    
-    Ія: Мені чомусь згадалося, як в дитинстві мама будила мене кожного ранку й примушувала робити зарядку.
+
+@stopBgm
+@hide НепозбувнаБентега
+;@hide ХоробрийСвітанок
+@hide ЩастяДляДвох
+@hide Втрата
+@bgm Ambience_Потяг_Всередині_Пустий
+
+@sfx ХоробрийСвітанок
+Композиція "Хоробрий Світанок"
+
+@char Настя.guitar_play_nastya_norm pos:30,0
+@char Ія.dark_iya_doubts pos:75,0
+Ія: Така життєствердна музика… Про стійкість, і я не знаю… 
+@sfx Дівчина_Хіхікнула
+@char Ія.dark_iya_doubts
+
+Ія: Мені чомусь згадалося, як в дитинстві мама будила мене кожного ранку й примушувала робити зарядку.
 
 Ія: Вона включала якісь мотивуючі треки. Чи так вона думала.
 @char Ія.dark_iya_fear
@@ -963,6 +1049,72 @@
 @sfx Обережно!_Двері_Зачиняються!
 Диктор: Обережно, двері зачиняються.
 @stopBgm
+
+
+#SituationsIyaEndBad2
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @if CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @if CharsSaved==0
+        @toast "Невже долі немає*"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @if CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @if CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @if CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndBad2
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsIyaEndBad2
+
+
 Настя: ...
 Забула вона…
 @sfx Потяг_Метро_(Відбуває)
@@ -981,10 +1133,18 @@
 @goto .IyaEnd
 
 #IyaEndGood1
+@stopBgm
+@hide НепозбувнаБентега
+@hide ХоробрийСвітанок
+;@hide ЩастяДляДвох
+@hide Втрата
+@bgm Ambience_Потяг_Всередині_Пустий
+
     Композиція "Щастя для двох".
     @sfx ЩастяДляДвох
     
-    @char Ія.iya_soft_smile
+    @char Настя.guitar_play_nastya_norm pos:30,0
+    @char Ія.iya_soft_smile pos:75,0   
     ...    
     Ія: Твоя музика розрадила мою печаль. Я слухала її і подумала про Аю.
     @sfx Дівчина_Хіхікнула
@@ -1003,13 +1163,87 @@
     Настя: Красиво. Я думала, то тільки в серіалах у людей так красиво буває.
 
     @set CharsSaved=CharsSaved+1
+
+#SituationsIyaEndGood1
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @if CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @if CharsSaved==0
+        @toast "Невже долі немає*"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @if CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @if CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @if CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsIyaEndGood1
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsIyaEndGood1
     
 @goto .IyaEpilogue
 
 #IyaEndGood2
+
+@stopBgm
+@hide НепозбувнаБентега
+@hide ХоробрийСвітанок
+@hide ЩастяДляДвох
+;@hide Втрата
+@bgm Ambience_Потяг_Всередині_Пустий
+
     Композиція "Втрата".
     @sfx Втрата
     
+    @char Настя.guitar_play_nastya_norm pos:30,0
+    @char Ія.Ія.iya_sad pos:75,0   
+
     @char Ія.iya_sad
 
     ...
@@ -1042,6 +1276,69 @@
     Настя: То виходить, шось цінне було у тебе в житті.
 
     @set CharsSaved=CharsSaved+1
+
+    #SituationsIyaEndGood2
+    @if ToastSituation==1
+        @if CharsSaved==1
+
+            @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @elseIf CharsSaved==0
+            @toast "Як ти почуваєшся у цьому ворожому світі?"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @endIf
+
+    @elseIf ToastSituation==2
+
+        @if CharsSaved==1
+            @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @if CharsSaved==2
+            @toast "Ти не просто дивишся, ти впливаєш"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @if CharsSaved==0
+            @toast "Невже долі немає*"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+            
+        @endIf
+
+    @elseIf ToastSituation==3
+
+        @if CharsSaved==1
+            @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @if CharsSaved==2
+            @toast "Ти можеш вирішувати долі. Виріши свою!"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @if CharsSaved==3
+            @toast "Світ здатен почути твою музику"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @if CharsSaved==0
+            @toast "Усім нам дорога тільки в могилу"
+            @set ToastSituation=ToastSituation+1
+            @goto .EndSituationsIyaEndGood2
+
+        @endIf
+
+    @endIf
+
+
+#EndSituationsIyaEndGood2
 
 @goto .IyaEpilogue
 

@@ -3,6 +3,17 @@
 
 @bgm Ambience_Потяг_Всередині_З_Пасажирами
 @back BlackBg
+
+
+;;;;
+;@goto Scene3_Orest.OrestChooseTheSong
+;@back BG_Sc1_Train.CircleReveal
+;@choice "Музика 1" handler:ButtonList1 goto:.Ch1Option1 
+;@choice "Музика 2" handler:ButtonList2 goto:.Ch1Option2
+;@choice "Музика 3" handler:ButtonList3 goto:.Ch1Option3
+;@stop
+
+;;;;
 @printer Dialogue
 
 @sfx Обережно!_Двері_Зачиняються!

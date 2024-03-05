@@ -953,19 +953,30 @@
 @char Настя.nastya_smile
 Та, так і зіграю.
 Настя: Тож... Музичкою й скажу свою думку.
-@choice "Відпусти її..." goto:.OrestEndGood1
-@choice "Не губи себе." goto:.OrestEndGood2
-@choice "Твій хоробрий вчинок." goto:.OrestEndBad1
-@choice "Усміхнись мені, козаче!" goto:.OrestEndBad2
+
+
+
+@choice "Не губи себе." handler:НічПоїдаєНас goto:.OrestEndGood2
+@choice "Твій хоробрий вчинок." handler:ХоробрийСвітанок goto:.OrestEndBad1
+@choice "Відпусти її..." handler:ЩастяДляДвох goto:.OrestEndGood1
+@choice "Усміхнись мені, козаче!" handler:КучерявеСонце goto:.OrestEndBad2
 @stop
 
 #OrestEndGood1
+@stopBgm
+@hide НічПоїдаєНас
+@hide ХоробрийСвітанок
+;@hide ЩастяДляДвох
+@hide КучерявеСонце
+@bgm Ambience_Потяг_Всередині_Пустий
+
+
 @set CharsSaved=CharsSaved+1
 Композиція "Щастя для двох".
 @sfx ЩастяДляДвох
 ...
-@char Настя.nastya_irony
-@char Орест.orest_thoughtful
+@char Настя.nastya_irony pos:30
+@char Орест.orest_thoughtful pos:75
 Орест: Чекай, твоя музика… Здається, я це вже десь чув. Як вона, кажеш, називається?
 
 @char Настя.nastya_norm
@@ -991,12 +1002,19 @@
 @goto .OrestGoodEnding
 
 #OrestEndGood2
+@stopBgm
+;@hide НічПоїдаєНас
+@hide ХоробрийСвітанок
+@hide ЩастяДляДвох
+@hide КучерявеСонце
+@bgm Ambience_Потяг_Всередині_Пустий
+
 Композиція "Ніч поїдає нас".
 @set CharsSaved=CharsSaved+1
 @sfx НічПоїдаєНас
 ...
-
-@char Орест.orest_sad
+@char Настя.nastya_norm pos:30
+@char Орест.orest_sad pos:75
 Орест: По кому дзвонить дзвін? По мені дзвонить, пані Анастасіє. То голос прощання тіла з душею.
 @char Настя.nastya_norm
 @char Орест.orest_sigh
@@ -1017,11 +1035,17 @@
 
 #OrestEndBad1
 @stopBgm
+@hide НічПоїдаєНас
+;@hide ХоробрийСвітанок
+@hide ЩастяДляДвох
+@hide КучерявеСонце
+@bgm Ambience_Потяг_Всередині_Пустий
+
 Композиція "Хоробрий світанок".
 @sfx ХоробрийСвітанок
 ...
-
-@char Орест.dark_orest_normal
+@char Настя.nastya_norm pos:30
+@char Орест.dark_orest_normal pos:75
 Орест: Така ніби проста мелодія… але є в ній якась впевненість.
 
 @char Орест.dark_orest_normal
@@ -1034,11 +1058,21 @@
 @goto .OrestBadEnding
 
 #OrestEndBad2
+@stopBgm
+@hide НічПоїдаєНас
+@hide ХоробрийСвітанок
+@hide ЩастяДляДвох
+;@hide КучерявеСонце
+@bgm Ambience_Потяг_Всередині_Пустий
+
+
+
 Композиція "Кучеряве сонце".
 @char Орест.orest_smile
 @sfx КучерявеСонце
 ...
-@char Орест.dark_orest_smile
+@char Настя.nastya_norm pos:30
+@char Орест.dark_orest_smile pos:75
 Орест: Панянко з душею, повною радості! Ти надихнула мене повірити в себе на цьому останньому в житті шляху.
 @goto .OrestBadEnding
 @char Орест.dark_orest_confident
@@ -1174,6 +1208,71 @@
 
 @sfx Обережно!_Двері_Зачиняються!
 
+
+#SituationsOrestGoodEnd
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @elseIf CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @elseIf CharsSaved==0
+        @toast "Невже долі немає?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @elseIf CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @elseIf CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @elseIf CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestGoodEnd
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsOrestGoodEnd
+
+
 @char Настя.nastya_meh
 Настя: ...
 @sfx Двері_Вагону_Зачиняються
@@ -1257,6 +1356,71 @@
 @back BG_Dialog_Orest
 ;@char Настя.nastya_norm pos:30,0
 @sfx Двері_Вагону_Зачиняються
+
+
+#SituationsOrestBadEnd
+@if ToastSituation==1
+    @if CharsSaved==1
+
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @elseIf CharsSaved==0
+        @toast "Як ти почуваєшся у цьому ворожому світі?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @endIf
+
+@elseIf ToastSituation==2
+
+    @if CharsSaved==1
+        @toast "Здається, ти ще можеш принести у цей світ щось хороше."
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @elseIf CharsSaved==2
+        @toast "Ти не просто дивишся, ти впливаєш"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @elseIf CharsSaved==0
+        @toast "Невже долі немає?"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+        
+    @endIf
+
+@elseIf ToastSituation==3
+
+    @if CharsSaved==1
+        @toast "Тобі нарешті вдалося! Тепер ти можеш все!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @elseIf CharsSaved==2
+        @toast "Ти можеш вирішувати долі. Виріши свою!"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @elseIf CharsSaved==3
+        @toast "Світ здатен почути твою музику"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @elseIf CharsSaved==0
+        @toast "Усім нам дорога тільки в могилу"
+        @set ToastSituation=ToastSituation+1
+        @goto .EndSituationsOrestBadEnd
+
+    @endIf
+
+@endIf
+
+
+#EndSituationsOrestBadEnd
+
 ...
 @sfx Потяг_Метро_(Відбуває)
 

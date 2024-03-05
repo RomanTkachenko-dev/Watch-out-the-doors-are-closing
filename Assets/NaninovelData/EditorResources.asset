@@ -1080,3 +1080,43 @@ MonoBehaviour:
     - name: policeman_2_smile
       pathPrefix: "Characters/\u041F\u043E\u043B\u0456\u0446\u0435\u0439\u0441\u044C\u043A\u0438\u0439"
       guid: e8dff005c83fc0f40a670d32ff8652a9
+  - Id: TextPrinters/dc9e13fe-efda-4884-8e21-33978b2f89c7
+    Resources:
+    - name: DialogueMusic
+      pathPrefix: TextPrinters
+      guid: 0e76cdf11e74da842aef7c5b4e0c9e53
+  - Id: ChoiceHandlers/9377bcc9-b15b-45ce-9e19-cdeb5aec3921
+    Resources:
+    - name: "\u041D\u0435\u043F\u043E\u0437\u0431\u0443\u0432\u043D\u0430\u0411\u0435\u043D\u0442\u0435\u0433\u0430"
+      pathPrefix: ChoiceHandlers
+      guid: 8ab4af2ff03ec7d4f837654423523d50
+  - Id: ChoiceHandlers/68592e4a-d214-490e-9d7a-c146320317b0
+    Resources:
+    - name: "\u0425\u043E\u0440\u043E\u0431\u0440\u0438\u0439\u0421\u0432\u0456\u0442\u0430\u043D\u043E\u043A"
+      pathPrefix: ChoiceHandlers
+      guid: ec92a9b5dd70457499bf3bf372ed73e4
+  - Id: ChoiceHandlers/562da5f9-f735-4c01-8b2b-ab4d963bed28
+    Resources:
+    - name: "\u0429\u0430\u0441\u0442\u044F\u0414\u043B\u044F\u0414\u0432\u043E\u0445"
+      pathPrefix: ChoiceHandlers
+      guid: 100d07e600cb1244cb2c23c2ef4c1389
+  - Id: ChoiceHandlers/aa1d0fb0-a94c-4b78-971e-c274ac8c00b5
+    Resources:
+    - name: "\u0412\u0442\u0440\u0430\u0442\u0430"
+      pathPrefix: ChoiceHandlers
+      guid: a0a03ca7c2b2e024883647f5d0424e34
+  - Id: ChoiceHandlers/ddf41499-8aae-41a9-841c-f2528db674a9
+    Resources:
+    - name: "\u041A\u0440\u043E\u043A\u0443\u044E\u0447\u0456\u041A\u0440\u0456\u0437\u044C\u0427\u0430\u0441"
+      pathPrefix: ChoiceHandlers
+      guid: fb6053353c7b7cc44b32cfd552a78d1a
+  - Id: ChoiceHandlers/129a7621-bccf-41f2-929b-2f5cfbf87405
+    Resources:
+    - name: "\u041D\u0456\u0447\u041F\u043E\u0457\u0434\u0430\u0454\u041D\u0430\u0441"
+      pathPrefix: ChoiceHandlers
+      guid: b5cc4f5e2f5248e408f5ee21fc56a1dd
+  - Id: ChoiceHandlers/3e98de1c-d940-426f-a33e-438c2631b961
+    Resources:
+    - name: "\u041A\u0443\u0447\u0435\u0440\u044F\u0432\u0435\u0421\u043E\u043D\u0446\u0435"
+      pathPrefix: ChoiceHandlers
+      guid: 5e557def9d9109f479413e136b3815bd
