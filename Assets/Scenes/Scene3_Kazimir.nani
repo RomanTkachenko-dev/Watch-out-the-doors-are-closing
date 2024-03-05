@@ -1334,25 +1334,25 @@
 @sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІ)
 
 
-@choice "Не мають вмиратм юні." handler:НепозбувнаБентега goto:.KazikBentega
-@choice "Смійся, сонячний хлопчику." handler:ХоробрийСвітанок goto:.KazikSvitanok
+@choice "Не мають вмиратм юні." handler:НепозбувнаБентега1 goto:.KazikBentega
+@choice "Смійся, сонячний хлопчику." handler:ХоробрийСвітанок1 goto:.KazikSvitanok
 @choice "Наснися їй." handler:КрокуючіКрізьЧас goto:.KazikTime 
-@choice "А хто подумає про тебе?" handler:Втрата goto:.KazikLoss
+@choice "А хто подумає про тебе?" handler:Втрата1 goto:.KazikLoss
 @stop
 
 #KazikBentega
     @stopBgm
-    ;@hide НепозбувнаБентега
-    @hide ХоробрийСвітанок
+    ;@hide НепозбувнаБентега1
+    @hide ХоробрийСвітанок1
     @hide КрокуючіКрізьЧас
-    @hide Втрата
+    @hide Втрата1
     @bgm Ambience_Потяг_Всередині_Пустий
 
     @char Настя.guitar_play_nastya_norm pos:30,0
     @char Казік.cazik_awkward_smile pos:75,0
 
     Композиція "Непозбувна бентега".
-    @sfx НепозбувнаБентега
+    @sfx НепозбувнаБентега1
     Настя: ...
     Казік: ...
 @goto .horoshakintsivkakazik
@@ -1360,17 +1360,17 @@
 #KazikSvitanok
 
     @stopBgm
-    @hide НепозбувнаБентега
-    ;@hide ХоробрийСвітанок
+    @hide НепозбувнаБентега1
+    ;@hide ХоробрийСвітанок1
     @hide КрокуючіКрізьЧас
-    @hide Втрата
+    @hide Втрата1
     @bgm Ambience_Потяг_Всередині_Пустий
 
     @char Настя.guitar_play_nastya_smile pos:30,0
     @char Казік.cazik_awkward_smile pos:75,0
 
     Композиція "Хоробрий світанок".
-    @sfx ХоробрийСвітанок
+    @sfx ХоробрийСвітанок1
     @char Настя.guitar_play_nastya_smile
     Настя: ...
     @stopSfx
@@ -1378,10 +1378,10 @@
 
 #KazikTime
     @stopBgm
-    @hide НепозбувнаБентега
-    @hide ХоробрийСвітанок
+    @hide НепозбувнаБентега1
+    @hide ХоробрийСвітанок1
     ;@hide КрокуючіКрізьЧас
-    @hide Втрата
+    @hide Втрата1
     @bgm Ambience_Потяг_Всередині_Пустий
 
     @char Настя.guitar_play_nastya_norm pos:30,0
@@ -1397,17 +1397,17 @@
 
 #KazikLoss
     @stopBgm
-    @hide НепозбувнаБентега
-    @hide ХоробрийСвітанок
+    @hide НепозбувнаБентега1
+    @hide ХоробрийСвітанок1
     @hide КрокуючіКрізьЧас
-    ;@hide Втрата
+    ;@hide Втрата1
     @bgm Ambience_Потяг_Всередині_Пустий
 
     @char Настя.guitar_play_nastya_norm pos:30,0
     @char Казік.cazik_awkward_smile pos:75,0
 
-    Композиція "Втрата".
-    @sfx Втрата
+    Композиція "Втрата1".
+    @sfx Втрата1
     @char Настя.guitar_play_nastya_norm
     Настя: ...
 @goto .horoshakintsivkakazik

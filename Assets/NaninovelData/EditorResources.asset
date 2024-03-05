@@ -1120,3 +1120,28 @@ MonoBehaviour:
     - name: "\u041A\u0443\u0447\u0435\u0440\u044F\u0432\u0435\u0421\u043E\u043D\u0446\u0435"
       pathPrefix: ChoiceHandlers
       guid: 5e557def9d9109f479413e136b3815bd
+  - Id: ChoiceHandlers/025c3721-c639-4f53-81e1-2d94f494c8f6
+    Resources:
+    - name: "\u041D\u0435\u043F\u043E\u0437\u0431\u0443\u0432\u043D\u0430\u0411\u0435\u043D\u0442\u0435\u0433\u04301"
+      pathPrefix: ChoiceHandlers
+      guid: 1f9b7ac8fe3a2a646aef9b3eaf6af8d4
+  - Id: ChoiceHandlers/89966b6a-f334-4fda-9f2f-de73970ce57e
+    Resources:
+    - name: "\u0412\u0442\u0440\u0430\u0442\u04301"
+      pathPrefix: ChoiceHandlers
+      guid: 33ca750dd8a1d644da1b929d95cb1fbc
+  - Id: ChoiceHandlers/a07e4d8a-ebfa-4ad5-9924-685d1a1ee4ce
+    Resources:
+    - name: "\u0425\u043E\u0440\u043E\u0431\u0440\u0438\u0439\u0421\u0432\u0456\u0442\u0430\u043D\u043E\u043A1"
+      pathPrefix: ChoiceHandlers
+      guid: 41641f971eda0fc49b2d23eb7f6f821b
+  - Id: ChoiceHandlers/89e194e1-f07a-47e9-98ae-be406afb8242
+    Resources:
+    - name: "\u0425\u043E\u0440\u043E\u0431\u0440\u0438\u0439\u0421\u0432\u0456\u0442\u0430\u043D\u043E\u043A2"
+      pathPrefix: ChoiceHandlers
+      guid: 0cc40186de7eef047a293949851b37a6
+  - Id: ChoiceHandlers/031d8cfe-7481-4b9e-9aeb-25aa9baec7d9
+    Resources:
+    - name: "\u0429\u0430\u0441\u0442\u044F\u0414\u043B\u044F\u0414\u0432\u043E\u04451"
+      pathPrefix: ChoiceHandlers
+      guid: 48fd073130eadfc4793b4eb31b23fd61

@@ -35,6 +35,7 @@
 ; 3 = Kazik
 @set PreviousChar=0
 @set ToastSituation=1
+@set CharsSaved=0
 #Scene3Choice
 
 @hide Настя
