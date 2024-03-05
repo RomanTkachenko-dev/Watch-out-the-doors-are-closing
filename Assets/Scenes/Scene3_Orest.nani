@@ -433,11 +433,12 @@
 
 @bgm Ambience_Потяг_Всередині_Пустий
 
-Орест: Ну як, пані Анастасіє?
-@char Орест.Abstract_BGs_Orest_Star
+@char Орест.no_glow_guitar_play_orest_smile
 @char Настя.no_guitar_nastya_norm
+Орест: Ну як, пані Анастасіє?
+;@char Орест.Abstract_BGs_Orest_Star
+
 Настя: То точно моя гітарка була?
-@char Орест.guitar_play_orest_smile
 Орест: Раніше я грав гірше.
 @char Орест.orest_thoughtful
 @char Настя.nastya_surprise
@@ -537,6 +538,10 @@
 @goto .OrestDestiny
 #OrestDestiny
 @char Орест.orest_normal
+
+;@stopBgm 
+
+@bgm Сцена3.2_Орест
 Орест: Мою долю змінив один стариган. 
 
 @back Abstract_BGs_OrestRise
@@ -1022,7 +1027,7 @@
 @char Орест.dark_orest_normal
 Орест: Як коли травинка пробивається через асфальт.
 
-@char Орест.darkorest_confident
+@char Орест.dark_orest_confident
 Орест: Я теж у собі віднайшов цю впевненість. Я багато сумнівався, але вона допомагала мені рухатися до мети.
 
 Орест: От і тепер маю довершити почате.
@@ -1055,7 +1060,7 @@
 @char Орест.orest_confident
 Орест: Ти права.
 
-@char Орест.orest_saf
+@char Орест.orest_sad
 Орест: Бачу, що ти не з тих, хто ганяється за славою.
 Орест: Візьми це кільце на згадку про мене, пані Настю. Викинь його в річку, або собі візьми. 
 
@@ -1231,7 +1236,7 @@
 @back BG_StationUnderground_02
 @unlock CG/BG_StationUnderground_02
 @bgm Ambience_Погана_Кінцівка_Орест_Черви_І_Стогін
-@char Настя.nastya_surprise
+;@char Настя.nastya_surprise
 Настя: Це...
 Орест: ...
 @char Настя.nastya_norm
@@ -1245,18 +1250,18 @@
 Орест: Тож, бувай.
 
 @sfx Обережно!_Двері_Зачиняються!
-@char Настя.nastya_meh
+;@char Настя.nastya_meh
 Настя: Ну бувай...
 @hide Орест
 
 @back BG_Dialog_Orest
-@char Настя.nastya_norm pos:30,0
+;@char Настя.nastya_norm pos:30,0
 @sfx Двері_Вагону_Зачиняються
 ...
 @sfx Потяг_Метро_(Відбуває)
 
 @char Настя.nastya_meh 
-@char Настя.nastya_meh
+;@char Настя.nastya_meh
 Ех, шкода козака. Молодий ше, і все при ньому… то ж не як я, то ж у людини всьо було. Чесне слово, нахіба так убиваться?
 
 @char Настя.nastya_norm

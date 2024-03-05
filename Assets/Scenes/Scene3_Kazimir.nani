@@ -110,7 +110,7 @@
 @char Настя.nastya_surprise
 Настя: Шо?!
 
-@char Казік.casik_normal
+@char Казік.cazik_normal
 Казік: Упс. Не вгадав твій вайб. Хотів сказати, ім'я-по-батькові — це ж так викладачів називають. А ти, як на викладачку, дуже непогано виглядаєш. Стильно.
 
 @char Настя.nastya_disgust
@@ -128,7 +128,7 @@
 
 @char Настя.nastya_facepalm
 Настя: Та нє. Просто шось не зрозуміла тебе.
-@char Казік.casik_normal
+@char Казік.cazik_normal
 
 Казік: По тобі видно, що ти не з тих, хто зазнається.
 @char Казік.cazik_sly_smile
@@ -497,7 +497,7 @@
 Казік: Міст чи парк — що б ти обрала?
 
 @char Настя.nastya_meh
-@char Казік.cazik_sly_normal
+@char Казік.cazik_normal
 Шось він дуже не ласий говорить про себе. От же ж...! Чого темнить? Ну гаразд...
 
 @choice "Міст. З нього можна стрибнуть." goto:.mist
@@ -1286,6 +1286,7 @@
 
 @stopBgm
 
+@bgm Ambience_Потяг_Всередині_Пустий
 @char Настя.nastya_norm
 @char Казік.cazik_sly_smile
 

@@ -322,7 +322,7 @@
     @sfx Двері_Вагону_Зачиняються
     @sfx Потяг_Метро_(Відбуває)
 
-    @back BG_GhostTrain_Final
+    @back BG_GhostTrain_Final_Empty
     @bgm Ambience_Потяг_Всередині_Пустий
 
     @char Настя.ghost_nastya_norm pos:30,0
@@ -512,14 +512,14 @@
     @char Поліцейський.policeman_2_angry
     Поліцейська: Це на неї викликали. Пані, перепрошую, вам доведеться пройти з нами.
 
-    @char Настя.nastya_meh
+    ;@char Настя.nastya_meh
     Настя: Шо?! Чого?! Куди?!
 
     @char Поліцейський.policeman_2_normal
     @char Поліцейська.policeman_1_normal
     Поліцейський: Будь ласка, не чиніть опору. Пройдіть із нами до машини.
 
-    @char Настя.nastya_surprise
+    ;@char Настя.nastya_surprise
     Настя: Шо?! Куди ви мене… я ж нічо! Я вже йду! Харон! Харон!
 
     @back BlackBg

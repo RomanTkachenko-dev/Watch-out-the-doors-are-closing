@@ -932,7 +932,7 @@
 Все-таки жити хотіла, раз планувала в рай піти...
 
 @sfx Зупинка_Або_Ж_Прибуття_Потяга
-@char Ія.dark_iya_norm
+@char Ія.dark_iya_normal
 Ія: Тільки от...
 @sfx Радіо_Рипіння
 
@@ -940,7 +940,7 @@
 @sfx Двері_Вагону_Відчиняються
 @bgm Ambience_Погана_Кінцівка_Ія_Завірюха
 
-@char Ія.iya_thoughtfulness
+@char Ія.dark_iya_thoughtfulness
 Ія: ...
 @char Настя.nastya_surprise
 Настя: ...

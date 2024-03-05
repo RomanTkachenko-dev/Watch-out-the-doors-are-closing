@@ -1,11 +1,11 @@
 @stopSfx
 @stopBgm
-@back BG_GhostTrain_ForChosing
+@back BG_GhostTrain
 @unlock CG/BG_GhostTrain_ForChosing
 
-@char Ія.ChoosingSprite_Iya pos:60,25 
-@char Казік.ChoosingSprite_Cazik pos:40,37 
-@char Орест.ChoosingSprite_Orest pos:52,30 
+;@char Ія.ChoosingSprite_Iya pos:60,25 
+;@char Казік.ChoosingSprite_Cazik pos:40,37 
+;@char Орест.ChoosingSprite_Orest pos:52,30 
 
 @sfx Обережно!_Двері_Зачиняються!
 Диктор: Обережно, двері зачиняються.
@@ -38,6 +38,7 @@
 
 #Scene3Choice
 
+@hide Настя
 @char Ія.ChoosingSprite_Iya pos:60,25 if:iya=false 
 @char Казік.ChoosingSprite_Cazik pos:40,37  if:kazik=false 
 @char Орест.ChoosingSprite_Orest pos:52,30 if:orest=false 
