@@ -4,7 +4,7 @@
 @set OrestScore=0
 @bgm Ambience_Потяг_Всередині_Пустий
 
-@back BG_GhostTrain
+;@back BG_GhostTrain
 
 ; PreviousChar - це змінна, яка змінюється в залежності від того, кого з персонажів ми обрали до цього
 ; 0 = Nobody
@@ -973,7 +973,7 @@
 
 @set CharsSaved=CharsSaved+1
 Композиція "Щастя для двох".
-@sfx ЩастяДляДвох1
+@sfx ЩастяДляДвох
 ...
 @char Настя.nastya_irony pos:30
 @char Орест.orest_thoughtful pos:75
@@ -1042,7 +1042,7 @@
 @bgm Ambience_Потяг_Всередині_Пустий
 
 Композиція "Хоробрий світанок".
-@sfx ХоробрийСвітанок2
+@sfx ХоробрийСвітанок
 ...
 @char Настя.nastya_norm pos:30
 @char Орест.dark_orest_normal pos:75
@@ -1304,7 +1304,7 @@
 @char Орест.dark_orest_confident
 Орест: Чесно кажучи, в мене були сумніви. Але тепер я ствердився в своєму рішенні лягти в могилу замість дружини.
 Орест: Тепер я напевне знаю, що обрав правильний шлях. Наслідки вчинків, зроблених з любові — ось єдине, що має залишитись після кожного з нас.
-@char Настя.nastya_norm
+;@char Настя.nastya_norm
 
 @char Орест.dark_orest_smile
 Орест: Я ляжу в її могилу, і заберу з собою цей страшний дар чи прокляття.
@@ -1331,7 +1331,7 @@
 @char Орест.dark_orest_smile
 @sfx Двері_Вагону_Відчиняються
 
-;@hide Настя
+@hide Настя
 @back BG_StationUnderground_02
 @unlock CG/BG_StationUnderground_02
 @bgm Ambience_Погана_Кінцівка_Орест_Черви_І_Стогін

@@ -1,19 +1,11 @@
 @bgm Меню
 @unlock BG_MMenu.CircleReveal
 
-@printer Fullscreen
-@skip
-Над грою працювали:
-@skip false
-@wait 4
-@resetText
+@back Disclaimer
+@wait 0
 
 
-@skip
-Приємної гри!
-@skip false
-@wait 4
-@resetText
+
 
 @hidePrinter
 @stop

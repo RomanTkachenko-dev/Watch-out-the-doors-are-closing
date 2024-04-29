@@ -1,0 +1,37 @@
+; Ukrainian <uk> to English <en> localization document for `Scene3` naninovel script
+
+# 1ceaaac7
+; Настя: ...
+
+# e3ff4ac0
+; Шо це? Якось тут дивно.
+
+# 3e50bed3
+; А хоча ніби й як завжди.
+
+# 872ceca0
+; Нє, дивно.
+
+# 3c674fce
+; Шось дупля не ріжу, шо саме не так.
+
+# 9720cb9f
+; Настя: Еййй, добрий вечір, хе-хе…
+
+# c3f2a725
+; Чекай-но. Це ж ці… примари. Оно, навіть лиць не видно. То ось кого він возить. То куди?.. Невже справді у пекло?..
+
+# a5b303f1
+; Може, тойво. Спитати…
+
+# 89f26502
+; @choice "Підійти до силуета дівчини" goto:.Ch1Option1  if:iya=false 
+
+# 84ef0ee
+; @choice "Підійти до силуета підлітка" goto:.Ch1Option2 if:kazik=false 
+
+# d933cc41
+; @choice "Підійти до силуета чоловіка" goto:.Ch1Option3 if:orest=false 
+
+# 6ed7f10
+; @choice "Шо, більше нікого нема? Всі повиходили?" goto:Scene4 if:orest=true&&kazik=true&&iya=true  

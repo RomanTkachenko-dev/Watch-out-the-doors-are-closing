@@ -5,7 +5,7 @@
 @bgm Ambience_Потяг_Всередині_Пустий
 
 
-@back BG_GhostTrain
+;@back BG_GhostTrain
 
 ; PreviousChar - це змінна, яка змінюється в залежності від того, кого з персонажів ми обрали до цього
 ; 0 = Nobody
@@ -47,6 +47,7 @@
 @unlock CG/BG_Dialog_Iya
 
 @char Настя.nastya_complacency pos:30,0
+@char Ія.transparency_iya_normal pos:75,0
 Настя: Паню, добрий вечір…
 	Пасажирка: А~мбр~і~а~ ~
     @char Настя.nastya_meh
@@ -63,7 +64,7 @@
 #IyaDialog
 
 @sfx Звук_Появи_Привида_(ВаріантІІ)
-@char Ія.transparency_iya_normal pos:75,0
+@char Ія.transparency_iya_normal 
 
 @char Ія.iya_soft_smile pos:75,0
 Ія: Кажу, мене звуть Ія!
@@ -1155,7 +1156,7 @@
     Ія: Якось цілих три дні лив дощ. А мені було сумно-сумно. Бо за тиждень до того мій хлопець мене кинув.
 
     @char Ія.iya_embarrassment
-    Ія: В неї була парасоля, а в мене ні. Я ж забудькувата.
+    Ія: В неї була парасоля, а "в мене ні. Я ж забудькувата.
 
     Ія: І вона проводжала мене додому всі три дні. А потім, зовсім потім, вона мені розказала, що всі ті роки кохала мене.
     @char Ія.iya_thoughtfulness

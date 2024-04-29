@@ -26,13 +26,21 @@
 
 @bgm Сцена1_Настя
 
+
 @sfx Зупинка_Або_Ж_Прибуття_Потяга 
 ???: ...
 ???: ...
 @back BG_Sc1_Train.CircleReveal
-@unlock CG/BG_Sc1_Train.CircleReveal
+
+
+@unlock CG/BG_Sc1_Train
 @char Настя.guitar_play_nastya_norm pos:30,0
 @sfx ХоробрийСвітанок
+
+@spawn ShakeBackground params:,0,,0.005,0.005
+;@spawn ShakePrinter params:,0,,0.005,0.005
+;;@spawn ShakeCamera params:,0,,0.005,0.005
+@spawn ShakeCharacter params:,0,,0.005,0.005
 
 Дитина: Тьотя, на!
 @char Настя.guitar_play_nastya_laugh
@@ -69,7 +77,7 @@
 @char Настя.guitar_play_nastya_disgust
 ???: Для тебе Анастасія Олександрівна!
 
-@‌sfx Жінка_Зітхає_Сумно
+@sfx Жінка_Зітхає_Сумно
 Настя: Ех!
 Оце во граєш-співаєш тут, душу вкладаєш. Хоч би голову хто підняв, усі в своїх гаджетах.
 А якшо й підіймуть, то отакі от.

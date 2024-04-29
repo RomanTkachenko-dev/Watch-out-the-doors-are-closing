@@ -330,6 +330,9 @@ MonoBehaviour:
     - name: BlackBg
       pathPrefix: Backgrounds/MainBackground
       guid: 066e0ddc29ca8a448a89ddb61b9a5f62
+    - name: Disclaimer
+      pathPrefix: Backgrounds/MainBackground
+      guid: af8ee2b4fa3ea484ab3838eeacc17782
   - Id: Scripts
     Resources:
     - name: Scene1
@@ -466,18 +469,15 @@ MonoBehaviour:
     - name: CG/BG_UpperSt_01
       pathPrefix: Unlockables
       guid: cc2b1857f85a60f47b509b18e6ba0bca
+    - name: CG/BG_UpperSt_GoodEnding
+      pathPrefix: Unlockables
+      guid: d18d7bd8b13e6b94c8eb78ea3221aed4
     - name: CG/BG_UpperSt_02
       pathPrefix: Unlockables
       guid: 57b330433617b664d8bbdf57fedaffa1
     - name: CG/BG_UpperSt_03
       pathPrefix: Unlockables
       guid: 554dcc3446d3ee146a699d872d8b1c01
-    - name: CG/BG_UpperSt_GoodEnding
-      pathPrefix: Unlockables
-      guid: d18d7bd8b13e6b94c8eb78ea3221aed4
-    - name: CG/BG_UpperSt_Paradise
-      pathPrefix: Unlockables
-      guid: 97b9d399927f1894198b2e6b3c27a3d1
   - Id: Audio
     Resources:
     - name: "\u041A\u0440\u043E\u043A\u0443\u044E\u0447\u0456\u041A\u0440\u0456\u0437\u044C\u0427\u0430\u0441"

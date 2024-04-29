@@ -3,7 +3,7 @@
 @stopBgm
 
 @bgm Ambience_Потяг_Всередині_Пустий
-@back BG_GhostTrain
+;@back BG_GhostTrain
 @printer Dialogue
 @hide Казік.ChoosingSprite_Cazik
 
@@ -89,15 +89,20 @@
 ;@toast "Настюха - самовпевнена житуха"
 @char Настя.nastya_norm
 Настя: Потяг під'їхав, двері відкрилися. Ну я і зайшла.
+@goto .KazikYouDied
 
 #tachortzna
 @char Настя.nastya_menace
 Настя: Та чорт його зна, вже, може, й помирала.
+
 @char Настя.nastya_norm
 Настя: Піди розбери з такою житухою.
+@goto .KazikYouDied
+#KazikYouDied
 
 @char Казік.cazik_thoughtfulness
-Пасажир: Ні, ну якщо ти змогла зайти, то мабуть все ж таки помирала. Хоча виглядаєш ніби жива. 
+Пасажир: Ні, ну якщо ти змогла зайти, то мабуть все ж таки помирала. Хоча виглядаєш ніби жива.
+
 @char Казік.cazik_normal
 Пасажир: Казімір. Для друзів просто Казік.
 
@@ -1334,7 +1339,7 @@
 @sfx Звук_Вжик_Гітари_Перед_Вибором_Пісні_(ВаріантІ)
 
 
-@choice "Не мають вмиратм юні." handler:НепозбувнаБентега1 goto:.KazikBentega
+@choice "Не мають вмирати юні." handler:НепозбувнаБентега1 goto:.KazikBentega
 @choice "Смійся, сонячний хлопчику." handler:ХоробрийСвітанок1 goto:.KazikSvitanok
 @choice "Наснися їй." handler:КрокуючіКрізьЧас goto:.KazikTime 
 @choice "А хто подумає про тебе?" handler:Втрата1 goto:.KazikLoss
@@ -1352,7 +1357,7 @@
     @char Казік.cazik_awkward_smile pos:75,0
 
     Композиція "Непозбувна бентега".
-    @sfx НепозбувнаБентега1
+    @sfx НепозбувнаБентега
     Настя: ...
     Казік: ...
 @goto .horoshakintsivkakazik
@@ -1370,7 +1375,7 @@
     @char Казік.cazik_awkward_smile pos:75,0
 
     Композиція "Хоробрий світанок".
-    @sfx ХоробрийСвітанок1
+    @sfx ХоробрийСвітанок
     @char Настя.guitar_play_nastya_smile
     Настя: ...
     @stopSfx
@@ -1406,8 +1411,8 @@
     @char Настя.guitar_play_nastya_norm pos:30,0
     @char Казік.cazik_awkward_smile pos:75,0
 
-    Композиція "Втрата1".
-    @sfx Втрата1
+    Композиція "Втрата".
+    @sfx Втрата
     @char Настя.guitar_play_nastya_norm
     Настя: ...
 @goto .horoshakintsivkakazik
