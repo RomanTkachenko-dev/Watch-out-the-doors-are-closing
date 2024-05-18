@@ -2,192 +2,193 @@
 
 # 774c1cdb
 ; Ну во, поїхали.
-
+Choo-choo!
 # 439caa6d
 ; Настя: П’ять… десять…
-
+Nastya: Five... ten...
 # 1f68a20
 ; Настя: На пожерти стане, на портвейн стане… на сіги не стане, а закінчились, як назло…
-
+Nastya: Enough for sum' food, and for sum' booze... not enough for smokes, though, an' I'm all out. Ugh.
 # 8ed81ba7
 ; Шось сьогодні взагалі майже не слухав ніхто. У людей нема смаку, ну.
-
+Nastya: Damn, much no un' even listened today. Them people have no taste, I'm tellin' ya.
 # 377fdfb
 ; Настя: Ну, хоч для себе ще посиджу пограю.
-
+Nastya: Well, then I'mma jus' play for myself a lil' bit.
 # 3e647b9e
 ; ???: Сансанівна!
-
+???: Sansanivna!
 # 2e9b6579
 ; Настя: Петрівна? Добрий вечір.
-
+Nastya: Petrivna? Fancy seein' ya here.
 # 1b81582f
 ; Петрівна: Ти ше тут? Останній поїхав уже.
-
+Petrivna: You still here? That was the last one that just departed.
 # 9d86a498
 ; @choice "Та бачу. Я вже на сьогодні з роботою всьо." goto:.Ch1Option1
-
+@choice "Yeah, I see. Just wrappin' up work for today." goto:.Ch1Option1
 # c253d1f0
 ; @choice "Знаю без тебе, шо поїхав." goto:.Ch1Option2
-
+@choice "Ya don't gotta tell me." goto:.Ch1Option2
 # 81f35575
 ;     Петрівна: Роботою, господи. Чи й не робота. Я уже всі тут підлоги намила, поки ти там єрундою займалась.
-
+Petrivna: You call that 'work'. I've seen yer 'work'. I already swept all the floors here, and you were out there doing heck all.
 # ca1e1e2d
 ;     Петрівна: Шо ти зла така сьогодні? Не ласі пасажирчики давати гріш ні за шо?
-
+Petrivna: Why're you so crabby? No one wanna pay you for nothin'?
 # 71d630f2
 ; Петрівна: А йой, шоб тебе. Маю покурить, бо вже зуби цокають. Давай зі мною.
-
+Petrivna: Aw damn you. I gotta smoke, I'm gettin' all jittery. Come on with me.
 # 81528122
 ; Настя: Стрельнуть даси? Бо у мене сьогодні галяк.
-
+Nastya: Can I bum one? I'm all out.
 # 6e76313
 ; Петрівна: Та шо вже з тобою робить, з неробою. Пригощу вже.
-
+Petrivna: You're a bum all right. Fine, I'll share.
 # 1a2d8a0e
 ; Настя: Ха-ха! Оце дякую.
-
+Nastya: Ha-ha! Thanks much.
 # 92e01826
 ; @choice "Шо як твої ноги?" goto:.Ch2Option1
-
+@choice "How're yer legs?" goto:.Ch2Option1
 # 996f3bac
 ; @choice "Шо як твій Митрик?" goto:.Ch2Option2
-
+@choice "How's yer Mytryk?" goto:.Ch2Option2
 # 6b97ea1
 ; @choice "Шо як робота?" goto:.Ch2Option3
-
+@choice "How's work?"  goto:.Ch2Option3
 # e17bf810
 ;     Петрівна: Ой.
-
+Perivna: Ugh.
 # d5cfc873
 ;     Настя: Шо?
-
+Nastya: Wha'?
 # 6f9f569f
 ;     Петрівна: Та шо. Вчора на коліні шишак такий знайшла, я вже боюсь і думать, шо воно.
-
+Petrivna: Well, wha'. Found a big damn bump on that knee yesterday, don't wanna even think what that might be.
 # 3a078a62
 ;     Настя: Та і не кажи. У міську не підеш?
-
+Nastya: Yeah, I'd say. Not gonna go see a doctor?
 # 3ce8ac03
 ;     Петрівна: Та шо вони мені там нового скажуть. Леонід Міхалич свій диплом відомо як отримав. А за ті гроші, шо вони там платять, нового ревматолога хрін вони знайдуть.
-
+Petrivna: What'll they tell me that I don't already know? Leonid Mikhalych's diploma, you know how he got it. And they aren't gettin' a new rheumatologist for the kinda money they pay there.
 # 78c4734f
 ;     Настя: Ну та…
-
+Nastya: Ye-eah.
 # c40ae4c2
 ;     Петрівна: Ой, Митрик. Най би чорти драли. Викормила зміюку.
-
+Petrivna: Ugh, Mytryk. Devils be on that bastard. Nursed a damn snake in my bosom.
 # 4d8d654
 ;     Настя: А шо?
-
+Nastya: Huh?
 # 1346a86
 ;     Петрівна: Та шо. Виніс вчора з хати то радіо старе. Йому на шо того вистачить, хіба похмелиться, а я без музики.
-
+Petrivna: Know what he did? Took that old radio. Left me without my music, and for what? What's that gonna buy 'im? Not even a bottle.
 # defb9545
 ;     Настя: Ну та, без музики воно не то.
-
+Nastya: Yeah, not nice without the music.
 # ec57830d
 ;     Петрівна: Ой, робота. Перейди на Федота. Спину ломить, руки круте.
-
+Petrivna: Ugh, work. Pack it up and throw it to them dogs. Back's killin' me, and my hands, ugh.
 # 9dcb16d1
 ;     Петрівна: Зарплату затримують, щоб вони повсиралися у тій бухгалтерії.
-
+Petrivna: And the pay's late again. Hope them bitches in the accounting shit themselves.
 # 31375dfa
 ;     Настя: Йой, не кажи.
-
+Nastya: Aw, true.
 # 73f3dcf7
 ; Петрівна: А ти шо?
-
+Petrivna: And how you been?
 # 5e7e1c76
 ; Настя: Та шо. У людей немає смаку, я тобі кажу. Усі в своїх телехвонах. Я там попідбирала пару новеньких пісеньок, шо на радіо крутять, але нє, бач.
-
+Nastya: Aw, ya know. People got no taste, I'm tellin' ya. All up them gadgets. Played 'em some new songs from the radio, but nah.
 # 4e671541
 ; Петрівна: На цій гілці одні нудні їздять.
-
+Petrivna: This line's got all bores.
 # 9dc228b1
 ; Настя: Та нє, ясно. То я думала, хоч посиджу ще трохи побринькаю сама для себе. Ти не будеш виганять?
-
+Nastya: Yeah, yeah. So I thought I'd sit around 'ere for a lil' bit, just play for myself. You're not gonna be kickin' me out, right?
 # e13df5a2
 ; Петрівна: Тунеядка ти, Наська. Побринькати вона хоче. А робити хто буде? Тарас Григорович?
-
+Petrivna: A damn moocher you are, Nastka. Play for yaself, yeah! I'm the only one doin' any work 'ere.
 # e857905a
 ; Петрівна: Ти б додому шкандибала. Бо почуєш поїзд, якого нема, і шо тоді, з ким мені оце курить.
-
+Petrivna: You should get your ass home. What if you hear the train that don't exist, what then? Who's gonna keep me company for smokes?
 # 58a60b49
 ; Настя: Та я знаю…
-
+Nastya: I know, I know.
 # be8f8f8c
 ; Петрівна: Шо ти знаєш? Знає вона… Прикмета погана.
-
+Petrivna: What'd you know? It's bad to hear it, is what I'm sayin'.
 # 306cd978
 ; Настя: А шо буде?
-
+Nastya: Yeah? What's gon' happen?
 # 56bc1d7c
 ; Петрівна: А шо. Кому шо. Може, покрутить руки, і всьо, не зможеш більше бринькать. 
-
+Petrivna: What's gon' happen - somethin'! Maybe your hands'll get all crooked, what then? Not gonna plink-plonk anymore then, are you?
 # ececc609
 ; Петрівна: Може, коли нап’єшся, то впадеш на путя і тебе током вб’є. Чи якийсь поліцай ревний тебе упакує, за те шо ти по вагонах без дозволу горлопанькаєш.
-
+Petrivna: Or maybe you'll get drunk and fall on the rails and get zapped and die. Or a copper'll pack you up for caterwauling on them trains without a permit.
 # c9c56f80
 ; Настя: Ага.
-
+Nastya: Uh-huh.
 # 644f1302
 ; Петрівна: Дуга! Не сиди довго, бо закрию тут. На підлозі мокрій спати будеш.
-
+Petrivna: Don't uh-huh me! And don't sit your ass here long, or I'll lock ya up 'ere, make ya sleep on wet floor.
 # c8aa251d
 ; Настя: Ой, Петрівна. Характер у тебе дай боже. Як ти з таким характером ще й дитя мала, боже сохрани того козака, шо на тебе повівся.
-
+Nastya: Aw, Petrivna. Such a sweet gal. How'd ya get knocked up with that character of yours, god help that cossack that took a shine to ya.
 # 6d5e4973
 ; Настя: Поважати треба чужу роботу, Петрівна, ось шо. Може, не всі шось таке помітне роблять, як ти, але без музики воно все ж не то на світі.
-
+Nastya: Gotta respect honest work, Petrivna, is what I'll tell ya. Not all of us be doin' somethin' as noticeable as you, but it's not the same without music in this world, nah, it isn't.
 # a44ed50a
 ; Настя: Ай, та шо ж ти будеш робить, знову болить…
-
+Nastya: Ugh, what're ya gon' do, the pain kicked in again.
 # 67222ab3
 ; Настя: Треба грать. Пісня поможе.
-
+Nastya: Gotta play. The song'll help.
 # 66c3435d
 ; Настя: Га? Шо?
-
+Nastya: Huh? Wha'?
 # 2a0d014d
 ; Настя: Чекай, та ж останній вже поїхав? То котра вже?..
-
+Nastya: Wait up, the last one's passed, nah? What time's it?
 # 34aaea90
 ; Настя: Нє, не може буть.
-
+Nastya: Na-ah, can't be...
 # 7f48bf92
 ; Настя: Чекай, то чого він такий…
-
+Nastya: Wait, why's it so...
 # 5b05a224
 ; Настя: …примарний…
-
+Nastya: ...ghostly...
 # 6c731889
 ; @choice "Може, тікать?" goto:.Ch3Option1
-
+@choice "Should I scram?" goto:.Ch3Option1
 # 27b0fe37
 ; @choice "Може, зайти?" goto:.Ch3Option2
-
+@choice "Should I go in?" goto:.Ch3Option2
 # 202c636c
 ;     Настя: А, чого. Петрівна каже, погана прикмета почуть. А я вже і побачила. То вже всьо, виходить.
-
+Nastya: Aw, why'd I do that? Petrivna said, it's bad to hear it. I saw it, though. Guess that's it, then.
 # 28128b22
 ;     Настя: Все одно вже втрачать нічого. Все болить, гріш кіт наплакав. Ех, де мої вісімнадцять… може, якби вчилась нормально…
-
+Nastya: What've I got to lose? Everything hurts. Been scrapin' for money for years now. If only I didn't waste my teens and studied, maybe...
 # 31bef478
 ;     Настя: А цікаво, куди він мене завезе.
-
+Nastya: Wonder where it'll take me.
 # 9dc84b3b
 ;     Настя: Може, в пекло? Та нє. От у моїй комуналці, отам пекло. А це… шо там може буть. Шо я в цім житті не бачила.
-
+Nastya: To hell, maybe? Aw, nah. My damn flat, that's where hell is. What've they got out there that I ain't seen?
 # aad09bb3
 ;     Настя: А чого нє. Вже не дівчинка, вже пожила. Навіть якшо він в пекло їде, хіба тут краще?
-
+Nastya: And why not? I'm no lil' girl, I've had my life. Even if it's goin' to hell, is it any better 'ere?
 # 771b0d35
 ;     Настя: А ну як не в пекло. Може, це у цю, як її. Реобкорнацію. Шоб переродитись. Може, хоч так якусь нормальну житуху собі влаштую.
-
+Nastya: And what if it's not goin' to hell? What if it's going to... how's to say. Reincantation. To get reborn. Could make myself a nice lil' life still.
 # 8da91260
 ;     Настя: Або кудись просто де нормально. Не як у цій сраці. Зберу там гарну кумпанію і як злабаю!..
-
+Nastya: Or maybe it's just goin' somewhere normal. Not like this dump. Somewhere I could scrape up a lil' company for a tune or two...
 # 168a3e3b
 ; Настя: Поїду. А шо ще робить.
+Nastya: Nah, I'm boardin'. What else's there left for me?
