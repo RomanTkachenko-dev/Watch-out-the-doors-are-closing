@@ -2,108 +2,109 @@
 
 # 87754bd4
 ; Так.
-Meow.
+So.
 # cbfd76a6
 ; Шо зіграть?
-Meow meow?
+What'll I play?
 # 4e1448cc
 ; Може, шось таке веселеньке? Якісь вони тут усі понурі. Повтуплюються ото в телехвони.
-Meow, meow meow meow? Meow meow meow meow meow. Meow meow meow meow.
+Somethin' jolly? The folk here looks mighty gloomy, what with starin' in they gadgets and all.
 # 844bd819
 ; А чекай, може, шось таке романтичне? Оно одні за руці тримаються, другі… може, таке шось.
-
+Ah wait, maybe I'll go with somethin' romantic? Look at these doves holdin' hands, and those ones there, too... yea-ah, perhaps somethin' romantic.
 # 15bb71cf
 ; ???: Шо зіграть?
-
+???: What'll I play?
 # 5c5c42a3
 ; ???: А! Вже знаю.
-
+???: Ah! I know.
 # f3574947
 ; ???: ...
-
+???: ...
 # f3574947
 ; ???: ...
-
+???: ...
 # cc7f9abe
 ; Дитина: Тьотя, на!
-
+Child: Here, lady, this is for you!
 # 64ad449f
 ; ???: Ой ти моє зайчик, дякую-дякую! Рости велике і здорове, мамі-папі на радість!
-
+???: Aw, you lil' bird, thank ye, thank ye! Grow big an' strong, make yer mama an' dada mighty proud!
 # d76eaa0f
 ; Чоловік: Не займай дитини, стара курва. Порозвелося нахлібників…
-
+Man: Keep off the kid, old bitch. Goddamn moochers...
 # 93ca530d
 ; @choice "Май сором при дитині таке казать!" goto:.Ch1Option1 
-
+@choice "'Ave ya no shame, talkin' like that before a kid?"  goto:.Ch1Option1
 # 1ebaaa9e
 ; @choice "Стули писок!" goto:.Ch1Option2
-
+@choice: "Shut ya piehole!" goto:.Ch1Option2
 # 35931eb3
 ; @choice "*промовчати*" goto:.Ch1Option3
-
+@choice "*Say nothing*" goto:.Ch1Option3
 # 97677288
 ; ???: Май сором при дитині таке казать!
-
+???: 'Ave ya no shame, sayin' that before a kid?
 # ac66706d
 ; Чоловік: Мала б сама сором, намалювалася як молодуха і диринь-диринь отут, ану пішла!
-
+Man: Look at yourself! Think if you painted your face like a harlot you can plink-plonk here? Get lost!
 # 6c09d187
 ; ???: Стули писок!
-
+???: Shut ya piehole!
 # d15106c
 ; Чоловік: Я зараз поліцію на тебе викличу, вони тобі стулять по горбу!
-
+Man: See what you're gonna have to say about my piehole when I call the cops on you!
 # 3bf76de8
 ; Жінка: Роботу знайди, кобила!
-
+Woman: Get a job, old bag!
 # 26f525f
 ; ???: Для тебе Анастасія Олександрівна!
-
+???: It's Miss Anastasiya Oleksandrivna for them likes of you!
 # 233d5c53
 ; Настя: Ех!
-
+Nastya: Sigh.
 # f6886ec0
 ; Оце во граєш-співаєш тут, душу вкладаєш. Хоч би голову хто підняв, усі в своїх гаджетах.
-
+Look at me, playin' an' singin' here, puttin' all my heart in it. You'd think sumone'd look up, but nah, they all up in they gadgets.
 # 8ad0fc7e
 ; А якшо й підіймуть, то отакі от.
-
+And if they look, it's them likes of that guy.
 # d4f92128
 ; Хіба, може, з малявки будуть люди. А у цих нема смаку.
-
+Maybe that kid'll grow up nice. Them others 'ere 'ave no taste.
 # bc4c2ff2
 ; Хочеш людям якусь радість чи шо, а вони тобі о шо. Оно, дивись, зиркають. Крізь мене зиркають. Як ніби я їм примара.
-
+You go tryna make folks happy or sum'n, and they be like this. Look at 'em starin'. Right through me. Like I'm a ghost to 'em.
 # f45b66d5
 ; А я нє. Хоча є тут декілька… оно вони. І тільки я, видно, їх бачу.
-
+Well I'm no ghost, I'll tell ya that! Them real ghosts are ri-ight there. Must be just me seein'em, though.
 # bd202e5
 ; @choice "Це, мабуть, вже білка." goto:.Ch2Option1
-
+@choice "Are these them pink elephants?" goto:.Ch2Option1
 # cb1a4812
 ; @choice "Цікаво, шо воно таке." goto:.Ch2Option2
-
+@choice "Wonder what they are."
 # 8ec0fc98
 ; @choice "Ці ''без лиць'' посимпатичніші будуть, ніж ті, шо з лицями." goto:.Ch2Option3
-
+@choice "Them no-faced folk kinda nicer lookin' than the livin' faces." goto:.Ch2Option3
 # f6331065
 ; Треба менше пить.
-
+Gotta cut the booze.
 # b67daa2a
 ; А хоча, яка на хрін різниця. Все одно скоро здохну. Вже всьо болить.
-
+Ah, who gives a shit. I'mma croak soon anyways. Everythin' hurts these days.
 # d7eaea95
 ; Може, правду розказують про те, шо тут під землею десь пекло.
-
+Maybe it's true that there's hell somewhere underground 'ere.
 # 8587235c
 ; Може, їх звідти випускають погулять по території.
-
+Maybe they let 'em out for a lil' yard call.
 # a9e32eb5
 ; Як у тюрячці. Не до ночі згадати.
-
+Like in the clink. Ugh.
 # 5b373bfb
 ; “З лицями”. З харями! І шо далі то зліші.
-
+"Faces", yeah. Mugs, I'd say. Ugly evil mugs, and gettin' eviller.
 # 680804b7
 ; На моїх сусідів по комуналці схожі. Ті теж мразі
+Kinda remind me of my fuckin' roommates. Those people are dogs. Jus' like these.
