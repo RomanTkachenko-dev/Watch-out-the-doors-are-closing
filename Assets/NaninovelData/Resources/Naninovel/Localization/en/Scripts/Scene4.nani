@@ -227,49 +227,49 @@ Nastya: ...
 Nastya: Smokin' with'em was my only joy, ya know.
 # e4fa7e62
 ;         Харитон: Чи може пані сказати, що, зустрівшись зі мною і отримавши таку саму пропозицію, вони б сказали про пані так само?
-Kharyton: 
+Kharyton: Would the lady say that, given the same proposition, her friends would say the same about her?
 # 38acc600
 ;         Настя: Петрівна ні в жисть. Вона хороша баба, але така вже нудна. Ніколи слова доброго не дождешся.
-
+Nastya: Not Petrivna, not in a million years. She's a good lass, but just so crabby. You wouldn't get a nice word outta her.
 # 61424a9f
 ;         Настя: Миколаївна б, може, сказала. Але тоже не знати.
-
+Nastya: Mykolayivna could, though. Or I don't know.
 # 11866366
 ;         Харитон: Хіба це найкраще, на що ви заслуговуєте, Анастасіє Олександрівно?
-
+Kharyton: Is that the best that you deserve, Anastasiya Oleksandrivna?
 # 1846cb2
 ;         Настя: …
-
+Nastya: ...
 # f232b262
 ;     Харитон: Наступна станція — кінцева.
-
+Kharyton: The next station is the last one.
 # 2a62c7b
 ;     Настя: Шо там, на кінцевій?
-
+Nastya: What's on the last one?
 # c112b4c9
 ;     Харитон: На кожну душу очікує щось своє, пані. Але одне, що я можу вам обіцяти — це відпочинок. Там більше немає тіла, а отже, немає і болю.
-
+Kharyton: Each soul finds something special, madame. I can promise you one thing: repose. There is no body there. There is no pain.
 # 99be46f9
 ;     Харитон: За розкладом саме час від’їжджати, пані.
-
+Kharyton: The schedule says it is time to depart, madame.
 # 94df51f6
 ;     @choice "Поїхали скорше." goto:.EndingRideOutOfLife1
-
+@choice "Yeah, yeah, let's get outta here." goto:.EndingRideOutOfLife1
 # bb83a6ad
 ;     @choice "Ну шо ж… нехай." goto:.EndingRideOutOfLife2
-
+@choice "Well... let's go, I guess..." goto:.EndingRideOutOfLife2
 # be1d1985
 ;     Настя: Ну шо ж. Виходить, шо так воно всьо і закінчується. Пожила-пожила, за полтос років прожила, а нічо не нажила.
-
+Nastya: So. Guess this is how it all ends, huh. Fifty years I lived, and what'd I get?
 # c5c520fd
 ;     Настя: Ні я нічо хорошого не зробила, ні мені нічо.
-
+Nastya: I did no good for any'un, and no'un did any good to me.
 # 36cb1aa5
 ;     Настя: То може, воно і ліпше отак просто собі поїхать. Петрівна казала, погана прикмета. Може, воно і погана. Не знаю.
-
+Nastya: Maybe it's better to jus' get on a train an' leave like this. Petrivna said it's bad luck. Bad, maybe. Fucked if I know.
 # ecd6f7a4
 ;     Настя: Одно шкода. Петрівна з Миколаївною завтра вранці будуть мене на перекур чекать.
-
+Nastya: 
 # 3b1286a5
 ;     Настя: І післязавтра будуть чекать.
 
