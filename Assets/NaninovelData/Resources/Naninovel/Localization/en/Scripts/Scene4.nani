@@ -170,64 +170,64 @@ Nastya: A couple boozers got together, they asses deserved each other, I'd say. 
 Nastya: I grew up like a weed. Can't wait to get pulled real soon.
 # 12cc9448
 ;     Харитон: Неймовірно сумна історія. Сумна і несправедлива.
-
+Kharyton: Such an incredibly sad story, sad and unfair.
 # eaa229
 ;     Харитон: Обставини буття смертних занадто часто складаються у найбільш прикрий спосіб.
-
+Kharyton: The circumstances of mortal lives too often arrange most regrettably.
 # 942616d4
 ;     Харитон: І пані зовсім не мала рідної душі, змалечку і до сьогодні?
-
+Kharyton: So I understand it, the lady has not had a kindred soul, from the time she was young, and up to this day?
 # f3952893
 ;     Настя: Тьотька Дашка хіба. Вона вчителька була у музикалці, поки не спилась. На гітарі мене навчила. А потім шо. Потім синька, і всьо.
-
+Nastya: Maybe Auntie Dashka, her I had. Was a teacher at the music school, 'till she drank herself silly, that is. Taught me guitar, she did. Then booze took'er, and that's it.
 # 4ad809c6
 ;     Харитон: Дійсно, неймовірно несправедлива історія. Така сильна і неординарна особистість. Такі трагічні обставини.
-
+Kharyton: Truly, an incredibly unfair story. Such a strong and extraordinary person. Such tragic circumstances.
 # d93de261
 ;     Харитон: Анастасіє Олександрівно, не сприйміть за грубість. 
-
+Kharyton: Anastasiya Oleksandrivna, I do hope I do not come off as rude.
 # 4970d79b
 ;     Харитон: Проте, на мою скромну думку, ваші очі видають неймовірну втому. Можливо, пані вже не хоче дивитись на цей негостинний світ?
-
+Kharyton: But, in my humble opinion, your eyes are full of such unbearable fatigue. Perhaps, the lady would prefer not to see this unwelcoming world anymore?
 # f9e0c686
 ;     Харитон: Можливо, пані час покинути цей бал невдячності і горя?
-
+Kharyton: Perhaps, it is time for the lady to leave this corner of grief and ingratitude?
 # 93364847
 ;     @choice "Та скорше б вже покинуть." goto:.CharonReadyToDie
-
+@choice "Yeah, high time I leave." goto:.CharonReadyToDie
 # 85ad4421
 ;     @choice "А моя гітарка?" goto:.CharonButMyGuitar
-
+@choice "What 'bout my guitar?" goto:.CharonButMyGuitar
 # 18798804
 ;     @choice "А Петрівна? Миколаївна?" goto:.CharonButMyFriends
-
+@choice "What 'bout Petrivna? And Mykolayivna?" goto:.CharonButMyFriends
 # fd179c20
 ;         Настя: Тут вже мені давно нічого ловить.
-
+Nastya: Nuth'n left for me 'ere.
 # 10b7c41
 ;         Настя: Якби ше зіграть… пісня завше помагає.
-
+Nastya: Wish I could play a last one, though. The song helps, ya know.
 # f88a2de8
 ;         Харитон: Музика — прекрасна річ. Проте пані час відпочити. Час послухати.
-
+Kharyton: Music is the most wonderful thing. However, the lady should rest. The lady should listen now.
 # 60654e8b
 ;         Харитон: І до того ж. Хіба музика принесла пані те, що пані шукала? Єднання людських душ? Вираження творчого пориву душі?
-
+Kharyton: Besides, has music brought the lady what she was searching for? Has music brought about the unity of human souls? Has it expressed the artistic will of the living?
 # 16ab7652
 ;         Настя: Моя оддушина була…
-
+Nastya: 'Twas my only escape.
 # 147ae36a
 ;         Харитон: Всього-на-всього щось, що не є таким поганим, як решта світу. Хіба це найкраще, на що ви заслуговуєте, Анастасіє Олександрівно?
-
+Kharyton: An escape. Merely something not as bad as the rest of the world. Is that the best that you deserve, Anastasiya Oleksandrivna?
 # 1846cb2
 ;         Настя: …
-
+Nastya: ...
 # 4c867637
 ;         Настя: З ними курить — ото одна радість в мене була.
-
+Nastya: Smokin' with'em was my only joy, ya know.
 # e4fa7e62
 ;         Харитон: Чи може пані сказати, що, зустрівшись зі мною і отримавши таку саму пропозицію, вони б сказали про пані так само?
-
+Kharyton: 
 # 38acc600
 ;         Настя: Петрівна ні в жисть. Вона хороша баба, але така вже нудна. Ніколи слова доброго не дождешся.
 
