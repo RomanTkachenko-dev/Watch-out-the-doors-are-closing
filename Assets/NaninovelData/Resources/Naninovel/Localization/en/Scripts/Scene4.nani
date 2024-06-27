@@ -122,7 +122,7 @@ Nastya: Beatin' or nah, same difference. Not for long anyways.
 Kharyton: Ah. So that is why the scent is so familiar.
 # fcf7f75
 ;         Настя: Я залізла, бо вже похрін було. Погана прикмета, не погана. Шо втрачать?
-Nastya: I got on 'cause I ain't gave a shit anymore. Bad luck, good luck, what'd I have to lose?
+Nastya: I got on 'cause I ain't give a shit anymore. Bad luck, good luck, what'd I have to lose?
 # de138c4
 ;         Харитон: Якщо пані пробачить мою прямоту, пані дійсно має дуже знайомий аромат.
 Kharyton: If the lady should forgive my directness, the lady does have a particularly familiar aroma.
@@ -137,37 +137,37 @@ Nastya: Aw c'mon, doctor? I'm scrapin' for bills 'ere. Doctor my ass.
 Kharyton: My sincere condolences.
 # b54727c5
 ;     Настя: Люди — ублюди, Харитоне Андроновичу. Сидять у телехвонах своїх і навісніють. Ти їм оце граєш, душу рвеш, а вони тобі ше в харю дадуть.
-Nastya: 
+Nastya: Those 'people' they call'em, Kharyton Andronovych. They just stare in they gadgets all day till they blue in the face. Ya could pour out ya heart playin' for'em, and all ya'd get is ya head beat in.
 # af9d2cbe
 ;     Настя: Ні смаку, ні совісті.
-
+Nastya: Ain't got no taste, ain't got no heart.
 # 7c5075
 ;     Настя: А я?
-
+Nastya: And look at me!
 # aa017fc6
 ;     @choice "Сама собі житуху спортила." goto:.CharonIAmGuilty
-
+@choice "I took my life an' I turned it to shit." goto:.CharonIAmGuilty
 # 47ab0df6
 ;     @choice "Опинилась не тоді не там, і покотилась." goto:.CharonCircumstancesAreGuilty
-
+@choice "Found myself at wrong place in wrong time, and 'ere I am." goto:.CharonIAmGuilty
 # c4cad243
 ;         Настя: Не вчилась, не працювала, вола гибала. Шо тіки не нюхала і не колола. Обжималась по кутках. Тіки й побувала в житті, шо на нарах.
-
+Nastya: I never studied, I never worked, I jus' goofed off all days. I'd snort or smoke anything you'd give me. Made out in corners. Only place I visited in my time is the clink.
 # 1a7dfa2f
 ;         Настя: Ай…
-
+Nastya: Awh, fu-...
 # c4584ab9
 ;         Настя: Може, і ліпше, шо захворіла. Хоть не буду довго мучитись.
-
+Nastya: Maybe it's better I got sick. At least I'll go out fast.
 # 7d5fbba3
 ;         Настя: Може, якби родилась у нормальній хаті, у нормальній сім’ї, то були б люди з мене. А так… шо там казать.
-
+Nastya: Maybe if I got born in a normal house with normal people, I coulda grow up nice. I didn't, though, so there ya have it.
 # f5ed91a0
 ;         Настя: Алкаші знайшли одне одного. Яке їхало, таке здибало. І залетіли. А кому того дитя треба, коли на портвейн нема?
-
+Nastya: A couple boozers got together, they asses deserved each other, I'd say. And then they got knocked up. And you tell me, who needs a kid when they have no cash for a bottle?
 # 590afd25
 ;         Настя: Так і виросла, як той бур’ян. Вже не дождусь, коли виполють.
-
+Nastya: I grew up like a weed. Can't wait to get pulled real soon.
 # 12cc9448
 ;     Харитон: Неймовірно сумна історія. Сумна і несправедлива.
 
