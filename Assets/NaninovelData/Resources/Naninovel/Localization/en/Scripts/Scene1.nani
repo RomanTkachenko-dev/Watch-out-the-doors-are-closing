@@ -80,7 +80,7 @@ You go tryna make folks happy or sum'n, and they be like this. Look at 'em stari
 Well I'm no ghost, I'll tell ya that! Them real ghosts are ri-ight there. Must be just me seein'em, though.
 # bd202e5
 ; @choice "Це, мабуть, вже білка." goto:.Ch2Option1
-@choice "Are these them pink elephants?" goto:.Ch2Option1
+@choice "Am I seein' things?" goto:.Ch2Option1
 # cb1a4812
 ; @choice "Цікаво, шо воно таке." goto:.Ch2Option2
 @choice "Wonder what they are."
