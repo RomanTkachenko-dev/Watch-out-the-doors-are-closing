@@ -17,21 +17,22 @@ Nah, is weird.
 Beats me what's wrong here.
 # 9720cb9f
 ; Настя: Еййй, добрий вечір, хе-хе…
-Ey-y, good evenin', he-he...
+Nastya: Ey-y, good evenin', he-he...
 # c3f2a725
 ; Чекай-но. Це ж ці… примари. Оно, навіть лиць не видно. То ось кого він возить. То куди?.. Невже справді у пекло?..
-
+Wait up. Those are them ghosts, no? Can't even see they faces. Guess that's who boards this train, I see. So where...? Is it goin' to hell for real?
 # a5b303f1
 ; Може, тойво. Спитати…
-
+Should I, you know... ask?
 # 89f26502
 ; @choice "Підійти до силуета дівчини" goto:.Ch1Option1  if:iya=false 
-
+ @choice "Approach the silhouette of a girl" goto:.Ch1Option1  if:iya=false 
 # 84ef0ee
 ; @choice "Підійти до силуета підлітка" goto:.Ch1Option2 if:kazik=false 
-
+@choice "Approach the silhouette of a teenager" goto:.Ch1Option2 if:kazik=false
 # d933cc41
 ; @choice "Підійти до силуета чоловіка" goto:.Ch1Option3 if:orest=false 
-
+@choice "Approach the silhouette of a man" goto:.Ch1Option3 if:orest=false
 # 6ed7f10
 ; @choice "Шо, більше нікого нема? Всі повиходили?" goto:Scene4 if:orest=true&&kazik=true&&iya=true  
+@choice "Wha', 's everyone gone? Got off the train?" goto:Scene4 if:orest=true&&kazik=true&&iya=true
