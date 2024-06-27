@@ -2,121 +2,121 @@
 
 # 1ceaaac7
 ; Настя: ...
-
+Nastya: ...
 # d3496b89
 ; Диктор: Станція “Перекур”. Технічна зупинка. Наступна станція — кінцева.
-
+Announcer: This is Smoke Break, technical stop. The next station is the Last Stop.
 # 94032405
 ; Настя: Перекур, каже. Курить хто мені купить, ти?
-
+Nastya: Smoke break, ya say. An' who's gon' buy me smokes, huh? You?
 # 152c0e3
 ; Настя: Треба сходить хоть ноги розімнять. Все одно говорить більше ні з ким.
-
+Nastya: Gotta go stretch my legs. No one left to talk to 'ere anyways.
 # 1846cb2
 ; Настя: …
-
+Nastya: ...
 # a2d2581f
 ; Настя: Сюда б зараз дівок моїх. Петрівну. І Миколаївну. Ото б було їм розказать…
-
+Nastya: Wish my gals were 'ere now. Petrivna and Mykolayivna. So help me what I would tell'em...
 # bc2b662a
 ; ???: Доброї ночі. Перепрошую. Я волів би закурити. Чи пані не буде проти?
-
+???: Good evening, madame, excuse me. I would like to smoke my cigarette here. Would the lady mind if I did?
 # d5cfc873
 ; Настя: Шо?
-
+Nastya: Wha'?
 # 14fa53b7
 ; ???: Дозволите закурити тут, пані?
-
+???: Would you mind if I smoked here, madame?
 # ae3da413
 ; @choice "Кури, козаче." goto:.CharonSmoke
-
+@choice "Sure, smoke, lad." goto:.CharonSmoke
 # 6abb6dcc
 ; @choice "Тіки якщо даси стрельнути." goto:.CharonGive
-
+@choice "Only if ya bum me one." goto:.CharonGive
 # e521571d
 ;     Настя: Яка я там в сраку пані.
-
+Nastya: Madame my ass.
 # c6cf9477
 ;     ???: Дякую красно.
-
+???: Thank you kindly.
 # 763f1730
 ;     ???: Чи пані бажає курити також?
-
+???: Would the lady like to smoke, too?
 # f6ac9e33
 ;     Настя: Йой, питаєш!
-
+Nastya: Oh, you askin' me!
 # 1ceaaac7
 ;     Настя: ...
-
+Nastya: ...
 # 279a7644
 ;     ???: О, звичайно, пані має отримати певну винагороду за незручності.
-
+???: Oh, certainly, the lady must receive a reward for her trouble.
 # 118a22af
 ;     ???: Прошу, візьміть.
-
+???: Here, please.
 # dc626e6
 ;     Настя: Боже, нарешті.
-
+Nastya: Oh god, finally!
 # 1ceaaac7
 ;     Настя: ...
-
+Nastya: ...
 # 6e126ad2
 ; Настя: Фух, так краще.
-
+Nastya: Whew, much better.
 # 558ff57
 ; Настя: Я Настя, до речі.
-
+Nastya: I'm Nastya, by the way.
 # 661d2e45
 ; ???: Харитон Андронович, до ваших послуг. Я керманич цієї неймовірної машини. Іноді друзі називають мене скорочено: Харон.
-
+???: Kharyton Andronovych, at your service. I am the helmsman of this wonderful machine. My friends sometimes call me simply: Charon.
 # 15ad9922
 ; @choice "Хе-хе, Харон." goto:.CharonNameFunny
-
+@choice "He-he, Charon." goto:.CharonNameFunny
 # a0bd6ccc
 ; @choice "Гарно." goto:.CharonNameNice
-
+@choice "Pretty name." goto:.CharonNameNice
 # 248efe20
 ; @choice "Шось якось як не по-нашому." goto:.CharonNameStrange
-
+@choice "Sum'n foreign, no?" goto:.CharonNameStrange
 # 9a4755a
 ;     Харитон: Вельми неординарно, як ви думаєте?
-
+Kharyton: Quite extraordinary, don't you think?
 # 46bd411d
 ;     Настя: Не одинарно. Хе-хе.
-
+Nastya: Ex-ordinary. He-he.
 # 9537469a
 ;     Харитон: О, дякую. Пані має винятковий смак.
-
+Kharyton: Why, thank you! The lady has most exquisite taste.
 # a6212e57
 ;     Харитон: Але я відмітив це іще коли пані вперше заграли.
-
+Kharyton: I couldn't help but notice that the moment the lady first played.
 # 6aed704c
 ;     Харитон: Припускаю, це через те, що багато моїх друзів родом з далеких країв.
-
+Kharyton: I would suppose the reason for that is that a lot of my friends hail from far away.
 # a94afe7e
 ; Харитон: Проте, якщо пані пробачить мені мою зухвалість, я не міг не помітити один незвичайний факт.
-
+Kharyton: However, if the lady should forgive me my audacity, I could not help but notice a strange fact.
 # 7fbd6f1f
 ; Харитон: А саме той факт, що пані не мертва.
-
+Kharyton: The fast that the lady is not dead.
 # 35bdbd26
 ; Харитон: Чи є цьому певне пояснення?
-
+Kharyton: Is there a particular reason for this?
 # 6175acda
 ;     @choice "Може й мертва вже." goto:.CharonAlreadyDead
-
+@choice "Might as well be dead already." goto:.CharonAlreadyDead
 # 5ae89d94
 ;     @choice "Вибачай, Харитоне Андроновичу." goto:.CharonSorry
-
+@choice "Sorry, Kharyton Andronovych." goto:.CharonSorry
 # 707237c4
 ;         Настя: Я вже сама не знаю, шо значить “не мертва”. Може й мертва. З якого боку подивиться.
-
+Nastya: I've no idea, honest, what 'not dead' even means for me. Might be dead. Depends how ya look, y'know.
 # aaa2367c
 ;         Харитон: Але моє вухо вловлює цей звук, такий незвичний у цій частині підземних тонелів. Пані має серце, що б’ється.
-
+Kharyton: Oh, but my ear catches a sound, so strange and unusual in these parts of the underground tunnels. The lady has a beating heart.
 # 47b04189
 ;         Настя: А понту з того, шо б’ється. Все одно ненадовго.
-
+Nastya: Beatin' or nah, same difference. Not for long anyways.
 # 9f3c14d7
 ;         Харитон: Ах. То ось що це за знайомий аромат.
 
